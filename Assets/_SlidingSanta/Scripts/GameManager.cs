@@ -97,6 +97,11 @@ namespace SgLib
         public Material planeMaterial;
         public GameObject mainHouse;
 
+        [Header("Game Center")]
+        private string ios_Leaderboard = "christmasdefense_normalmode";
+        private string android_Leaderboard = "CgkI9Lat8aMREAIQAA";
+        private string leaderboard;
+
         private List<GameObject> listLeftWall = new List<GameObject>();
         //Stored the left twall
         private List<GameObject> listRightWall = new List<GameObject>();
@@ -176,8 +181,48 @@ namespace SgLib
         {
             // Initial setup
             Application.targetFrameRate = targetFrameRate;
+            if (Application.platform == RuntimePlatform.Android)
+            {
+                //PlayGamesPlatform.Activate();
+                leaderboard = android_Leaderboard;
+            }
+            else if (Application.platform == RuntimePlatform.IPhonePlayer)
+            {
+                leaderboard = ios_Leaderboard;
+            }
+            else
+            {
+                leaderboard = ios_Leaderboard;
+            }
+
+            Social.localUser.Authenticate(success => { if (success) { Debug.Log("==iOS GC authenticate OK"); } else { Debug.Log("==iOS GC authenticate Failed"); } });
+
             PrepareGame();
+            
         }
+
+        //Show Unity Ads
+        public void ShowAd(string zone)
+        {
+            UnityAds.ads.ShowAd(zone);
+        }
+
+        //Report score to the leaderboard
+        void ReportScore()
+        {
+            if (Social.localUser.authenticated)
+            {
+                Social.ReportScore(ScoreManager.Instance.Score, leaderboard, success =>
+                { if (success) { Debug.Log("==iOS GC report score ok: " + ScoreManager.Instance.Score + "\n"); } else { Debug.Log("==iOS GC report score Failed: " + leaderboard + "\n"); } });
+
+            }
+            else
+            {
+                Debug.Log("==iOS GC can't report score, not authenticated\n");
+            }
+        }
+
+
 
         // Listens to the event when player dies and call GameOver
         void PlayerController_PlayerDied()
@@ -251,6 +296,7 @@ namespace SgLib
         {
             GameState = GameState.GameOver;
             GameCount++;
+            ReportScore();
             StartCoroutine(CRStopMusic(1f));
         }
 

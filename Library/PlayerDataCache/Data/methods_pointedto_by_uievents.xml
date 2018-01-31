@@ -1,11 +1,13 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
-		<type fullname="ShareUIController">
-			<method name="Share"/>
-			<method name="SwitchFormat"/>
-			<method name="SwitchFormat"/>
+		<type fullname="SgLib.CharacterScroller">
+			<method name="HandleConfirmButton"/>
+			<method name="UnlockVehicleButton"/>
+			<method name="UnlockHumanButton"/>
 		</type>
 		<type fullname="SgLib.UIManager">
+			<method name="ButtonClickSound"/>
+			<method name="RestartGame"/>
 			<method name="ButtonClickSound"/>
 			<method name="ShowSettingsUI"/>
 			<method name="ButtonClickSound"/>
@@ -28,8 +30,6 @@
 			<method name="OpenFacebookPage"/>
 			<method name="ButtonClickSound"/>
 			<method name="ButtonClickSound"/>
-			<method name="RestartGame"/>
-			<method name="ButtonClickSound"/>
 			<method name="ShowStoreUI"/>
 			<method name="ButtonClickSound"/>
 			<method name="ToggleMusic"/>
@@ -40,7 +40,7 @@
 			<method name="ButtonClickSound"/>
 			<method name="WatchRewardedAd"/>
 			<method name="ButtonClickSound"/>
-			<method name="ShowLeaderboardUI"/>
+			<method name="ShowLeaderboard"/>
 			<method name="ButtonClickSound"/>
 			<method name="ToggleMusic"/>
 			<method name="ButtonClickSound"/>
@@ -52,13 +52,13 @@
 			<method name="ButtonClickSound"/>
 			<method name="RestorePurchase"/>
 		</type>
+		<type fullname="ShareUIController">
+			<method name="Share"/>
+			<method name="SwitchFormat"/>
+			<method name="SwitchFormat"/>
+		</type>
 		<type fullname="SgLib.RewardUIController">
 			<method name="Close"/>
-		</type>
-		<type fullname="SgLib.CharacterScroller">
-			<method name="UnlockHumanButton"/>
-			<method name="UnlockVehicleButton"/>
-			<method name="HandleConfirmButton"/>
 		</type>
 	</assembly>
 </linker>

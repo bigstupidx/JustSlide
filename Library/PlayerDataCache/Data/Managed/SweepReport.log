@@ -2,16 +2,16 @@
 All Assemblies
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 2302
+  Total Type Removals = 2197
     Nested = 184
-    Interfaces = 148
-    Abstract Classes = 171
-    Generic Types = 86
+    Interfaces = 138
+    Abstract Classes = 164
+    Generic Types = 77
     Generic Interfaces = 6
     Generic Abstract Classes = 3
-    Attributes = 171
-  Total Field Removals = 809
-  Total Method Removals = 10933
+    Attributes = 167
+  Total Field Removals = 779
+  Total Method Removals = 11080
 ---------------------------------------------------
 ---------------------------------------------------
 Assembly: Mono.Security
@@ -25,8 +25,8 @@ Summary:
     Generic Interfaces = 0
     Generic Abstract Classes = 0
     Attributes = 0
-  Total Field Removals = 65
-  Total Method Removals = 316
+  Total Field Removals = 64
+  Total Method Removals = 315
   References Removed = 0
 ---------------------------------------------------
     <PrivateImplementationDetails>
@@ -337,8 +337,6 @@ Summary:
         ReadInt32()
         Write(System.UInt64)
     Mono.Security.Protocol.Tls.ValidationResult
-        user_denied
-        .ctor(System.Boolean,System.Boolean,System.Int32)
         get_UserDenied()
     Mono.Security.StrongName
     Mono.Security.X509.Extensions.AuthorityKeyIdentifierExtension
@@ -547,16 +545,16 @@ Summary:
 Assembly: mscorlib
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 668
-    Nested = 48
+  Total Type Removals = 663
+    Nested = 47
     Interfaces = 72
     Abstract Classes = 60
-    Generic Types = 7
+    Generic Types = 4
     Generic Interfaces = 0
     Generic Abstract Classes = 1
     Attributes = 81
-  Total Field Removals = 515
-  Total Method Removals = 4179
+  Total Field Removals = 518
+  Total Method Removals = 4139
   References Removed = 0
 ---------------------------------------------------
     <PrivateImplementationDetails>
@@ -1131,6 +1129,10 @@ Summary:
         FINISHED
         NOT_STARTED
     System.ArraySegment`1
+        .ctor(T[])
+        .ctor(T[],System.Int32,System.Int32)
+        op_Equality(System.ArraySegment`1<T>,System.ArraySegment`1<T>)
+        op_Inequality(System.ArraySegment`1<T>,System.ArraySegment`1<T>)
     System.ArrayTypeMismatchException
         .ctor(System.String,System.Exception)
     System.AssemblyLoadEventArgs
@@ -1345,35 +1347,22 @@ Summary:
         .ctor(System.Collections.Generic.ICollection`1<System.Collections.Generic.KeyValuePair`2<T,U>>)
         get_Items()
     System.Collections.Generic.Dictionary`2
-        .ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>)
-        .ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IEqualityComparer`1<TKey>)
         .ctor(System.Int32,System.Collections.Generic.IEqualityComparer`1<TKey>)
         get_Comparer()
-        get_Keys()
-        pick_key(TKey,TValue)
-        System.Collections.Generic.IDictionary<TKey,TValue>.get_Keys()
-        System.Collections.Generic.IDictionary<TKey,TValue>.get_Values()
         System.Collections.IDictionary.Contains(System.Object)
         System.Collections.IDictionary.get_IsFixedSize()
         System.Collections.IDictionary.get_IsReadOnly()
         System.Collections.IDictionary.get_Keys()
         System.Collections.IDictionary.get_Values()
-    System.Collections.Generic.Dictionary`2/KeyCollection
     System.Collections.Generic.Dictionary`2/ShimEnumerator
         Dispose()
     System.Collections.Generic.IDictionary`2
-        Add(TKey,TValue)
         ContainsKey(TKey)
-        get_Item(TKey)
-        get_Keys()
-        get_Values()
         Remove(TKey)
-        set_Item(TKey,TValue)
         TryGetValue(TKey,TValue&)
     System.Collections.Generic.KeyNotFoundException
         .ctor(System.String,System.Exception)
     System.Collections.Generic.List`1
-        .ctor(System.Collections.Generic.IEnumerable`1<T>)
         .ctor(T[],System.Int32)
         BinarySearch(System.Int32,System.Int32,T,System.Collections.Generic.IComparer`1<T>)
         BinarySearch(T)
@@ -1381,7 +1370,6 @@ Summary:
         CheckRange(System.Int32,System.Int32)
         ConvertAll<TOutput>(System.Converter`2<T,TOutput>)
         CopyTo(System.Int32,T[],System.Int32,System.Int32)
-        CopyTo(T[])
         Exists(System.Predicate`1<T>)
         FindAll(System.Predicate`1<T>)
         FindAllList(System.Predicate`1<T>)
@@ -1406,7 +1394,6 @@ Summary:
         LastIndexOf(T,System.Int32,System.Int32)
         RemoveRange(System.Int32,System.Int32)
         Reverse(System.Int32,System.Int32)
-        Sort(System.Collections.Generic.IComparer`1<T>)
         Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer`1<T>)
         TrueForAll(System.Predicate`1<T>)
     System.Collections.Hashtable
@@ -1443,7 +1430,6 @@ Summary:
     System.Collections.Queue
         Contains(System.Object)
         Synchronized(System.Collections.Queue)
-        ToArray()
         TrimToSize()
     System.Collections.Queue/SyncQueue
     System.Collections.ReadOnlyCollectionBase
@@ -1622,7 +1608,6 @@ Summary:
         ToString(System.Int32)
         ToString(System.Int32,System.IFormatProvider)
         ToString(System.Int32,System.Int32)
-        ToString(System.Int64)
         ToString(System.Int64,System.IFormatProvider)
         ToString(System.Int64,System.Int32)
         ToString(System.SByte)
@@ -1670,10 +1655,8 @@ Summary:
         .ctor(System.Int32,System.Int32,System.Int32,System.Globalization.Calendar)
         .ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.DateTimeKind)
         .ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Globalization.Calendar)
-        .ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.DateTimeKind)
         .ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Globalization.Calendar)
         .ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Globalization.Calendar,System.DateTimeKind)
-        AddDays(System.Double)
         AddHours(System.Double)
         AddMinutes(System.Double)
         AddMonths(System.Int32)
@@ -1695,7 +1678,6 @@ Summary:
         GetTypeCode()
         IsDaylightSavingTime()
         Parse(System.String)
-        ParseExact(System.String,System.String,System.IFormatProvider)
         ToFileTime()
         ToFileTimeUtc()
         ToLongDateString()
@@ -1703,7 +1685,6 @@ Summary:
         ToOADate()
         ToShortDateString()
         ToShortTimeString()
-        ToString(System.String)
         TryParse(System.String,System.DateTime&)
         TryParse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime&)
         TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime&)
@@ -1770,7 +1751,6 @@ Summary:
         ToOffset(System.TimeSpan)
         ToString(System.IFormatProvider)
         ToString(System.String)
-        ToUniversalTime()
         TryParse(System.String,System.DateTimeOffset&)
         TryParse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset&)
         TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTimeOffset&)
@@ -1926,12 +1906,10 @@ Summary:
         Parse(System.String,System.Globalization.NumberStyles)
         ToString(System.String)
         TryParse(System.String,System.Double&)
-        TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Double&)
     System.DuplicateWaitObjectException
     System.Enum
         GetNames(System.Type)
         GetValues(System.Type)
-    System.EventHandler`1
     System.Exception
         FixRemotingException()
         get_Data()
@@ -1944,8 +1922,6 @@ Summary:
         .ctor(System.String,System.Exception)
     System.FieldAccessException
         Result
-        .ctor(System.String,System.Exception)
-    System.FormatException
         .ctor(System.String,System.Exception)
     System.GC
         AddMemoryPressure(System.Int64)
@@ -2308,8 +2284,6 @@ Summary:
         Parse(System.String)
         Parse(System.String,System.Globalization.NumberStyles)
         TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Int16&)
-    System.Int32
-        Parse(System.String,System.Globalization.NumberStyles)
     System.Int64
         MaxValue
         MinValue
@@ -2404,7 +2378,6 @@ Summary:
         Open(System.String,System.IO.FileMode,System.IO.FileAccess)
         Open(System.String,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare)
         OpenWrite(System.String)
-        ReadAllBytes(System.String)
         ReadAllLines(System.IO.StreamReader)
         ReadAllLines(System.String)
         ReadAllLines(System.String,System.Text.Encoding)
@@ -2544,8 +2517,6 @@ Summary:
     System.IO.Stream
         CreateWaitHandle()
         get_CanTimeout()
-        get_ReadTimeout()
-        get_WriteTimeout()
         set_ReadTimeout(System.Int32)
         set_WriteTimeout(System.Int32)
         Synchronized(System.IO.Stream)
@@ -2560,7 +2531,6 @@ Summary:
         .ctor(System.String,System.Boolean)
         .ctor(System.String,System.Text.Encoding)
         .ctor(System.String,System.Text.Encoding,System.Boolean)
-        Close()
         DataAvailable()
         DiscardBufferedData()
         get_BaseStream()
@@ -2578,14 +2548,11 @@ Summary:
         get_AutoFlush()
         get_BaseStream()
         get_Encoding()
-    System.IO.StringReader
-        Close()
     System.IO.StringWriter
         .ctor(System.IFormatProvider)
         get_Encoding()
         GetStringBuilder()
     System.IO.SynchronizedReader
-        Close()
         ReadBlock(System.Char[],System.Int32,System.Int32)
     System.IO.SynchronizedWriter
         .ctor(System.IO.TextWriter)
@@ -2599,7 +2566,6 @@ Summary:
         Write(System.Int64)
         Write(System.Object)
         Write(System.Single)
-        Write(System.String,System.Object)
         Write(System.UInt32)
         Write(System.UInt64)
         WriteLine(System.Boolean)
@@ -2612,13 +2578,11 @@ Summary:
         WriteLine(System.Int64)
         WriteLine(System.Object)
         WriteLine(System.Single)
-        WriteLine(System.String,System.Object)
         WriteLine(System.String,System.Object,System.Object,System.Object)
         WriteLine(System.String,System.Object[])
         WriteLine(System.UInt32)
         WriteLine(System.UInt64)
     System.IO.TextReader
-        Close()
         ReadBlock(System.Char[],System.Int32,System.Int32)
     System.IO.TextWriter
         .ctor(System.IFormatProvider)
@@ -2634,7 +2598,6 @@ Summary:
         Write(System.Int64)
         Write(System.Object)
         Write(System.Single)
-        Write(System.String,System.Object)
         Write(System.UInt32)
         Write(System.UInt64)
         WriteLine(System.Boolean)
@@ -2647,7 +2610,6 @@ Summary:
         WriteLine(System.Int64)
         WriteLine(System.Object)
         WriteLine(System.Single)
-        WriteLine(System.String,System.Object)
         WriteLine(System.String,System.Object,System.Object,System.Object)
         WriteLine(System.String,System.Object[])
         WriteLine(System.UInt32)
@@ -2831,6 +2793,13 @@ Summary:
         .ctor(System.String)
         .ctor(System.String,System.Exception)
     System.Random
+        MBIG
+        MSEED
+        MZ
+        Next()
+        Next(System.Int32)
+        NextBytes(System.Byte[])
+        NextDouble()
     System.RankException
         Result
         .ctor(System.String,System.Exception)
@@ -3478,7 +3447,6 @@ Summary:
         get_IsFamily()
         get_IsFamilyAndAssembly()
         get_IsFamilyOrAssembly()
-        get_IsInitOnly()
         get_IsPinvokeImpl()
         get_IsPrivate()
         get_IsSpecialName()
@@ -4480,20 +4448,14 @@ Summary:
     System.Runtime.InteropServices.FUNCFLAGS
     System.Runtime.InteropServices.FUNCKIND
     System.Runtime.InteropServices.GCHandle
-        .ctor(System.IntPtr)
-        .ctor(System.Object)
         AddrOfPinnedObject()
-        Alloc(System.Object)
-        CheckCurrentDomain(System.Int32)
-        FromIntPtr(System.IntPtr)
         GetAddrOfPinnedObject(System.Int32)
         op_Equality(System.Runtime.InteropServices.GCHandle,System.Runtime.InteropServices.GCHandle)
-        op_Explicit(System.IntPtr)
-        op_Explicit(System.Runtime.InteropServices.GCHandle)
         op_Inequality(System.Runtime.InteropServices.GCHandle,System.Runtime.InteropServices.GCHandle)
         set_Target(System.Object)
-        ToIntPtr(System.Runtime.InteropServices.GCHandle)
     System.Runtime.InteropServices.HandleRef
+        get_Wrapper()
+        op_Explicit(System.Runtime.InteropServices.HandleRef)
     System.Runtime.InteropServices.ICustomAdapter
     System.Runtime.InteropServices.ICustomFactory
     System.Runtime.InteropServices.ICustomMarshaler
@@ -5595,7 +5557,6 @@ Summary:
         .ctor(System.Byte[],System.String)
         .ctor(System.Byte[],System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
         .ctor(System.IntPtr)
-        .ctor(System.Security.Cryptography.X509Certificates.X509Certificate)
         .ctor(System.String)
         .ctor(System.String,System.Security.SecureString)
         .ctor(System.String,System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
@@ -6201,7 +6162,6 @@ Summary:
         get_CurrentCulture()
         get_CurrentCultureIgnoreCase()
         get_InvariantCulture()
-        get_Ordinal()
     System.SystemException
         Result
     System.TermInfoBooleans
@@ -6312,7 +6272,6 @@ Summary:
         .ctor(System.Int32,System.Int32)
         Append(System.Boolean)
         Append(System.Byte)
-        Append(System.Char[])
         Append(System.Decimal)
         Append(System.Double)
         Append(System.Int16)
@@ -6418,7 +6377,6 @@ Summary:
         get_IsVisible()
         get_StructLayoutAttribute()
         get_TypeInitializer()
-        GetConstructors()
         GetDefaultMembers()
         GetEvent(System.String)
         GetEvents()
@@ -6477,7 +6435,6 @@ Summary:
         MaxValue
         MinValue
         GetTypeCode()
-        Parse(System.String)
         Parse(System.String,System.Globalization.NumberStyles)
     System.UInt64
         MaxValue
@@ -6496,7 +6453,6 @@ Summary:
         get_MinorRevision()
         op_GreaterThan(System.Version,System.Version)
         op_GreaterThanOrEqual(System.Version,System.Version)
-        op_LessThan(System.Version,System.Version)
         op_LessThanOrEqual(System.Version,System.Version)
         ToString(System.Int32)
     System.WeakReference
@@ -6505,29 +6461,32 @@ Summary:
 Assembly: System
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 591
-    Nested = 13
-    Interfaces = 32
-    Abstract Classes = 45
+  Total Type Removals = 532
+    Nested = 18
+    Interfaces = 30
+    Abstract Classes = 42
     Generic Types = 4
     Generic Interfaces = 0
     Generic Abstract Classes = 0
-    Attributes = 37
-  Total Field Removals = 121
-  Total Method Removals = 789
+    Attributes = 36
+  Total Field Removals = 75
+  Total Method Removals = 943
   References Removed = 0
 ---------------------------------------------------
     <PrivateImplementationDetails>
         $$field-0
-        $$field-1
         .ctor()
-    <PrivateImplementationDetails>/$ArrayType$16
     <PrivateImplementationDetails>/$ArrayType$32
     Consts
     Locale
         .ctor()
     Mono.Security.X509.OSX509Certificates
+        CoreFoundationLibrary
+        SecurityLibrary
+        .ctor()
     System.CodeDom.Compiler.GeneratedCodeAttribute
+        get_Tool()
+        get_Version()
     System.Collections.Generic.LinkedList`1
     System.Collections.Generic.LinkedListNode`1
     System.Collections.Generic.Queue`1
@@ -6586,11 +6545,8 @@ Summary:
         BaseGetAllValues()
         BaseGetAllValues(System.Type)
         BaseHasKeys()
-        BaseRemove(System.String)
         BaseRemoveAt(System.Int32)
         BaseSet(System.Int32,System.Object)
-        BaseSet(System.String,System.Object)
-        Equals(System.String,System.String)
         get_Comparer()
         get_EqualityComparer()
         get_HashCodeProvider()
@@ -6607,20 +6563,13 @@ Summary:
         .ctor(System.Int32,System.Collections.IHashCodeProvider,System.Collections.IComparer)
         .ctor(System.Int32,System.Collections.Specialized.NameValueCollection)
         Add(System.Collections.Specialized.NameValueCollection)
-        AsStringArray(System.Collections.ArrayList)
         Clear()
         CopyTo(System.Array,System.Int32)
-        Get(System.String)
         get_AllKeys()
         get_Item(System.Int32)
-        get_Item(System.String)
         GetValues(System.Int32)
-        GetValues(System.String)
         HasKeys()
         RefreshCachedAll()
-        Remove(System.String)
-        Set(System.String,System.String)
-        set_Item(System.String,System.String)
     System.Collections.Specialized.OrderedDictionary
     System.Collections.Specialized.ProcessStringDictionary
     System.Collections.Specialized.StringCollection
@@ -6831,6 +6780,8 @@ Summary:
     System.ComponentModel.WeakObjectWrapper
     System.ComponentModel.WeakObjectWrapperComparer
     System.ComponentModel.Win32Exception
+        .ctor(System.String)
+        .ctor(System.String,System.Exception)
     System.Diagnostics.ConsoleTraceListener
     System.Diagnostics.CorrelationManager
     System.Diagnostics.DataReceivedEventArgs
@@ -6876,9 +6827,13 @@ Summary:
         .ctor(System.GenericUriParserOptions)
     System.GenericUriParserOptions
     System.HttpStyleUriParser
-    System.IO.Compression.CompressionMode
     System.IO.Compression.DeflateStream
+        BufferSize
+        LIBNAME
+        .ctor(System.IO.Stream,System.IO.Compression.CompressionMode,System.Boolean)
+        get_BaseStream()
     System.IO.Compression.GZipStream
+        get_BaseStream()
     System.IO.DefaultWatcher
     System.IO.DefaultWatcherData
     System.IO.ErrorEventArgs
@@ -6924,69 +6879,116 @@ Summary:
     System.MonoTODOAttribute
         get_Comment()
     System.Net.AuthenticationManager
+        .ctor()
+        Clear()
+        DoUnregister(System.String,System.Boolean)
+        get_CredentialPolicy()
+        get_CustomTargetNameDictionary()
+        get_RegisteredModules()
+        GetMustImplement()
+        Register(System.Net.IAuthenticationModule)
+        set_CredentialPolicy(System.Net.ICredentialPolicy)
+        Unregister(System.Net.IAuthenticationModule)
+        Unregister(System.String)
     System.Net.AuthenticationSchemes
     System.Net.AuthenticationSchemeSelector
     System.Net.Authorization
+        protectionRealm
+        get_ConnectionGroupId()
+        get_MutuallyAuthenticated()
+        get_ProtectionRealm()
+        GetMustImplement()
+        set_MutuallyAuthenticated(System.Boolean)
+        set_ProtectionRealm(System.String[])
     System.Net.BasicClient
-    System.Net.BindIPEndPoint
+        get_CanPreAuthenticate()
     System.Net.Cache.HttpCacheAgeControl
     System.Net.Cache.HttpRequestCacheLevel
     System.Net.Cache.HttpRequestCachePolicy
     System.Net.Cache.RequestCacheLevel
     System.Net.Cache.RequestCachePolicy
     System.Net.ChunkedInputStream
-    System.Net.ChunkStream
     System.Net.Configuration.Dummy
     System.Net.ConnectionModes
     System.Net.Cookie
+        .ctor(System.String,System.String,System.String)
+        .ctor(System.String,System.String,System.String,System.String)
+        IsToken(System.String)
+        QuotedString(System.String)
+        set_Expired(System.Boolean)
+        ToClientString()
     System.Net.CookieCollection
+        Add(System.Net.CookieCollection)
+        CopyTo(System.Net.Cookie[],System.Int32)
+        get_IsReadOnly()
+        get_Item(System.String)
     System.Net.CookieContainer
-    System.Net.CookieException
-    System.Net.CookieParser
+        <>f__switch$map4
+        DefaultCookieLengthLimit
+        DefaultCookieLimit
+        DefaultPerDomainCookieLimit
+        .ctor(System.Int32)
+        .ctor(System.Int32,System.Int32,System.Int32)
+        Add(System.Net.Cookie)
+        Add(System.Net.CookieCollection)
+        Add(System.Uri,System.Net.CookieCollection)
+        get_Capacity()
+        get_Count()
+        get_MaxCookieSize()
+        get_PerDomainCapacity()
+        Parse(System.String)
+        set_Capacity(System.Int32)
+        set_MaxCookieSize(System.Int32)
+        set_PerDomainCapacity(System.Int32)
+        SetCookies(System.Uri,System.String)
     System.Net.CredentialCache
-    System.Net.DecompressionMethods
     System.Net.DigestClient
-    System.Net.DigestHeaderParser
-    System.Net.DigestSession
+        get_CanPreAuthenticate()
     System.Net.Dns
+        BeginGetHostAddresses(System.String,System.AsyncCallback,System.Object)
+        BeginGetHostByName(System.String,System.AsyncCallback,System.Object)
+        BeginGetHostEntry(System.Net.IPAddress,System.AsyncCallback,System.Object)
+        BeginGetHostEntry(System.String,System.AsyncCallback,System.Object)
+        BeginResolve(System.String,System.AsyncCallback,System.Object)
+        EndGetHostAddresses(System.IAsyncResult)
+        EndGetHostByName(System.IAsyncResult)
+        EndGetHostEntry(System.IAsyncResult)
+        EndResolve(System.IAsyncResult)
+        GetHostAddresses(System.String)
+        GetHostByAddr_internal(System.String,System.String&,System.String[]&,System.String[]&)
+        GetHostByAddress(System.Net.IPAddress)
+        GetHostByAddress(System.String)
+        GetHostByAddressFromString(System.String,System.Boolean)
+        GetHostEntry(System.Net.IPAddress)
+        GetHostEntry(System.String)
+        GetHostName()
+        GetHostName_internal(System.String&)
+        Resolve(System.String)
+    System.Net.Dns/GetHostAddressesCallback
+    System.Net.Dns/GetHostByNameCallback
+    System.Net.Dns/GetHostEntryIPCallback
+    System.Net.Dns/GetHostEntryNameCallback
+    System.Net.Dns/ResolveCallback
     System.Net.DownloadDataCompletedEventArgs
     System.Net.DownloadDataCompletedEventHandler
     System.Net.DownloadProgressChangedEventArgs
     System.Net.DownloadProgressChangedEventHandler
     System.Net.DownloadStringCompletedEventArgs
     System.Net.DownloadStringCompletedEventHandler
-    System.Net.EndPoint
     System.Net.EndPointListener
     System.Net.EndPointManager
     System.Net.FileWebRequest
-        asyncResponding
-        credentials
-        requestEndEvent
-        requesting
         requestStream
-        webResponse
-        Abort()
         BeginGetRequestStream(System.AsyncCallback,System.Object)
-        BeginGetResponse(System.AsyncCallback,System.Object)
-        Close()
         EndGetRequestStream(System.IAsyncResult)
-        EndGetResponse(System.IAsyncResult)
         get_ConnectionGroupName()
-        get_ContentLength()
         get_ContentType()
-        get_Credentials()
-        get_Headers()
-        get_Method()
         get_PreAuthenticate()
-        get_Proxy()
-        get_RequestUri()
         get_Timeout()
         get_UseDefaultCredentials()
-        GetMustImplement()
         GetRequestStream()
         GetRequestStreamInternal()
         GetResponse()
-        GetResponseInternal()
         set_ConnectionGroupName(System.String)
         set_ContentLength(System.Int64)
         set_ContentType(System.String)
@@ -6996,108 +6998,50 @@ Summary:
         set_Proxy(System.Net.IWebProxy)
         set_Timeout(System.Int32)
         set_UseDefaultCredentials(System.Boolean)
-    System.Net.FileWebRequest/FileWebStream
     System.Net.FileWebRequest/GetRequestStreamCallback
-    System.Net.FileWebRequest/GetResponseCallback
     System.Net.FileWebResponse
+        get_ContentLength()
+        get_ContentType()
+        get_ResponseUri()
     System.Net.FtpAsyncResult
+        get_CompletedSynchronously()
+        get_Stream()
+        Reset()
+        set_Response(System.Net.FtpWebResponse)
+        WaitUntilComplete()
     System.Net.FtpDataStream
-    System.Net.FtpStatus
-    System.Net.FtpStatusCode
+        get_NetworkStream()
     System.Net.FtpWebRequest
-        <>f__switch$map5
-        <>f__switch$map6
         AbortCommand
-        asyncResult
         AuthCommand
         ChangeDir
-        controlReader
-        controlStream
-        credentials
-        dataStream
-        enableSsl
         EOL
-        file_name
-        ftpResponse
-        hostEntry
-        initial_path
-        keepAlive
-        localEndPoint
-        offset
-        origDataStream
         PassiveCommand
         PasswordCommand
         PortCommand
         QuitCommand
         RenameFromCommand
-        renameTo
         RenameToCommand
-        requestState
-        requestStream
         RestCommand
-        servicePoint
         TypeCommand
         UserCommand
-        Abort()
-        Authenticate()
         BeginGetRequestStream(System.AsyncCallback,System.Object)
-        BeginGetResponse(System.AsyncCallback,System.Object)
-        ChangeToSSLSocket(System.IO.Stream&)
-        CheckFinalState()
-        CheckIfAborted()
         CheckRequestStarted()
-        CloseConnection()
-        CloseControlConnection()
-        CloseDataConnection()
-        CreateExceptionFromResponse(System.Net.FtpStatus)
-        CWDAndSetFileName(System.Uri)
-        DownloadData()
         EndGetRequestStream(System.IAsyncResult)
-        EndGetResponse(System.IAsyncResult)
         get_ClientCertificates()
         get_ConnectionGroupName()
-        get_ContentLength()
         get_ContentOffset()
         get_ContentType()
-        get_Credentials()
-        get_DataType()
         get_DefaultCachePolicy()
-        get_EnableSsl()
-        get_Headers()
         get_KeepAlive()
-        get_Method()
         get_PreAuthenticate()
-        get_Proxy()
-        get_ReadWriteTimeout()
         get_RenameTo()
-        get_RequestUri()
-        get_ServicePoint()
-        get_State()
         get_Timeout()
         get_UseBinary()
         get_UseDefaultCredentials()
         get_UsePassive()
-        GetInitialPath(System.Net.FtpStatus)
-        GetMustImplement()
-        GetRemoteFolderPath(System.Uri)
         GetRequestStream()
         GetResponse()
-        GetResponseStatus()
-        GetServicePoint()
-        InFinalState()
-        InitDataConnection()
-        InitiateSecureConnection(System.IO.Stream&)
-        InProgress()
-        OpenControlConnection()
-        OpenDataConnection()
-        OperationCompleted()
-        ProcessMethod()
-        ProcessRequest()
-        ProcessSimpleMethod()
-        ResolveHost()
-        SendCommand(System.Boolean,System.String,System.String[])
-        SendCommand(System.String,System.String[])
-        ServiceNotAvailable()
         set_ClientCertificates(System.Security.Cryptography.X509Certificates.X509CertificateCollection)
         set_ConnectionGroupName(System.String)
         set_ContentLength(System.Int64)
@@ -7113,25 +7057,29 @@ Summary:
         set_Proxy(System.Net.IWebProxy)
         set_ReadWriteTimeout(System.Int32)
         set_RenameTo(System.String)
-        set_State(System.Net.FtpWebRequest/RequestState)
         set_Timeout(System.Int32)
         set_UseBinary(System.Boolean)
         set_UseDefaultCredentials(System.Boolean)
         set_UsePassive(System.Boolean)
-        SetCompleteWithError(System.Exception)
-        SetTransferCompleted()
-        SetType()
-        SetupPassiveConnection(System.String)
-        UploadData()
-    System.Net.FtpWebRequest/RequestState
     System.Net.FtpWebResponse
+        get_BannerMessage()
+        get_ContentLength()
+        get_ExitMessage()
+        get_LastModified()
+        get_ResponseUri()
+        get_StatusCode()
+        get_StatusDescription()
+        get_Stream()
+        get_WelcomeMessage()
+        set_ExitMessage(System.String)
+        set_StatusCode(System.Net.FtpStatusCode)
+        set_StatusDescription(System.String)
     System.Net.GlobalProxySelection
         .ctor()
         GetEmptyWebProxy()
         set_Select(System.Net.IWebProxy)
     System.Net.GlobalProxySelection/EmptyWebProxy
     System.Net.HttpConnection
-    System.Net.HttpContinueDelegate
     System.Net.HttpListener
     System.Net.HttpListenerBasicIdentity
     System.Net.HttpListenerContext
@@ -7141,108 +7089,49 @@ Summary:
     System.Net.HttpListenerResponse
     System.Net.HttpRequestHeader
     System.Net.HttpResponseHeader
-    System.Net.HttpStatusCode
     System.Net.HttpStreamAsyncResult
     System.Net.HttpUtility
     System.Net.HttpVersion
         .ctor()
     System.Net.HttpWebRequest
-        aborted
-        abortHandler
-        actualVersion
-        asyncRead
-        asyncWrite
-        authCompleted
-        auto_decomp
-        bodyBuffer
-        bodyBufferLength
-        continueDelegate
-        cookieContainer
-        credentials
-        expectContinue
-        finished_reading
-        getResponseCalled
         gotRequestStream
-        haveRequest
-        haveResponse
-        is_ntlm_auth
         maxResponseHeadersLength
-        preAuthenticate
-        requestSent
-        saved_exc
-        unsafe_auth_blah
-        usedPreAuth
-        WebConnection
-        webResponse
-        writeStream
-        Abort()
         AddRange(System.Int32)
         AddRange(System.Int32,System.Int32)
         AddRange(System.String,System.Int32)
         AddRange(System.String,System.Int32,System.Int32)
         BeginGetRequestStream(System.AsyncCallback,System.Object)
-        BeginGetResponse(System.AsyncCallback,System.Object)
-        CheckAuthorization(System.Net.WebResponse,System.Net.HttpStatusCode)
-        CheckFinalStatus(System.Net.WebAsyncResult)
-        CheckIfForceWrite()
         CheckRequestStarted()
-        CheckSendError(System.Net.WebConnectionData)
-        DoContinueDelegate(System.Int32,System.Net.WebHeaderCollection)
-        DoPreAuthenticate()
         EndGetRequestStream(System.IAsyncResult)
-        EndGetResponse(System.IAsyncResult)
-        get_Aborted()
         get_Accept()
         get_AllowAutoRedirect()
         get_AllowWriteStreamBuffering()
-        get_AuthUri()
-        get_AutomaticDecompression()
-        get_ClientCertificates()
         get_Connection()
         get_ConnectionGroupName()
-        get_ContentLength()
         get_ContentType()
         get_ContinueDelegate()
         get_CookieContainer()
-        get_Credentials()
         get_DefaultCachePolicy()
         get_DefaultMaximumErrorResponseLength()
         get_DefaultMaximumResponseHeadersLength()
         get_Expect()
-        get_ExpectContinue()
-        get_FinishedReading()
         get_GotRequestStream()
         get_HaveResponse()
-        get_Headers()
         get_IfModifiedSince()
-        get_InternalAllowBuffering()
-        get_KeepAlive()
         get_MaximumAutomaticRedirections()
         get_MaximumResponseHeadersLength()
         get_MediaType()
-        get_Method()
         get_Pipelined()
         get_PreAuthenticate()
         get_ProtocolVersion()
-        get_Proxy()
-        get_ProxyQuery()
-        get_ReadWriteTimeout()
         get_Referer()
-        get_RequestUri()
-        get_SendChunked()
         get_Timeout()
-        get_TransferEncoding()
-        get_UnsafeAuthenticatedConnectionSharing()
         get_UseDefaultCredentials()
         get_UserAgent()
         get_UsesNtlmAuthentication()
-        GetHeaders()
         GetMustImplement()
         GetRequestStream()
         GetResponse()
-        HandleNtlmAuth(System.Net.WebAsyncResult)
-        Redirect(System.Net.WebAsyncResult,System.Net.HttpStatusCode)
-        SendRequestHeaders(System.Boolean)
         set_Accept(System.String)
         set_AllowAutoRedirect(System.Boolean)
         set_AllowWriteStreamBuffering(System.Boolean)
@@ -7259,11 +7148,8 @@ Summary:
         set_DefaultMaximumErrorResponseLength(System.Int32)
         set_DefaultMaximumResponseHeadersLength(System.Int32)
         set_Expect(System.String)
-        set_ExpectContinue(System.Boolean)
-        set_FinishedReading(System.Boolean)
         set_Headers(System.Net.WebHeaderCollection)
         set_IfModifiedSince(System.DateTime)
-        set_InternalContentLength(System.Int64)
         set_KeepAlive(System.Boolean)
         set_MaximumAutomaticRedirections(System.Int32)
         set_MaximumResponseHeadersLength(System.Int32)
@@ -7281,15 +7167,25 @@ Summary:
         set_UnsafeAuthenticatedConnectionSharing(System.Boolean)
         set_UseDefaultCredentials(System.Boolean)
         set_UserAgent(System.String)
-        SetResponseData(System.Net.WebConnectionData)
-        SetResponseError(System.Net.WebExceptionStatus,System.Exception,System.String)
-        SetWriteStream(System.Net.WebConnectionStream)
-        SetWriteStreamError(System.Net.WebExceptionStatus,System.Exception)
     System.Net.HttpWebResponse
+        get_CharacterSet()
+        get_ContentEncoding()
+        get_ContentLength()
+        get_ContentType()
+        get_Cookies()
+        get_IsMutuallyAuthenticated()
+        get_LastModified()
+        get_Method()
+        get_ProtocolVersion()
+        get_ResponseUri()
+        get_Server()
+        GetMustImplement()
+        GetResponseHeader(System.String)
+        set_Cookies(System.Net.CookieCollection)
     System.Net.IAuthenticationModule
+        get_CanPreAuthenticate()
     System.Net.ICredentialPolicy
-    System.Net.ICredentials
-        GetCredential(System.Uri,System.String)
+        ShouldSendCredential(System.Uri,System.Net.WebRequest,System.Net.NetworkCredential,System.Net.IAuthenticationModule)
     System.Net.ICredentialsByHost
     System.Net.IPAddress
         m_HashCode
@@ -7299,7 +7195,6 @@ Summary:
         get_IsIPv6LinkLocal()
         get_IsIPv6Multicast()
         get_IsIPv6SiteLocal()
-        GetAddressBytes()
         HostToNetworkOrder(System.Int32)
         HostToNetworkOrder(System.Int64)
         NetworkToHostOrder(System.Int32)
@@ -7309,17 +7204,18 @@ Summary:
         SwapInt(System.Int32)
         SwapLong(System.Int64)
     System.Net.IPEndPoint
+        MaxPort
+        MinPort
     System.Net.IPHostEntry
+        get_Aliases()
+        get_HostName()
     System.Net.IPv6Address
         get_AddressFamily()
         get_Item(System.Int32)
         get_PrefixLength()
     System.Net.IWebProxy
-        get_Credentials()
         set_Credentials(System.Net.ICredentials)
     System.Net.IWebProxyScript
-    System.Net.IWebRequestCreate
-        Create(System.Uri)
     System.Net.ListenerAsyncResult
     System.Net.ListenerPrefix
     System.Net.Mail.AlternateView
@@ -7352,6 +7248,12 @@ Summary:
     System.Net.NetConfig
     System.Net.NetworkAccess
     System.Net.NetworkCredential
+        .ctor()
+        .ctor(System.String,System.String)
+        .ctor(System.String,System.String,System.String)
+        set_Domain(System.String)
+        set_Password(System.String)
+        set_UserName(System.String)
     System.Net.NetworkInformation.AlignmentUnion
     System.Net.NetworkInformation.DuplicateAddressDetectionState
     System.Net.NetworkInformation.GatewayIPAddressInformation
@@ -7475,53 +7377,64 @@ Summary:
     System.Net.OpenReadCompletedEventHandler
     System.Net.OpenWriteCompletedEventArgs
     System.Net.OpenWriteCompletedEventHandler
-    System.Net.ProtocolViolationException
-    System.Net.ReadState
     System.Net.RequestStream
     System.Net.ResponseStream
     System.Net.Security.AuthenticatedStream
-    System.Net.Security.LocalCertificateSelectionCallback
+        get_IsEncrypted()
+        get_IsMutuallyAuthenticated()
+        get_IsServer()
+        get_IsSigned()
     System.Net.Security.NegotiateStream
     System.Net.Security.ProtectionLevel
     System.Net.Security.SslStream
+        .ctor(System.IO.Stream)
+        .ctor(System.IO.Stream,System.Boolean)
+        .ctor(System.IO.Stream,System.Boolean,System.Net.Security.RemoteCertificateValidationCallback)
+        AuthenticateAsClient(System.String)
+        AuthenticateAsServer(System.Security.Cryptography.X509Certificates.X509Certificate)
+        AuthenticateAsServer(System.Security.Cryptography.X509Certificates.X509Certificate,System.Boolean,System.Security.Authentication.SslProtocols,System.Boolean)
+        BeginAuthenticateAsClient(System.String,System.AsyncCallback,System.Object)
+        BeginAuthenticateAsServer(System.Security.Cryptography.X509Certificates.X509Certificate,System.AsyncCallback,System.Object)
+        BeginAuthenticateAsServer(System.Security.Cryptography.X509Certificates.X509Certificate,System.Boolean,System.Security.Authentication.SslProtocols,System.Boolean,System.AsyncCallback,System.Object)
+        EndAuthenticateAsServer(System.IAsyncResult)
+        get_CanTimeout()
+        get_CheckCertRevocationStatus()
+        get_CipherAlgorithm()
+        get_CipherStrength()
+        get_HashAlgorithm()
+        get_HashStrength()
+        get_IsEncrypted()
+        get_IsMutuallyAuthenticated()
+        get_IsServer()
+        get_IsSigned()
+        get_KeyExchangeAlgorithm()
+        get_KeyExchangeStrength()
+        get_LocalCertificate()
+        get_RemoteCertificate()
+        get_SslProtocol()
+        set_ReadTimeout(System.Int32)
+        set_WriteTimeout(System.Int32)
+        Write(System.Byte[])
+    System.Net.Security.SslStream/<BeginAuthenticateAsServer>c__AnonStorey8
     System.Net.ServicePoint
-        certificate
-        clientCertificate
-        endPointCallback
-        groups
-        host
-        protocolVersion
-        CallEndPointDelegate(System.Net.Sockets.Socket,System.Net.IPEndPoint)
         CloseConnectionGroup(System.String)
         DecrementConnection()
         get_BindIPEndPointDelegate()
         get_Certificate()
         get_ClientCertificate()
         get_ConnectionLeaseTimeout()
-        get_ConnectionLimit()
         get_ConnectionName()
         get_Expect100Continue()
-        get_Groups()
-        get_HostEntry()
         get_MaxIdleTime()
-        get_ProtocolVersion()
         get_ReceiveBufferSize()
-        get_SendContinue()
         get_SupportsPipelining()
-        get_UseConnect()
-        get_UseNagleAlgorithm()
-        get_UsesProxy()
-        GetConnectionGroup(System.String)
         GetMustImplement()
         IncrementConnection()
-        SendRequest(System.Net.HttpWebRequest,System.String)
         set_BindIPEndPointDelegate(System.Net.BindIPEndPoint)
         set_ConnectionLeaseTimeout(System.Int32)
         set_ConnectionLimit(System.Int32)
         set_MaxIdleTime(System.Int32)
         set_ReceiveBufferSize(System.Int32)
-        SetCertificates(System.Security.Cryptography.X509Certificates.X509Certificate,System.Security.Cryptography.X509Certificates.X509Certificate)
-        SetVersion(System.Version)
     System.Net.ServicePointManager
         DefaultNonPersistentConnectionLimit
         DefaultPersistentConnectionLimit
@@ -7548,33 +7461,195 @@ Summary:
         set_ServerCertificateValidationCallback(System.Net.Security.RemoteCertificateValidationCallback)
         set_UseNagleAlgorithm(System.Boolean)
     System.Net.ServicePointManager/ChainValidationHelper
+        set_Host(System.String)
     System.Net.ServicePointManager/SPKey
         get_Uri()
         get_UseConnect()
     System.Net.SocketAddress
+        .ctor(System.Net.Sockets.AddressFamily)
     System.Net.Sockets.IOControlCode
     System.Net.Sockets.IPPacketInformation
     System.Net.Sockets.IPv6MulticastOption
     System.Net.Sockets.LingerOption
+        get_Enabled()
+        get_LingerTime()
+        set_Enabled(System.Boolean)
+        set_LingerTime(System.Int32)
     System.Net.Sockets.MulticastOption
+        group
+        iface_index
+        local
+        .ctor(System.Net.IPAddress)
+        .ctor(System.Net.IPAddress,System.Int32)
+        .ctor(System.Net.IPAddress,System.Net.IPAddress)
+        get_Group()
+        get_InterfaceIndex()
+        get_LocalAddress()
+        set_Group(System.Net.IPAddress)
+        set_InterfaceIndex(System.Int32)
+        set_LocalAddress(System.Net.IPAddress)
     System.Net.Sockets.NetworkStream
+        .ctor(System.Net.Sockets.Socket,System.IO.FileAccess)
+        get_CanTimeout()
+        get_DataAvailable()
+        get_Readable()
+        get_Socket()
+        get_Writeable()
+        set_Readable(System.Boolean)
+        set_ReadTimeout(System.Int32)
+        set_Writeable(System.Boolean)
+        set_WriteTimeout(System.Int32)
+    System.Net.Sockets.NetworkStream/Timeout
     System.Net.Sockets.ProtocolFamily
-    System.Net.Sockets.ProtocolType
-    System.Net.Sockets.SelectMode
     System.Net.Sockets.SendPacketsElement
     System.Net.Sockets.Socket
+        useoverlappedIO
+        .ctor(System.Net.Sockets.SocketInformation)
+        Accept(System.Net.Sockets.Socket)
+        AcceptAsync(System.Net.Sockets.SocketAsyncEventArgs)
+        AddSockets(System.Collections.ArrayList,System.Collections.IList,System.String)
+        Available_internal(System.IntPtr,System.Int32&)
+        BeginAccept(System.AsyncCallback,System.Object)
+        BeginAccept(System.Int32,System.AsyncCallback,System.Object)
+        BeginAccept(System.Net.Sockets.Socket,System.Int32,System.AsyncCallback,System.Object)
+        BeginConnect(System.Net.EndPoint,System.AsyncCallback,System.Object)
+        BeginConnect(System.Net.EndPoint,System.AsyncCallback,System.Object,System.Boolean)
+        BeginConnect(System.Net.IPAddress,System.Int32,System.AsyncCallback,System.Object)
+        BeginConnect(System.Net.IPAddress[],System.Int32,System.AsyncCallback,System.Object)
+        BeginConnect(System.String,System.Int32,System.AsyncCallback,System.Object)
+        BeginDisconnect(System.Boolean,System.AsyncCallback,System.Object)
+        BeginReceive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError&,System.AsyncCallback,System.Object)
+        BeginReceive(System.Collections.Generic.IList`1<System.ArraySegment`1<System.Byte>>,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)
+        BeginReceive(System.Collections.Generic.IList`1<System.ArraySegment`1<System.Byte>>,System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError&,System.AsyncCallback,System.Object)
+        BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint&,System.AsyncCallback,System.Object)
+        BeginReceiveMessageFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint&,System.AsyncCallback,System.Object)
+        BeginSend(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError&,System.AsyncCallback,System.Object)
+        BeginSend(System.Collections.Generic.IList`1<System.ArraySegment`1<System.Byte>>,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)
+        BeginSend(System.Collections.Generic.IList`1<System.ArraySegment`1<System.Byte>>,System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError&,System.AsyncCallback,System.Object)
+        BeginSendFile(System.String,System.AsyncCallback,System.Object)
+        BeginSendFile(System.String,System.Byte[],System.Byte[],System.Net.Sockets.TransmitFileOptions,System.AsyncCallback,System.Object)
+        BeginSendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint,System.AsyncCallback,System.Object)
+        Close(System.Int32)
+        Connect(System.Net.IPAddress,System.Int32)
+        Connect(System.Net.IPAddress[],System.Int32)
+        Connect(System.String,System.Int32)
+        Connect_internal(System.IntPtr,System.Net.SocketAddress,System.Int32&)
+        ConnectAsync(System.Net.Sockets.SocketAsyncEventArgs)
+        Disconnect(System.Boolean)
+        Disconnect_internal(System.IntPtr,System.Boolean,System.Int32&)
+        DisconnectAsync(System.Net.Sockets.SocketAsyncEventArgs)
+        DuplicateAndClose(System.Int32)
+        EndAccept(System.Byte[]&,System.IAsyncResult)
+        EndAccept(System.Byte[]&,System.Int32&,System.IAsyncResult)
+        EndAccept(System.IAsyncResult)
+        EndConnect(System.IAsyncResult)
+        EndDisconnect(System.IAsyncResult)
+        EndReceiveFrom(System.IAsyncResult,System.Net.EndPoint&)
+        EndReceiveMessageFrom(System.IAsyncResult,System.Net.Sockets.SocketFlags&,System.Net.EndPoint&,System.Net.Sockets.IPPacketInformation&)
+        EndSendFile(System.IAsyncResult)
+        EndSendTo(System.IAsyncResult)
+        get_Available()
+        get_DontFragment()
+        get_EnableBroadcast()
+        get_ExclusiveAddressUse()
+        get_Handle()
+        get_IsBound()
+        get_LingerState()
+        get_MulticastLoopback()
+        get_NoDelay()
+        get_OSSupportsIPv4()
+        get_OSSupportsIPv6()
+        get_ReceiveBufferSize()
+        get_RemoteEndPoint()
+        get_SendBufferSize()
+        get_Ttl()
+        get_UseOnlyOverlappedIO()
+        GetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Byte[])
+        GetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Int32)
+        GetSocketOption_arr_internal(System.IntPtr,System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Byte[]&,System.Int32&)
+        IOControl(System.Int32,System.Byte[],System.Byte[])
+        IOControl(System.Net.Sockets.IOControlCode,System.Byte[],System.Byte[])
+        Poll(System.Int32,System.Net.Sockets.SelectMode,System.Int32&)
+        Receive(System.Byte[])
+        Receive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError&)
+        Receive(System.Byte[],System.Int32,System.Net.Sockets.SocketFlags)
+        Receive(System.Byte[],System.Net.Sockets.SocketFlags)
+        Receive(System.Collections.Generic.IList`1<System.ArraySegment`1<System.Byte>>)
+        Receive(System.Collections.Generic.IList`1<System.ArraySegment`1<System.Byte>>,System.Net.Sockets.SocketFlags)
+        Receive(System.Collections.Generic.IList`1<System.ArraySegment`1<System.Byte>>,System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError&)
+        Receive_internal(System.IntPtr,System.Net.Sockets.Socket/WSABUF[],System.Net.Sockets.SocketFlags,System.Int32&)
+        ReceiveAsync(System.Net.Sockets.SocketAsyncEventArgs)
+        ReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint&)
+        ReceiveFrom(System.Byte[],System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint&)
+        ReceiveFrom(System.Byte[],System.Net.EndPoint&)
+        ReceiveFrom(System.Byte[],System.Net.Sockets.SocketFlags,System.Net.EndPoint&)
+        ReceiveFromAsync(System.Net.Sockets.SocketAsyncEventArgs)
+        ReceiveMessageFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags&,System.Net.EndPoint&,System.Net.Sockets.IPPacketInformation&)
+        ReceiveMessageFromAsync(System.Net.Sockets.SocketAsyncEventArgs)
+        RemoteEndPoint_internal(System.IntPtr,System.Int32&)
+        Select(System.Collections.IList,System.Collections.IList,System.Collections.IList,System.Int32)
+        Select_internal(System.Net.Sockets.Socket[]&,System.Int32,System.Int32&)
+        Send(System.Byte[])
+        Send(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError&)
+        Send(System.Byte[],System.Int32,System.Net.Sockets.SocketFlags)
+        Send(System.Byte[],System.Net.Sockets.SocketFlags)
+        Send(System.Collections.Generic.IList`1<System.ArraySegment`1<System.Byte>>)
+        Send(System.Collections.Generic.IList`1<System.ArraySegment`1<System.Byte>>,System.Net.Sockets.SocketFlags)
+        Send(System.Collections.Generic.IList`1<System.ArraySegment`1<System.Byte>>,System.Net.Sockets.SocketFlags,System.Net.Sockets.SocketError&)
+        Send_internal(System.IntPtr,System.Net.Sockets.Socket/WSABUF[],System.Net.Sockets.SocketFlags,System.Int32&)
+        SendAsync(System.Net.Sockets.SocketAsyncEventArgs)
+        SendFile(System.IntPtr,System.String,System.Byte[],System.Byte[],System.Net.Sockets.TransmitFileOptions)
+        SendFile(System.String)
+        SendFile(System.String,System.Byte[],System.Byte[],System.Net.Sockets.TransmitFileOptions)
+        SendPacketsAsync(System.Net.Sockets.SocketAsyncEventArgs)
+        SendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint)
+        SendTo(System.Byte[],System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint)
+        SendTo(System.Byte[],System.Net.EndPoint)
+        SendTo(System.Byte[],System.Net.Sockets.SocketFlags,System.Net.EndPoint)
+        SendToAsync(System.Net.Sockets.SocketAsyncEventArgs)
+        set_Connected(System.Boolean)
+        set_DontFragment(System.Boolean)
+        set_EnableBroadcast(System.Boolean)
+        set_ExclusiveAddressUse(System.Boolean)
+        set_LingerState(System.Net.Sockets.LingerOption)
+        set_MulticastLoopback(System.Boolean)
+        set_ReceiveBufferSize(System.Int32)
+        set_ReceiveTimeout(System.Int32)
+        set_SendBufferSize(System.Int32)
+        set_SendTimeout(System.Int32)
+        set_Ttl(System.Int16)
+        set_UseOnlyOverlappedIO(System.Boolean)
+        SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Boolean)
+        SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Byte[])
+        SetSocketOption(System.Net.Sockets.SocketOptionLevel,System.Net.Sockets.SocketOptionName,System.Object)
+        Shutdown(System.Net.Sockets.SocketShutdown)
+        SocketDefaults()
+        WSAIoctl(System.IntPtr,System.Int32,System.Byte[],System.Byte[],System.Int32&)
+    System.Net.Sockets.Socket/SendFileAsyncResult
+    System.Net.Sockets.Socket/SendFileHandler
+    System.Net.Sockets.Socket/SocketAsyncResult
+        Complete(System.Boolean)
+        Complete(System.Exception,System.Boolean)
+        Complete(System.Net.Sockets.Socket)
+        Complete(System.Net.Sockets.Socket,System.Int32)
+        get_CompletedSynchronously()
+        get_Socket()
+        set_AsyncWaitHandle(System.Threading.WaitHandle)
+    System.Net.Sockets.Socket/Worker
+        Accept()
+        AcceptReceive()
+        Connect()
+        Disconnect()
+        ReceiveGeneric()
+        SendGeneric()
+    System.Net.Sockets.Socket/WSABUF
     System.Net.Sockets.SocketAsyncEventArgs
     System.Net.Sockets.SocketAsyncOperation
-    System.Net.Sockets.SocketError
     System.Net.Sockets.SocketException
-    System.Net.Sockets.SocketFlags
+        get_ErrorCode()
     System.Net.Sockets.SocketInformation
     System.Net.Sockets.SocketInformationOptions
-    System.Net.Sockets.SocketOptionLevel
-    System.Net.Sockets.SocketOptionName
     System.Net.Sockets.SocketPolicyClient
-    System.Net.Sockets.SocketShutdown
-    System.Net.Sockets.SocketType
     System.Net.Sockets.TcpClient
     System.Net.Sockets.TcpListener
     System.Net.Sockets.TransmitFileOptions
@@ -7591,40 +7666,41 @@ Summary:
     System.Net.UploadValuesCompletedEventArgs
     System.Net.UploadValuesCompletedEventHandler
     System.Net.WebAsyncResult
+        get_CompletedSynchronously()
+        get_WriteStream()
     System.Net.WebClient
     System.Net.WebConnection
+        DownloadPolicy(System.String,System.String)
+        get_Connected()
     System.Net.WebConnectionData
+        Init()
     System.Net.WebConnectionGroup
+        Close()
+        get_Name()
     System.Net.WebConnectionStream
+        get_CanTimeout()
+        get_Request()
+        set_ReadTimeout(System.Int32)
+        set_WriteTimeout(System.Int32)
     System.Net.WebException
-    System.Net.WebExceptionStatus
+        get_Response()
     System.Net.WebHeaderCollection
         Add(System.Net.HttpRequestHeader,System.String)
         Add(System.Net.HttpResponseHeader,System.String)
-        Add(System.String)
         Clear()
-        Get(System.String)
         get_AllKeys()
         get_Item(System.Net.HttpRequestHeader)
         get_Item(System.Net.HttpResponseHeader)
         GetValues(System.Int32)
-        GetValues(System.String)
-        IsMultiValue(System.String)
         IsRestricted(System.String,System.Boolean)
         Remove(System.Net.HttpRequestHeader)
         Remove(System.Net.HttpResponseHeader)
-        Remove(System.String)
-        RemoveAndAdd(System.String,System.String)
-        RemoveInternal(System.String)
         RequestHeaderToString(System.Net.HttpRequestHeader)
         ResponseHeaderToString(System.Net.HttpResponseHeader)
         Set(System.Net.HttpRequestHeader,System.String)
         Set(System.Net.HttpResponseHeader,System.String)
-        Set(System.String,System.String)
         set_Item(System.Net.HttpRequestHeader,System.String)
         set_Item(System.Net.HttpResponseHeader,System.String)
-        SetInternal(System.String)
-        SetInternal(System.String,System.String)
         ToByteArray()
         ToStringMultiValue()
     System.Net.WebPermission
@@ -7644,7 +7720,6 @@ Summary:
         get_BypassArrayList()
         get_BypassList()
         get_BypassProxyOnLocal()
-        get_Credentials()
         GetDefaultProxy()
         set_Address(System.Uri)
         set_BypassList(System.String[])
@@ -7653,32 +7728,20 @@ Summary:
         set_UseDefaultCredentials(System.Boolean)
         ToUri(System.String)
     System.Net.WebRequest
-        Abort()
         AddPrefix(System.String,System.String)
         BeginGetRequestStream(System.AsyncCallback,System.Object)
-        BeginGetResponse(System.AsyncCallback,System.Object)
         ClearPrefixes()
-        Create(System.String)
-        Create(System.Uri)
         CreateDefault(System.Uri)
         EndGetRequestStream(System.IAsyncResult)
-        EndGetResponse(System.IAsyncResult)
         get_AuthenticationLevel()
         get_CachePolicy()
         get_ConnectionGroupName()
-        get_ContentLength()
         get_ContentType()
-        get_Credentials()
         get_DefaultCachePolicy()
-        get_Headers()
         get_ImpersonationLevel()
-        get_Method()
         get_PreAuthenticate()
-        get_Proxy()
-        get_RequestUri()
         get_Timeout()
         get_UseDefaultCredentials()
-        GetCreator(System.String)
         GetRequestStream()
         GetResponse()
         GetSystemWebProxy()
@@ -7701,6 +7764,13 @@ Summary:
         set_UseDefaultCredentials(System.Boolean)
     System.Net.WebRequestMethods
     System.Net.WebResponse
+        get_ContentLength()
+        get_ContentType()
+        get_IsFromCache()
+        get_IsMutuallyAuthenticated()
+        get_ResponseUri()
+        set_ContentLength(System.Int64)
+        set_ContentType(System.String)
     System.NetPipeStyleUriParser
     System.NetTcpStyleUriParser
     System.NewsStyleUriParser
@@ -7713,7 +7783,6 @@ Summary:
     System.Security.Authentication.ExchangeAlgorithmType
     System.Security.Authentication.HashAlgorithmType
     System.Security.Authentication.InvalidCredentialException
-    System.Security.Authentication.SslProtocols
     System.Security.Cryptography.AsnEncodedData
         .ctor(System.Byte[])
         .ctor(System.Security.Cryptography.AsnEncodedData)
@@ -7747,11 +7816,9 @@ Summary:
         set_Value(System.String)
     System.Security.Cryptography.OidCollection
         CopyTo(System.Security.Cryptography.Oid[],System.Int32)
-        get_Item(System.String)
         get_ReadOnly()
         GetEnumerator()
         ReadOnlyCopy()
-        set_ReadOnly(System.Boolean)
     System.Security.Cryptography.OidEnumerator
         get_Current()
     System.Security.Cryptography.X509Certificates.PublicKey
@@ -7773,7 +7840,6 @@ Summary:
         .ctor(System.Byte[],System.String)
         .ctor(System.Byte[],System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
         .ctor(System.IntPtr)
-        .ctor(System.Security.Cryptography.X509Certificates.X509Certificate)
         .ctor(System.String)
         .ctor(System.String,System.Security.SecureString)
         .ctor(System.String,System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
@@ -7825,8 +7891,6 @@ Summary:
         Create()
         get_ChainContext()
         get_ChainElements()
-        get_ChainStatus()
-        set_ChainPolicy(System.Security.Cryptography.X509Certificates.X509ChainPolicy)
     System.Security.Cryptography.X509Certificates.X509ChainElement
         get_Information()
     System.Security.Cryptography.X509Certificates.X509ChainElementCollection
@@ -7836,7 +7900,6 @@ Summary:
         get_CertificatePolicy()
         get_UrlRetrievalTimeout()
         set_RevocationFlag(System.Security.Cryptography.X509Certificates.X509RevocationFlag)
-        set_RevocationMode(System.Security.Cryptography.X509Certificates.X509RevocationMode)
         set_UrlRetrievalTimeout(System.TimeSpan)
         set_VerificationFlags(System.Security.Cryptography.X509Certificates.X509VerificationFlags)
         set_VerificationTime(System.DateTime)
@@ -7848,7 +7911,6 @@ Summary:
         .ctor()
         .ctor(System.Security.Cryptography.OidCollection,System.Boolean)
         Encode()
-        get_EnhancedKeyUsages()
     System.Security.Cryptography.X509Certificates.X509Extension
         .ctor(System.Security.Cryptography.AsnEncodedData,System.Boolean)
         .ctor(System.Security.Cryptography.Oid,System.Byte[],System.Boolean)
@@ -8027,34 +8089,19 @@ Summary:
     System.Timers.Timer
     System.Timers.TimersDescriptionAttribute
     System.Uri
-        <>f__switch$map12
-        <>f__switch$map13
-        cachedLocalPath
         MaxUriLength
         segments
         .ctor(System.String,System.UriKind,System.Boolean&)
-        .ctor(System.Uri,System.String)
         .ctor(System.Uri,System.String,System.Boolean)
         Compare(System.Uri,System.Uri,System.UriComponents,System.UriFormat,System.StringComparison)
         Escape()
-        EscapeDataString(System.String)
         EscapeUriString(System.String)
-        get_AbsolutePath()
         get_DnsSafeHost()
         get_Fragment()
-        get_HostNameType()
-        get_IsDefaultPort()
-        get_LocalPath()
-        get_PathAndQuery()
-        get_Port()
-        get_Query()
         get_Segments()
         get_UserEscaped()
         get_UserInfo()
-        GetChar(System.String,System.Int32,System.Int32)
-        GetChars(System.IO.MemoryStream,System.Text.Encoding)
         GetComponents(System.UriComponents,System.UriFormat)
-        GetInt(System.Byte)
         GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
         HexUnescape(System.String,System.Int32&)
         IsBadFileSystemCharacter(System.Char)
@@ -8066,15 +8113,12 @@ Summary:
         MakeRelative(System.Uri)
         MakeRelativeUri(System.Uri)
         MaybeUri(System.String)
-        NeedToEscapeDataChar(System.Char)
         NeedToEscapeUriChar(System.Char)
-        op_Inequality(System.Uri,System.Uri)
         Parse()
         set_Parser(System.UriParser)
         TryCreate(System.String,System.UriKind,System.Uri&)
         TryCreate(System.Uri,System.String,System.Uri&)
         TryCreate(System.Uri,System.Uri,System.Uri&)
-        UnescapeDataString(System.String)
     System.UriBuilder
     System.UriComponents
     System.UriFormat
@@ -8104,16 +8148,16 @@ Summary:
 Assembly: System.Core
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 121
-    Nested = 50
+  Total Type Removals = 115
+    Nested = 46
     Interfaces = 11
     Abstract Classes = 9
-    Generic Types = 69
+    Generic Types = 63
     Generic Interfaces = 6
     Generic Abstract Classes = 2
     Attributes = 5
   Total Field Removals = 32
-  Total Method Removals = 299
+  Total Method Removals = 281
   References Removed = 0
 ---------------------------------------------------
     <PrivateImplementationDetails>
@@ -8128,11 +8172,8 @@ Summary:
         get_CanTransformMultipleBlocks()
         get_InputBlockSize()
         get_OutputBlockSize()
-    System.Action`3
-    System.Action`4
     System.Collections.Generic.HashSet`1
         .ctor(System.Collections.Generic.IEnumerable`1<T>)
-        .ctor(System.Collections.Generic.IEnumerable`1<T>,System.Collections.Generic.IEqualityComparer`1<T>)
         .ctor(System.Collections.Generic.IEqualityComparer`1<T>)
         CheckIsSubsetOf(System.Collections.Generic.IEnumerable`1<T>)
         CheckIsSupersetOf(System.Collections.Generic.IEnumerable`1<T>)
@@ -8156,7 +8197,6 @@ Summary:
     System.Func`5
     System.InvalidTimeZoneException
     System.Linq.Check
-        FirstAndSecond(System.Object,System.Object)
         GroupBySelectors(System.Object,System.Object,System.Object,System.Object)
         JoinSelectors(System.Object,System.Object,System.Object,System.Object,System.Object)
         Source1AndSource2(System.Object,System.Object)
@@ -8164,10 +8204,8 @@ Summary:
         SourceAndCollectionSelectors(System.Object,System.Object,System.Object)
         SourceAndFunc(System.Object,System.Object)
         SourceAndFuncAndSelector(System.Object,System.Object,System.Object)
-        SourceAndKeyElementSelectors(System.Object,System.Object,System.Object)
         SourceAndKeyResultSelectors(System.Object,System.Object,System.Object)
         SourceAndKeySelector(System.Object,System.Object)
-        SourceAndSelector(System.Object,System.Object)
     System.Linq.Enumerable
         <>f__am$cache0
         <>f__am$cache1
@@ -8266,18 +8304,13 @@ Summary:
         Average<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Nullable`1<System.Int64>>)
         Average<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Nullable`1<System.Single>>)
         Average<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Single>)
-        Cast<TResult>(System.Collections.IEnumerable)
         Concat<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Collections.Generic.IEnumerable`1<TSource>)
         Contains<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,TSource)
-        Contains<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,TSource,System.Collections.Generic.IEqualityComparer`1<TSource>)
         ContainsGroup<K,T>(System.Collections.Generic.Dictionary`2<K,System.Collections.Generic.List`1<T>>,K,System.Collections.Generic.IEqualityComparer`1<K>)
-        Count<TSource>(System.Collections.Generic.IEnumerable`1<TSource>)
         Count<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
-        CreateCastIterator<TResult>(System.Collections.IEnumerable)
         CreateConcatIterator<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Collections.Generic.IEnumerable`1<TSource>)
         CreateDefaultIfEmptyIterator<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,TSource)
         CreateDistinctIterator<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Collections.Generic.IEqualityComparer`1<TSource>)
-        CreateExceptIterator<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Collections.Generic.IEnumerable`1<TSource>,System.Collections.Generic.IEqualityComparer`1<TSource>)
         CreateGroupByIterator<TSource,TKey,TElement,TResult>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TKey>,System.Func`2<TSource,TElement>,System.Func`3<TKey,System.Collections.Generic.IEnumerable`1<TElement>,TResult>,System.Collections.Generic.IEqualityComparer`1<TKey>)
         CreateGroupByIterator<TSource,TKey,TElement>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TKey>,System.Func`2<TSource,TElement>,System.Collections.Generic.IEqualityComparer`1<TKey>)
         CreateGroupByIterator<TSource,TKey,TResult>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TKey>,System.Func`3<TKey,System.Collections.Generic.IEnumerable`1<TSource>,TResult>,System.Collections.Generic.IEqualityComparer`1<TKey>)
@@ -8289,7 +8322,6 @@ Summary:
         CreateRangeIterator(System.Int32,System.Int32)
         CreateRepeatIterator<TResult>(TResult,System.Int32)
         CreateReverseIterator<TSource>(System.Collections.Generic.IEnumerable`1<TSource>)
-        CreateSelectIterator<TSource,TResult>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TResult>)
         CreateSelectIterator<TSource,TResult>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`3<TSource,System.Int32,TResult>)
         CreateSelectManyIterator<TSource,TCollection,TResult>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Collections.Generic.IEnumerable`1<TCollection>>,System.Func`3<TSource,TCollection,TResult>)
         CreateSelectManyIterator<TSource,TCollection,TResult>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`3<TSource,System.Int32,System.Collections.Generic.IEnumerable`1<TCollection>>,System.Func`3<TSource,TCollection,TResult>)
@@ -8311,8 +8343,6 @@ Summary:
         ElementAt<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Int32,System.Linq.Enumerable/Fallback)
         ElementAtOrDefault<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Int32)
         Empty<TResult>()
-        Except<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Collections.Generic.IEnumerable`1<TSource>)
-        Except<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Collections.Generic.IEnumerable`1<TSource>,System.Collections.Generic.IEqualityComparer`1<TSource>)
         First<TSource>(System.Collections.Generic.IEnumerable`1<TSource>)
         First<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
         First<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>,System.Linq.Enumerable/Fallback)
@@ -8342,7 +8372,6 @@ Summary:
         Last<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>,System.Linq.Enumerable/Fallback)
         LastOrDefault<TSource>(System.Collections.Generic.IEnumerable`1<TSource>)
         LastOrDefault<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
-        LongCount<TSource>(System.Collections.Generic.IEnumerable`1<TSource>)
         LongCount<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
         Max(System.Collections.Generic.IEnumerable`1<System.Decimal>)
         Max(System.Collections.Generic.IEnumerable`1<System.Double>)
@@ -8396,7 +8425,6 @@ Summary:
         Range(System.Int32,System.Int32)
         Repeat<TResult>(TResult,System.Int32)
         Reverse<TSource>(System.Collections.Generic.IEnumerable`1<TSource>)
-        Select<TSource,TResult>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TResult>)
         Select<TSource,TResult>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`3<TSource,System.Int32,TResult>)
         SelectMany<TSource,TCollection,TResult>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Collections.Generic.IEnumerable`1<TCollection>>,System.Func`3<TSource,TCollection,TResult>)
         SelectMany<TSource,TCollection,TResult>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`3<TSource,System.Int32,System.Collections.Generic.IEnumerable`1<TCollection>>,System.Func`3<TSource,TCollection,TResult>)
@@ -8441,12 +8469,7 @@ Summary:
         ThenBy<TSource,TKey>(System.Linq.IOrderedEnumerable`1<TSource>,System.Func`2<TSource,TKey>,System.Collections.Generic.IComparer`1<TKey>)
         ThenByDescending<TSource,TKey>(System.Linq.IOrderedEnumerable`1<TSource>,System.Func`2<TSource,TKey>)
         ThenByDescending<TSource,TKey>(System.Linq.IOrderedEnumerable`1<TSource>,System.Func`2<TSource,TKey>,System.Collections.Generic.IComparer`1<TKey>)
-        ToArray<TSource>(System.Collections.Generic.IEnumerable`1<TSource>)
         ToDictionary<TSource,TKey,TElement>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TKey>,System.Func`2<TSource,TElement>)
-        ToDictionary<TSource,TKey,TElement>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TKey>,System.Func`2<TSource,TElement>,System.Collections.Generic.IEqualityComparer`1<TKey>)
-        ToDictionary<TSource,TKey>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TKey>)
-        ToDictionary<TSource,TKey>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TKey>,System.Collections.Generic.IEqualityComparer`1<TKey>)
-        ToList<TSource>(System.Collections.Generic.IEnumerable`1<TSource>)
         ToLookup<TSource,TKey,TElement>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TKey>,System.Func`2<TSource,TElement>)
         ToLookup<TSource,TKey,TElement>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TKey>,System.Func`2<TSource,TElement>,System.Collections.Generic.IEqualityComparer`1<TKey>)
         ToLookup<TSource,TKey>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TKey>)
@@ -8455,11 +8478,9 @@ Summary:
         Union<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Collections.Generic.IEnumerable`1<TSource>)
         Union<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Collections.Generic.IEnumerable`1<TSource>,System.Collections.Generic.IEqualityComparer`1<TSource>)
         Where<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`3<TSource,System.Int32,System.Boolean>)
-    System.Linq.Enumerable/<CreateCastIterator>c__Iterator0`1
     System.Linq.Enumerable/<CreateConcatIterator>c__Iterator1`1
     System.Linq.Enumerable/<CreateDefaultIfEmptyIterator>c__Iterator2`1
     System.Linq.Enumerable/<CreateDistinctIterator>c__Iterator3`1
-    System.Linq.Enumerable/<CreateExceptIterator>c__Iterator4`1
     System.Linq.Enumerable/<CreateGroupByIterator>c__Iterator5`2
     System.Linq.Enumerable/<CreateGroupByIterator>c__Iterator6`3
     System.Linq.Enumerable/<CreateGroupByIterator>c__Iterator7`4
@@ -8471,7 +8492,6 @@ Summary:
     System.Linq.Enumerable/<CreateRangeIterator>c__IteratorD
     System.Linq.Enumerable/<CreateRepeatIterator>c__IteratorE`1
     System.Linq.Enumerable/<CreateReverseIterator>c__IteratorF`1
-    System.Linq.Enumerable/<CreateSelectIterator>c__Iterator10`2
     System.Linq.Enumerable/<CreateSelectIterator>c__Iterator11`2
     System.Linq.Enumerable/<CreateSelectManyIterator>c__Iterator12`2
     System.Linq.Enumerable/<CreateSelectManyIterator>c__Iterator13`2
@@ -8504,6 +8524,7 @@ Summary:
     System.Linq.Enumerable/<Sum>c__AnonStorey38`1
     System.Linq.Enumerable/Fallback
     System.Linq.Enumerable/Function`1
+        .ctor()
     System.Linq.Enumerable/ReadOnlyCollectionOf`1
     System.Linq.Expressions.BinaryExpression
     System.Linq.Expressions.CompilationContext
@@ -8582,20 +8603,19 @@ Summary:
 Assembly: UnityEngine
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 843
+  Total Type Removals = 808
     Nested = 51
-    Interfaces = 30
-    Abstract Classes = 49
+    Interfaces = 22
+    Abstract Classes = 45
     Generic Types = 6
     Generic Interfaces = 0
     Generic Abstract Classes = 0
-    Attributes = 48
-  Total Field Removals = 76
-  Total Method Removals = 5314
+    Attributes = 45
+  Total Field Removals = 90
+  Total Method Removals = 5335
   References Removed = 0
 ---------------------------------------------------
     <PrivateImplementationDetails>
-    AOT.MonoPInvokeCallbackAttribute
     JetBrains.Annotations.AssertionMethodAttribute
     JetBrains.Annotations.BaseTypeRequiredAttribute
     JetBrains.Annotations.CanBeNullAttribute
@@ -8617,22 +8637,68 @@ Summary:
     JetBrains.Annotations.StringFormatMethodAttribute
     JetBrains.Annotations.UsedImplicitlyAttribute
     SimpleJson.IJsonSerializerStrategy
+        DeserializeObject(System.Object,System.Type)
     SimpleJson.JsonArray
+        .ctor(System.Int32)
     SimpleJson.JsonObject
+        .ctor(System.Collections.Generic.IEqualityComparer`1<System.String>)
+        ContainsKey(System.String)
+        get_Item(System.Int32)
+        GetAtIndex(System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Int32)
+        Remove(System.String)
+        TryGetValue(System.String,System.Object&)
     SimpleJson.PocoJsonSerializerStrategy
+        DeserializeObject(System.Object,System.Type)
     SimpleJson.Reflection.ReflectionUtils
+        .ctor()
+        GetAttribute(System.Reflection.MemberInfo,System.Type)
+        GetAttribute(System.Type,System.Type)
+        GetContructor(System.Reflection.ConstructorInfo)
+        GetGenericTypeArguments(System.Type)
+        IsAssignableFrom(System.Type,System.Type)
+        IsNullableType(System.Type)
+        IsTypeDictionary(System.Type)
+        IsTypeGenericeCollectionInterface(System.Type)
+        IsValueType(System.Type)
+        ToNullableType(System.Object,System.Type)
+    SimpleJson.Reflection.ReflectionUtils/ThreadSafeDictionary`2
+        ContainsKey(TKey)
+        Remove(TKey)
+        TryGetValue(TKey,TValue&)
     SimpleJson.SimpleJson
+        BUILDER_CAPACITY
+        TOKEN_COLON
+        TOKEN_COMMA
+        TOKEN_CURLY_CLOSE
+        TOKEN_CURLY_OPEN
+        TOKEN_FALSE
+        TOKEN_NONE
+        TOKEN_NULL
+        TOKEN_NUMBER
+        TOKEN_SQUARED_CLOSE
+        TOKEN_SQUARED_OPEN
+        TOKEN_STRING
+        TOKEN_TRUE
+        DeserializeObject(System.String,System.Type)
+        DeserializeObject(System.String,System.Type,SimpleJson.IJsonSerializerStrategy)
+        DeserializeObject<T>(System.String)
+        DeserializeObject<T>(System.String,SimpleJson.IJsonSerializerStrategy)
+        EscapeToJavascriptString(System.String)
+        set_CurrentJsonSerializerStrategy(SimpleJson.IJsonSerializerStrategy)
     UnityEngine._AndroidJNIHelper
         .ctor()
-        GetFieldID(System.IntPtr,System.String,System.String,System.Boolean)
-        GetFieldID<ReturnType>(System.IntPtr,System.String,System.Boolean)
-        GetMethodID(System.IntPtr,System.String,System.Object[],System.Boolean)
     UnityEngine.AccelerationEvent
     UnityEngine.AddComponentMenu
         get_componentMenu()
         get_componentOrder()
     UnityEngine.AdditionalCanvasShaderChannels
     UnityEngine.Advertisements.UnityAdsSettings
+        .ctor()
+        set_enabled(System.Boolean)
+        set_initializeOnStartup(System.Boolean)
+        set_testMode(System.Boolean)
+        SetGameId(UnityEngine.RuntimePlatform,System.String)
+        SetPlatformEnabled(UnityEngine.RuntimePlatform,System.Boolean)
     UnityEngine.AI.NavMesh
         AllAreas
         AddLink(UnityEngine.AI.NavMeshLinkData)
@@ -8765,76 +8831,35 @@ Summary:
     UnityEngine.AndroidActivityIndicatorStyle
     UnityEngine.AndroidInput
     UnityEngine.AndroidJavaObject
-        _Call(System.String,System.Object[])
-        _CallStatic(System.String,System.Object[])
-        _Get<FieldType>(System.String)
-        _GetStatic<FieldType>(System.String)
         _Set<FieldType>(System.String,FieldType)
         _SetStatic<FieldType>(System.String,FieldType)
-        Call(System.String,System.Object[])
-        CallStatic(System.String,System.Object[])
         DebugPrint(System.String,System.String,System.String,System.Object[])
-        Get<FieldType>(System.String)
-        GetStatic<FieldType>(System.String)
         Set<FieldType>(System.String,FieldType)
         SetStatic<FieldType>(System.String,FieldType)
     UnityEngine.AndroidJavaProxy
         equals(UnityEngine.AndroidJavaObject)
         hashCode()
-        toString()
     UnityEngine.AndroidJavaRunnableProxy
         run()
     UnityEngine.AndroidJNI
         .ctor()
-        AllocObject(System.IntPtr)
         AttachCurrentThread()
-        CallStaticVoidMethod(System.IntPtr,System.IntPtr,UnityEngine.jvalue[])
-        CallVoidMethod(System.IntPtr,System.IntPtr,UnityEngine.jvalue[])
         DetachCurrentThread()
         EnsureLocalCapacity(System.Int32)
         ExceptionDescribe()
         FatalError(System.String)
         FromObjectArray(System.IntPtr)
-        FromReflectedField(System.IntPtr)
         GetBooleanArrayElement(System.IntPtr,System.Int32)
-        GetBooleanField(System.IntPtr,System.IntPtr)
         GetByteArrayElement(System.IntPtr,System.Int32)
-        GetByteField(System.IntPtr,System.IntPtr)
         GetCharArrayElement(System.IntPtr,System.Int32)
-        GetCharField(System.IntPtr,System.IntPtr)
         GetDoubleArrayElement(System.IntPtr,System.Int32)
-        GetDoubleField(System.IntPtr,System.IntPtr)
-        GetFieldID(System.IntPtr,System.String,System.String)
         GetFloatArrayElement(System.IntPtr,System.Int32)
-        GetFloatField(System.IntPtr,System.IntPtr)
         GetIntArrayElement(System.IntPtr,System.Int32)
-        GetIntField(System.IntPtr,System.IntPtr)
         GetLongArrayElement(System.IntPtr,System.Int32)
-        GetLongField(System.IntPtr,System.IntPtr)
-        GetObjectField(System.IntPtr,System.IntPtr)
         GetShortArrayElement(System.IntPtr,System.Int32)
-        GetShortField(System.IntPtr,System.IntPtr)
-        GetStaticBooleanField(System.IntPtr,System.IntPtr)
-        GetStaticByteField(System.IntPtr,System.IntPtr)
-        GetStaticCharField(System.IntPtr,System.IntPtr)
-        GetStaticDoubleField(System.IntPtr,System.IntPtr)
-        GetStaticFieldID(System.IntPtr,System.String,System.String)
-        GetStaticFloatField(System.IntPtr,System.IntPtr)
-        GetStaticIntField(System.IntPtr,System.IntPtr)
-        GetStaticLongField(System.IntPtr,System.IntPtr)
-        GetStaticObjectField(System.IntPtr,System.IntPtr)
-        GetStaticShortField(System.IntPtr,System.IntPtr)
-        GetStaticStringField(System.IntPtr,System.IntPtr)
-        GetStringField(System.IntPtr,System.IntPtr)
         GetStringUTFLength(System.IntPtr)
         GetSuperclass(System.IntPtr)
         GetVersion()
-        INTERNAL_CALL_AllocObject(System.IntPtr,System.IntPtr&)
-        INTERNAL_CALL_FromReflectedField(System.IntPtr,System.IntPtr&)
-        INTERNAL_CALL_GetFieldID(System.IntPtr,System.String,System.String,System.IntPtr&)
-        INTERNAL_CALL_GetObjectField(System.IntPtr,System.IntPtr,System.IntPtr&)
-        INTERNAL_CALL_GetStaticFieldID(System.IntPtr,System.String,System.String,System.IntPtr&)
-        INTERNAL_CALL_GetStaticObjectField(System.IntPtr,System.IntPtr,System.IntPtr&)
         INTERNAL_CALL_GetSuperclass(System.IntPtr,System.IntPtr&)
         INTERNAL_CALL_NewBooleanArray(System.Int32,System.IntPtr&)
         INTERNAL_CALL_NewByteArray(System.Int32,System.IntPtr&)
@@ -8895,15 +8920,11 @@ Summary:
         ToReflectedMethod(System.IntPtr,System.IntPtr,System.Boolean)
     UnityEngine.AndroidJNIHelper
         .ctor()
-        ConvertToJNIArray(System.Array)
         get_debug()
         GetConstructorID(System.IntPtr)
         GetFieldID(System.IntPtr,System.String)
         GetFieldID(System.IntPtr,System.String,System.String)
-        GetFieldID(System.IntPtr,System.String,System.String,System.Boolean)
-        GetFieldID<FieldType>(System.IntPtr,System.String,System.Boolean)
         GetMethodID(System.IntPtr,System.String)
-        GetMethodID(System.IntPtr,System.String,System.Object[],System.Boolean)
         GetMethodID(System.IntPtr,System.String,System.String)
         GetSignature(System.Object)
         GetSignature(System.Object[])
@@ -8911,32 +8932,7 @@ Summary:
         set_debug(System.Boolean)
     UnityEngine.AndroidJNISafe
         .ctor()
-        CallStaticVoidMethod(System.IntPtr,System.IntPtr,UnityEngine.jvalue[])
-        CallVoidMethod(System.IntPtr,System.IntPtr,UnityEngine.jvalue[])
         FromObjectArray(System.IntPtr)
-        FromReflectedField(System.IntPtr)
-        GetBooleanField(System.IntPtr,System.IntPtr)
-        GetByteField(System.IntPtr,System.IntPtr)
-        GetCharField(System.IntPtr,System.IntPtr)
-        GetDoubleField(System.IntPtr,System.IntPtr)
-        GetFieldID(System.IntPtr,System.String,System.String)
-        GetFloatField(System.IntPtr,System.IntPtr)
-        GetIntField(System.IntPtr,System.IntPtr)
-        GetLongField(System.IntPtr,System.IntPtr)
-        GetObjectField(System.IntPtr,System.IntPtr)
-        GetShortField(System.IntPtr,System.IntPtr)
-        GetStaticBooleanField(System.IntPtr,System.IntPtr)
-        GetStaticByteField(System.IntPtr,System.IntPtr)
-        GetStaticCharField(System.IntPtr,System.IntPtr)
-        GetStaticDoubleField(System.IntPtr,System.IntPtr)
-        GetStaticFieldID(System.IntPtr,System.String,System.String)
-        GetStaticFloatField(System.IntPtr,System.IntPtr)
-        GetStaticIntField(System.IntPtr,System.IntPtr)
-        GetStaticLongField(System.IntPtr,System.IntPtr)
-        GetStaticObjectField(System.IntPtr,System.IntPtr)
-        GetStaticShortField(System.IntPtr,System.IntPtr)
-        GetStaticStringField(System.IntPtr,System.IntPtr)
-        GetStringField(System.IntPtr,System.IntPtr)
         SetBooleanField(System.IntPtr,System.IntPtr,System.Boolean)
         SetByteField(System.IntPtr,System.IntPtr,System.Byte)
         SetCharField(System.IntPtr,System.IntPtr,System.Char)
@@ -8961,7 +8957,6 @@ Summary:
     UnityEngine.AndroidReflection
         RELECTION_HELPER_CLASS_NAME
         .ctor()
-        GetFieldMember(System.IntPtr,System.String,System.String,System.Boolean)
     UnityEngine.Animation
     UnityEngine.AnimationBlendMode
     UnityEngine.AnimationClip
@@ -9390,7 +9385,6 @@ Summary:
         get_systemLanguage()
         get_targetFrameRate()
         get_temporaryCachePath()
-        get_unityVersion()
         get_webSecurityEnabled()
         get_webSecurityHostUrl()
         GetBuildTags()
@@ -10303,7 +10297,6 @@ Summary:
         DrawRay(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color,System.Single)
         DrawRay(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Color,System.Single,System.Boolean)
         get_developerConsoleVisible()
-        get_isDebugBuild()
         get_logger()
         GetDiagnosticSwitches(System.Collections.Generic.List`1<UnityEngine.DiagnosticSwitch>)
         INTERNAL_CALL_DrawLine(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Color&,System.Single,System.Boolean)
@@ -10851,7 +10844,6 @@ Summary:
         Internal_DrawMeshMatrix(UnityEngine.Internal_DrawMeshMatrixArguments&,UnityEngine.MaterialPropertyBlock,UnityEngine.Material,UnityEngine.Mesh,UnityEngine.Camera)
         Internal_DrawMeshNow1(UnityEngine.Mesh,System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion)
         Internal_DrawMeshNow2(UnityEngine.Mesh,System.Int32,UnityEngine.Matrix4x4)
-        Internal_DrawTexture(UnityEngine.Internal_DrawTextureArguments&)
         Internal_SetMRTFullSetup(UnityEngine.RenderBuffer[],UnityEngine.RenderBuffer&,System.Int32,UnityEngine.CubemapFace,System.Int32,UnityEngine.Rendering.RenderBufferLoadAction[],UnityEngine.Rendering.RenderBufferStoreAction[],UnityEngine.Rendering.RenderBufferLoadAction,UnityEngine.Rendering.RenderBufferStoreAction)
         Internal_SetMRTSimple(UnityEngine.RenderBuffer[],UnityEngine.RenderBuffer&,System.Int32,UnityEngine.CubemapFace,System.Int32)
         Internal_SetNullRT()
@@ -10906,21 +10898,16 @@ Summary:
         Box(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.GUIStyle)
         BringWindowToBack(System.Int32)
         BringWindowToFront(System.Int32)
-        Button(UnityEngine.Rect,System.String)
         Button(UnityEngine.Rect,System.String,UnityEngine.GUIStyle)
         Button(UnityEngine.Rect,UnityEngine.GUIContent)
-        Button(UnityEngine.Rect,UnityEngine.GUIContent,UnityEngine.GUIStyle)
         Button(UnityEngine.Rect,UnityEngine.Texture)
         Button(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.GUIStyle)
         CalcMouseRects(UnityEngine.Rect,System.Int32,System.Int32,System.Single,System.Single,UnityEngine.GUIStyle,UnityEngine.GUIStyle,UnityEngine.GUIStyle,UnityEngine.GUIStyle,System.Boolean)
         CalcTotalHorizSpacing(System.Int32,UnityEngine.GUIStyle,UnityEngine.GUIStyle,UnityEngine.GUIStyle,UnityEngine.GUIStyle)
-        CalculateScaledTextureRects(UnityEngine.Rect,UnityEngine.ScaleMode,System.Single,UnityEngine.Rect&,UnityEngine.Rect&)
         CleanupRoots()
         DoBeginScrollView(UnityEngine.Rect,UnityEngine.Vector2,UnityEngine.Rect,System.Boolean,System.Boolean,UnityEngine.GUIStyle,UnityEngine.GUIStyle,UnityEngine.GUIStyle)
-        DoButton(UnityEngine.Rect,UnityEngine.GUIContent,System.IntPtr)
         DoButtonGrid(UnityEngine.Rect,System.Int32,UnityEngine.GUIContent[],System.Int32,UnityEngine.GUIStyle,UnityEngine.GUIStyle,UnityEngine.GUIStyle,UnityEngine.GUIStyle)
         DoLabel(UnityEngine.Rect,UnityEngine.GUIContent,System.IntPtr)
-        DoModalWindow(System.Int32,UnityEngine.Rect,UnityEngine.GUI/WindowFunction,UnityEngine.GUIContent,UnityEngine.GUIStyle,UnityEngine.GUISkin)
         DoRepeatButton(UnityEngine.Rect,UnityEngine.GUIContent,UnityEngine.GUIStyle,UnityEngine.FocusType)
         DoTextField(UnityEngine.Rect,System.Int32,UnityEngine.GUIContent,System.Boolean,System.Int32,UnityEngine.GUIStyle)
         DoTextField(UnityEngine.Rect,System.Int32,UnityEngine.GUIContent,System.Boolean,System.Int32,UnityEngine.GUIStyle,System.String)
@@ -10930,10 +10917,6 @@ Summary:
         DragWindow()
         DragWindow(UnityEngine.Rect)
         DrawTexture(UnityEngine.Rect,UnityEngine.Texture)
-        DrawTexture(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.ScaleMode)
-        DrawTexture(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.ScaleMode,System.Boolean)
-        DrawTexture(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.ScaleMode,System.Boolean,System.Single)
-        DrawTexture(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.ScaleMode,System.Boolean,System.Single,UnityEngine.Color,System.Single,System.Single)
         DrawTextureWithTexCoords(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.Rect)
         DrawTextureWithTexCoords(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.Rect,System.Boolean)
         EndClip()
@@ -10945,17 +10928,13 @@ Summary:
         FocusControl(System.String)
         FocusWindow(System.Int32)
         get_backgroundColor()
-        get_blendMaterial()
-        get_blitMaterial()
         get_changed()
-        get_color()
         get_contentColor()
         get_depth()
         get_enabled()
         get_matrix()
         get_mouseTooltip()
         get_nextScrollStepTime()
-        get_roundedRectMaterial()
         get_scrollTroughSide()
         get_tooltip()
         get_tooltipRect()
@@ -10971,17 +10950,13 @@ Summary:
         HorizontalSlider(UnityEngine.Rect,System.Single,System.Single,System.Single,UnityEngine.GUIStyle,UnityEngine.GUIStyle)
         InitializeGUIClipTexture()
         Internal_BeginWindows()
-        INTERNAL_CALL_DoButton(UnityEngine.Rect&,UnityEngine.GUIContent,System.IntPtr)
         INTERNAL_CALL_DoLabel(UnityEngine.Rect&,UnityEngine.GUIContent,System.IntPtr)
         INTERNAL_CALL_DoToggle(UnityEngine.Rect&,System.Int32,System.Boolean,UnityEngine.GUIContent,System.IntPtr)
         INTERNAL_CALL_DragWindow(UnityEngine.Rect&)
-        INTERNAL_CALL_Internal_DoModalWindow(System.Int32,System.Int32,UnityEngine.Rect&,UnityEngine.GUI/WindowFunction,UnityEngine.GUIContent,UnityEngine.GUIStyle,UnityEngine.GUISkin,UnityEngine.Rect&)
         INTERNAL_CALL_Internal_DoWindow(System.Int32,System.Int32,UnityEngine.Rect&,UnityEngine.GUI/WindowFunction,UnityEngine.GUIContent,UnityEngine.GUIStyle,UnityEngine.GUISkin,System.Boolean,UnityEngine.Rect&)
-        Internal_DoModalWindow(System.Int32,System.Int32,UnityEngine.Rect,UnityEngine.GUI/WindowFunction,UnityEngine.GUIContent,UnityEngine.GUIStyle,UnityEngine.GUISkin)
         Internal_DoWindow(System.Int32,System.Int32,UnityEngine.Rect,UnityEngine.GUI/WindowFunction,UnityEngine.GUIContent,UnityEngine.GUIStyle,UnityEngine.GUISkin,System.Boolean)
         Internal_EndWindows()
         INTERNAL_get_backgroundColor(UnityEngine.Color&)
-        INTERNAL_get_color(UnityEngine.Color&)
         INTERNAL_get_contentColor(UnityEngine.Color&)
         Internal_GetMouseTooltip()
         Internal_GetTooltip()
@@ -10996,7 +10971,6 @@ Summary:
         Label(UnityEngine.Rect,UnityEngine.GUIContent,UnityEngine.GUIStyle)
         Label(UnityEngine.Rect,UnityEngine.Texture)
         Label(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.GUIStyle)
-        ModalWindow(System.Int32,UnityEngine.Rect,UnityEngine.GUI/WindowFunction,System.String)
         ModalWindow(System.Int32,UnityEngine.Rect,UnityEngine.GUI/WindowFunction,System.String,UnityEngine.GUIStyle)
         ModalWindow(System.Int32,UnityEngine.Rect,UnityEngine.GUI/WindowFunction,UnityEngine.GUIContent)
         ModalWindow(System.Int32,UnityEngine.Rect,UnityEngine.GUI/WindowFunction,UnityEngine.GUIContent,UnityEngine.GUIStyle)
@@ -11408,6 +11382,11 @@ Summary:
         set_logEnabled(System.Boolean)
         set_logHandler(UnityEngine.ILogHandler)
     UnityEngine.ImageConversion
+        EncodeToEXR(UnityEngine.Texture2D)
+        EncodeToEXR(UnityEngine.Texture2D,EXRFlags)
+        EncodeToJPG(UnityEngine.Texture2D)
+        EncodeToJPG(UnityEngine.Texture2D,System.Int32)
+        EncodeToPNG(UnityEngine.Texture2D)
     UnityEngine.ImageEffectAllowedInSceneView
     UnityEngine.ImageEffectOpaque
     UnityEngine.ImageEffectTransformsToLDR
@@ -11463,7 +11442,6 @@ Summary:
         set_simulateMouseWithTouches(System.Boolean)
     UnityEngine.Internal.VR.VRTestMock
     UnityEngine.Internal_DrawMeshMatrixArguments
-    UnityEngine.Internal_DrawTextureArguments
     UnityEngine.InternalEmitParticleArguments
     UnityEngine.InternalStaticBatchingUtility
     UnityEngine.iOS.DeviceGeneration
@@ -11861,19 +11839,16 @@ Summary:
     UnityEngine.Networking.ConnectionSimulatorConfig
     UnityEngine.Networking.DownloadHandler
         CompleteContent()
-        get_data()
         get_isDone()
         get_text()
         GetCheckedDownloader<T>(UnityEngine.Networking.UnityWebRequest)
         GetContentType()
-        GetData()
         GetProgress()
         GetText()
         GetTextEncoder()
         INTERNAL_CALL_InternalCreateAssetBundleCached(UnityEngine.Networking.DownloadHandler,System.String,System.String,UnityEngine.Hash128&,System.UInt32)
         InternalCreateAssetBundle(System.String,System.UInt32)
         InternalCreateAssetBundleCached(System.String,System.String,UnityEngine.Hash128,System.UInt32)
-        InternalCreateBuffer()
         InternalCreateScript()
         ReceiveContentLength(System.Int32)
         ReceiveData(System.Byte[],System.Int32)
@@ -11881,17 +11856,14 @@ Summary:
     UnityEngine.Networking.DownloadHandlerAudioClip
         get_audioClip()
         GetContent(UnityEngine.Networking.UnityWebRequest)
-        GetData()
         GetText()
-        InternalGetData()
     UnityEngine.Networking.DownloadHandlerBuffer
+        GetContent(UnityEngine.Networking.UnityWebRequest)
     UnityEngine.Networking.DownloadHandlerMovieTexture
     UnityEngine.Networking.DownloadHandlerScript
     UnityEngine.Networking.DownloadHandlerTexture
         get_texture()
         GetContent(UnityEngine.Networking.UnityWebRequest)
-        GetData()
-        InternalGetData()
         InternalGetTexture()
         InternalGetTextureNative()
     UnityEngine.Networking.GlobalConfig
@@ -11971,27 +11943,20 @@ Summary:
         .ctor()
         .ctor(System.String)
         .ctor(System.String,System.String)
-        .ctor(System.String,System.String,UnityEngine.Networking.DownloadHandler,UnityEngine.Networking.UploadHandler)
         Abort()
         Delete(System.String)
         GenerateBoundary()
-        Get(System.String)
         get_chunkedTransfer()
         get_downloadedBytes()
-        get_downloadHandler()
         get_downloadProgress()
-        get_error()
         get_isHttpError()
         get_isModifiable()
-        get_isNetworkError()
         get_method()
         get_redirectLimit()
-        get_responseCode()
         get_timeout()
         get_uploadedBytes()
         get_uploadHandler()
         get_uploadProgress()
-        get_url()
         get_useHttpContinue()
         GetAssetBundle(System.String)
         GetAssetBundle(System.String,System.UInt32)
@@ -12007,18 +11972,11 @@ Summary:
         GetTexture(System.String,System.Boolean)
         Head(System.String)
         InternalAbort()
-        InternalBegin()
-        InternalCreate()
         InternalGetCustomMethod()
         InternalGetError()
         InternalGetMethod()
         InternalGetResponseHeaderKeys()
-        InternalGetUrl()
-        InternalSetCustomMethod(System.String)
-        InternalSetDefaults()
-        InternalSetMethod(UnityEngine.Networking.UnityWebRequest/UnityWebRequestMethod)
         InternalSetRequestHeader(System.String,System.String)
-        InternalSetUrl(System.String)
         Post(System.String,System.Collections.Generic.Dictionary`2<System.String,System.String>)
         Post(System.String,System.Collections.Generic.List`1<UnityEngine.Networking.IMultipartFormSection>)
         Post(System.String,System.Collections.Generic.List`1<UnityEngine.Networking.IMultipartFormSection>,System.Byte[])
@@ -12026,22 +11984,14 @@ Summary:
         Post(System.String,UnityEngine.WWWForm)
         Put(System.String,System.Byte[])
         Put(System.String,System.String)
-        Send()
         SerializeFormSections(System.Collections.Generic.List`1<UnityEngine.Networking.IMultipartFormSection>,System.Byte[])
         SerializeSimpleForm(System.Collections.Generic.Dictionary`2<System.String,System.String>)
         set_chunkedTransfer(System.Boolean)
-        set_disposeDownloadHandlerOnDispose(System.Boolean)
-        set_disposeUploadHandlerOnDispose(System.Boolean)
-        set_downloadHandler(UnityEngine.Networking.DownloadHandler)
-        set_method(System.String)
         set_redirectLimit(System.Int32)
         set_timeout(System.Int32)
-        set_uploadHandler(UnityEngine.Networking.UploadHandler)
-        set_url(System.String)
         set_useHttpContinue(System.Boolean)
         SetRequestHeader(System.String,System.String)
     UnityEngine.Networking.UnityWebRequest/UnityWebRequestError
-    UnityEngine.Networking.UnityWebRequest/UnityWebRequestMethod
     UnityEngine.Networking.UnityWebRequestMultimedia
     UnityEngine.Networking.UnityWebRequestTexture
     UnityEngine.Networking.UploadHandler
@@ -13696,10 +13646,10 @@ Summary:
     UnityEngine.RuntimeAnimatorController
         .ctor()
         get_animationClips()
-    UnityEngine.RuntimeInitializeLoadType
     UnityEngine.RuntimeInitializeOnLoadMethodAttribute
+        .ctor()
+        get_loadType()
     UnityEngine.RuntimeUndo
-    UnityEngine.ScaleMode
     UnityEngine.SceneManagement.Scene
         get_buildIndex()
         get_guid()
@@ -13799,7 +13749,6 @@ Summary:
         get_IsInDifferentAssembly()
         get_Namespace()
     UnityEngine.Scripting.GenerateManagedProxyAttribute
-    UnityEngine.Scripting.PreserveAttribute
     UnityEngine.Scripting.RequiredByNativeCodeAttribute
         <Name>k__BackingField
         <Optional>k__BackingField
@@ -13945,25 +13894,136 @@ Summary:
     UnityEngine.SliderHandler
     UnityEngine.SliderJoint2D
     UnityEngine.Social
-    UnityEngine.SocialPlatforms.ActivePlatform
+        CreateAchievement()
+        CreateLeaderboard()
+        LoadAchievementDescriptions(System.Action`1<UnityEngine.SocialPlatforms.IAchievementDescription[]>)
+        LoadAchievements(System.Action`1<UnityEngine.SocialPlatforms.IAchievement[]>)
+        LoadScores(System.String,System.Action`1<UnityEngine.SocialPlatforms.IScore[]>)
+        LoadUsers(System.String[],System.Action`1<UnityEngine.SocialPlatforms.IUserProfile[]>)
+        ReportProgress(System.String,System.Double,System.Action`1<System.Boolean>)
+        ShowAchievementsUI()
     UnityEngine.SocialPlatforms.IAchievement
+        get_completed()
+        get_hidden()
+        get_id()
+        get_lastReportedDate()
+        get_percentCompleted()
+        ReportProgress(System.Action`1<System.Boolean>)
+        set_id(System.String)
+        set_percentCompleted(System.Double)
     UnityEngine.SocialPlatforms.IAchievementDescription
+        get_achievedDescription()
+        get_hidden()
+        get_id()
+        get_image()
+        get_points()
+        get_title()
+        get_unachievedDescription()
+        set_id(System.String)
     UnityEngine.SocialPlatforms.ILeaderboard
+        get_localUserScore()
+        get_maxRange()
+        get_scores()
+        get_title()
+        LoadScores(System.Action`1<System.Boolean>)
+        set_id(System.String)
+        set_range(UnityEngine.SocialPlatforms.Range)
+        set_timeScope(UnityEngine.SocialPlatforms.TimeScope)
+        set_userScope(UnityEngine.SocialPlatforms.UserScope)
+        SetUserFilter(System.String[])
     UnityEngine.SocialPlatforms.ILocalUser
+        Authenticate(System.Action`2<System.Boolean,System.String>)
+        get_friends()
+        get_underage()
+        LoadFriends(System.Action`1<System.Boolean>)
     UnityEngine.SocialPlatforms.Impl.Achievement
+        .ctor()
+        .ctor(System.String,System.Double)
+        .ctor(System.String,System.Double,System.Boolean,System.Boolean,System.DateTime)
+        ReportProgress(System.Action`1<System.Boolean>)
+        set_id(System.String)
+        set_percentCompleted(System.Double)
+        SetCompleted(System.Boolean)
+        SetHidden(System.Boolean)
+        SetLastReportedDate(System.DateTime)
     UnityEngine.SocialPlatforms.Impl.AchievementDescription
+        get_image()
+        SetImage(UnityEngine.Texture2D)
     UnityEngine.SocialPlatforms.Impl.Leaderboard
+        get_localUserScore()
+        get_maxRange()
+        get_title()
+        GetUserFilter()
+        LoadScores(System.Action`1<System.Boolean>)
+        SetLocalUserScore(UnityEngine.SocialPlatforms.IScore)
+        SetMaxRange(System.UInt32)
+        SetUserFilter(System.String[])
     UnityEngine.SocialPlatforms.Impl.LocalUser
+        Authenticate(System.Action`2<System.Boolean,System.String>)
+        get_friends()
+        get_underage()
+        LoadFriends(System.Action`1<System.Boolean>)
+        SetFriends(UnityEngine.SocialPlatforms.IUserProfile[])
     UnityEngine.SocialPlatforms.Impl.Score
+        .ctor()
+        get_date()
+        get_formattedValue()
+        get_rank()
+        get_userID()
+        ReportScore(System.Action`1<System.Boolean>)
+        SetDate(System.DateTime)
+        SetFormattedValue(System.String)
+        SetRank(System.Int32)
+        SetUserID(System.String)
     UnityEngine.SocialPlatforms.Impl.UserProfile
+        .ctor(System.String,System.String,System.Boolean)
+        get_image()
+        SetIsFriend(System.Boolean)
+        SetState(UnityEngine.SocialPlatforms.UserState)
     UnityEngine.SocialPlatforms.IScore
+        get_date()
+        get_formattedValue()
+        get_leaderboardID()
+        get_rank()
+        get_userID()
+        get_value()
+        ReportScore(System.Action`1<System.Boolean>)
+        set_leaderboardID(System.String)
+        set_value(System.Int64)
     UnityEngine.SocialPlatforms.ISocialPlatform
+        Authenticate(UnityEngine.SocialPlatforms.ILocalUser,System.Action`2<System.Boolean,System.String>)
+        CreateAchievement()
+        CreateLeaderboard()
+        LoadAchievementDescriptions(System.Action`1<UnityEngine.SocialPlatforms.IAchievementDescription[]>)
+        LoadAchievements(System.Action`1<UnityEngine.SocialPlatforms.IAchievement[]>)
+        LoadFriends(UnityEngine.SocialPlatforms.ILocalUser,System.Action`1<System.Boolean>)
+        LoadScores(System.String,System.Action`1<UnityEngine.SocialPlatforms.IScore[]>)
+        LoadScores(UnityEngine.SocialPlatforms.ILeaderboard,System.Action`1<System.Boolean>)
+        LoadUsers(System.String[],System.Action`1<UnityEngine.SocialPlatforms.IUserProfile[]>)
+        ReportProgress(System.String,System.Double,System.Action`1<System.Boolean>)
+        ShowAchievementsUI()
     UnityEngine.SocialPlatforms.IUserProfile
+        get_image()
+        get_isFriend()
+        get_state()
+        get_userName()
     UnityEngine.SocialPlatforms.Local
-    UnityEngine.SocialPlatforms.Range
-    UnityEngine.SocialPlatforms.TimeScope
-    UnityEngine.SocialPlatforms.UserScope
-    UnityEngine.SocialPlatforms.UserState
+        <>f__am$cache0
+        <SortScores>m__0(UnityEngine.SocialPlatforms.Impl.Score,UnityEngine.SocialPlatforms.Impl.Score)
+        CreateAchievement()
+        CreateLeaderboard()
+        LoadAchievementDescriptions(System.Action`1<UnityEngine.SocialPlatforms.IAchievementDescription[]>)
+        LoadAchievements(System.Action`1<UnityEngine.SocialPlatforms.IAchievement[]>)
+        LoadScores(System.String,System.Action`1<UnityEngine.SocialPlatforms.IScore[]>)
+        LoadUsers(System.String[],System.Action`1<UnityEngine.SocialPlatforms.IUserProfile[]>)
+        ReportProgress(System.String,System.Double,System.Action`1<System.Boolean>)
+        SetLocalPlayerScore(UnityEngine.SocialPlatforms.Impl.Leaderboard)
+        ShowAchievementsUI()
+        SortScores(UnityEngine.SocialPlatforms.Impl.Leaderboard)
+        UnityEngine.SocialPlatforms.ISocialPlatform.Authenticate(UnityEngine.SocialPlatforms.ILocalUser,System.Action`2<System.Boolean,System.String>)
+        UnityEngine.SocialPlatforms.ISocialPlatform.LoadFriends(UnityEngine.SocialPlatforms.ILocalUser,System.Action`1<System.Boolean>)
+        UnityEngine.SocialPlatforms.ISocialPlatform.LoadScores(UnityEngine.SocialPlatforms.ILeaderboard,System.Action`1<System.Boolean>)
+    UnityEngine.SocialPlatforms.Local/<UnityEngine_SocialPlatforms_ISocialPlatform_Authenticate>c__AnonStorey0
     UnityEngine.SoftJointLimit
     UnityEngine.SoftJointLimitSpring
     UnityEngine.SortingLayer
@@ -14443,7 +14503,6 @@ Summary:
         set_wrapModeW(UnityEngine.TextureWrapMode)
         SetGlobalAnisotropicFilteringLimits(System.Int32,System.Int32)
     UnityEngine.Texture2D
-        .ctor(System.Int32,System.Int32)
         .ctor(System.Int32,System.Int32,UnityEngine.TextureFormat,System.Boolean,System.Boolean)
         .ctor(System.Int32,System.Int32,UnityEngine.TextureFormat,System.Boolean,System.Boolean,System.IntPtr)
         Apply(System.Boolean)
@@ -14451,7 +14510,6 @@ Summary:
         CreateExternalTexture(System.Int32,System.Int32,UnityEngine.TextureFormat,System.Boolean,System.Boolean,System.IntPtr)
         GenerateAtlas(UnityEngine.Vector2[],System.Int32,System.Int32,System.Collections.Generic.List`1<UnityEngine.Rect>)
         GenerateAtlasInternal(UnityEngine.Vector2[],System.Int32,System.Int32,System.Object)
-        get_blackTexture()
         get_format()
         get_mipmapCount()
         GetPixel(System.Int32,System.Int32)
@@ -14464,7 +14522,6 @@ Summary:
         GetRawTextureData()
         INTERNAL_CALL_Compress(UnityEngine.Texture2D,System.Boolean)
         INTERNAL_CALL_GetPixel(UnityEngine.Texture2D,System.Int32,System.Int32,UnityEngine.Color&)
-        INTERNAL_CALL_SetPixel(UnityEngine.Texture2D,System.Int32,System.Int32,UnityEngine.Color&)
         Internal_ResizeWH(System.Int32,System.Int32)
         LoadRawTextureData(System.Byte[])
         LoadRawTextureData(System.IntPtr,System.Int32)
@@ -14478,7 +14535,6 @@ Summary:
         Resize(System.Int32,System.Int32,UnityEngine.TextureFormat,System.Boolean)
         SetAllPixels32(UnityEngine.Color32[],System.Int32)
         SetBlockOfPixels32(System.Int32,System.Int32,System.Int32,System.Int32,UnityEngine.Color32[],System.Int32)
-        SetPixel(System.Int32,System.Int32,UnityEngine.Color)
         SetPixels(System.Int32,System.Int32,System.Int32,System.Int32,UnityEngine.Color[])
         SetPixels(System.Int32,System.Int32,System.Int32,System.Int32,UnityEngine.Color[],System.Int32)
         SetPixels(UnityEngine.Color[])
@@ -14916,32 +14972,25 @@ Summary:
         _assetBundle
         _responseHeaders
         <threadPriority>k__BackingField
-        .ctor(System.String)
         .ctor(System.String,System.Byte[])
         .ctor(System.String,System.Byte[],System.Collections.Generic.Dictionary`2<System.String,System.String>)
         .ctor(System.String,System.Byte[],System.Collections.Hashtable)
         .ctor(System.String,System.String,UnityEngine.Hash128,System.UInt32)
         .ctor(System.String,UnityEngine.WWWForm)
-        CreateTextureFromDownloadedData(System.Boolean)
         FlattenedHeadersFrom(System.Collections.Generic.Dictionary`2<System.String,System.String>)
         get_assetBundle()
         get_audioClip()
         get_bytes()
         get_bytesDownloaded()
         get_data()
-        get_error()
-        get_isDone()
         get_progress()
         get_responseHeaders()
         get_size()
         get_text()
-        get_texture()
         get_textureNonReadable()
         get_threadPriority()
         get_uploadProgress()
-        get_url()
         GetAudioClipInternal(System.Boolean,System.Boolean,System.Boolean,UnityEngine.AudioType)
-        GetStatusCodeName(System.Int64)
         LoadFromCacheOrDownload(System.String,System.Int32)
         LoadFromCacheOrDownload(System.String,System.Int32,System.UInt32)
         LoadFromCacheOrDownload(System.String,UnityEngine.CachedAssetBundle,System.UInt32)
@@ -14952,7 +15001,6 @@ Summary:
         set_threadPriority(UnityEngine.ThreadPriority)
         UnEscapeURL(System.String)
         UnEscapeURL(System.String,System.Text.Encoding)
-        WaitUntilDoneIfPossible()
     UnityEngine.WWWAudioExtensions
     UnityEngine.WWWForm
         boundary
@@ -15012,8 +15060,62 @@ Summary:
     UnityEngineInternal.LightmapType
     UnityEngineInternal.ScriptingUtils
         .ctor()
-    UnityEngineInternal.WebRequestUtils
-        MakeInitialUrl(System.String,System.String)
+---------------------------------------------------
+Assembly: UnityEngine.Advertisements
+---------------------------------------------------
+Summary:
+  Total Type Removals = 0
+    Nested = 0
+    Interfaces = 0
+    Abstract Classes = 0
+    Generic Types = 0
+    Generic Interfaces = 0
+    Generic Abstract Classes = 0
+    Attributes = 0
+  Total Field Removals = 0
+  Total Method Removals = 31
+  References Removed = 0
+---------------------------------------------------
+    UnityEngine.Advertisements.Editor.Platform
+        add_OnError(System.EventHandler`1<UnityEngine.Advertisements.ErrorEventArgs>)
+        add_OnReady(System.EventHandler`1<UnityEngine.Advertisements.ReadyEventArgs>)
+        get_isSupported()
+        remove_OnError(System.EventHandler`1<UnityEngine.Advertisements.ErrorEventArgs>)
+        remove_OnReady(System.EventHandler`1<UnityEngine.Advertisements.ReadyEventArgs>)
+    UnityEngine.Advertisements.ErrorEventArgs
+        get_error()
+        get_message()
+    UnityEngine.Advertisements.iOS.Platform
+        add_OnError(System.EventHandler`1<UnityEngine.Advertisements.ErrorEventArgs>)
+        add_OnReady(System.EventHandler`1<UnityEngine.Advertisements.ReadyEventArgs>)
+        get_isInitialized()
+        get_isSupported()
+        remove_OnError(System.EventHandler`1<UnityEngine.Advertisements.ErrorEventArgs>)
+        remove_OnReady(System.EventHandler`1<UnityEngine.Advertisements.ReadyEventArgs>)
+        UnityAdsEngineIsInitialized()
+        UnityAdsEngineIsSupported()
+    UnityEngine.Advertisements.IPlatform
+        add_OnError(System.EventHandler`1<UnityEngine.Advertisements.ErrorEventArgs>)
+        add_OnReady(System.EventHandler`1<UnityEngine.Advertisements.ReadyEventArgs>)
+        get_isInitialized()
+        get_isSupported()
+        remove_OnError(System.EventHandler`1<UnityEngine.Advertisements.ErrorEventArgs>)
+        remove_OnReady(System.EventHandler`1<UnityEngine.Advertisements.ReadyEventArgs>)
+    UnityEngine.Advertisements.MetaData
+        Get(System.String)
+    UnityEngine.Advertisements.ReadyEventArgs
+        get_placementId()
+    UnityEngine.Advertisements.ShowOptions
+        set_gamerSid(System.String)
+    UnityEngine.Advertisements.StartEventArgs
+        get_placementId()
+    UnityEngine.Advertisements.UnsupportedPlatform
+        add_OnError(System.EventHandler`1<UnityEngine.Advertisements.ErrorEventArgs>)
+        add_OnReady(System.EventHandler`1<UnityEngine.Advertisements.ReadyEventArgs>)
+        get_isInitialized()
+        get_isSupported()
+        remove_OnError(System.EventHandler`1<UnityEngine.Advertisements.ErrorEventArgs>)
+        remove_OnReady(System.EventHandler`1<UnityEngine.Advertisements.ReadyEventArgs>)
 ---------------------------------------------------
 Assembly: UnityEngine.UI
 ---------------------------------------------------

@@ -202,6 +202,13 @@ namespace SgLib
             }
         }
 
+        //Show Leaderboard
+        public void ShowLeaderboard()
+        {
+            Social.ShowLeaderboardUI();
+            Debug.Log("Leaderboard shown");
+        }
+
         public void ShowStartUI()
         {
             settingsUI.SetActive(false);
