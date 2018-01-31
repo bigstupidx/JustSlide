@@ -1,0 +1,64 @@
+<linker>
+	<assembly fullname="Assembly-CSharp">
+		<type fullname="ShareUIController">
+			<method name="Share"/>
+			<method name="SwitchFormat"/>
+			<method name="SwitchFormat"/>
+		</type>
+		<type fullname="SgLib.UIManager">
+			<method name="ButtonClickSound"/>
+			<method name="ShowSettingsUI"/>
+			<method name="ButtonClickSound"/>
+			<method name="RateApp"/>
+			<method name="ButtonClickSound"/>
+			<method name="StartGame"/>
+			<method name="CloseTutorial"/>
+			<method name="ButtonClickSound"/>
+			<method name="HideSettingsUI"/>
+			<method name="ButtonClickSound"/>
+			<method name="ButtonClickSound"/>
+			<method name="ToggleSound"/>
+			<method name="ButtonClickSound"/>
+			<method name="HideStoreUI"/>
+			<method name="ButtonClickSound"/>
+			<method name="CloseCharacterSelectionScene"/>
+			<method name="ButtonClickSound"/>
+			<method name="ToggleSound"/>
+			<method name="ButtonClickSound"/>
+			<method name="OpenFacebookPage"/>
+			<method name="ButtonClickSound"/>
+			<method name="ButtonClickSound"/>
+			<method name="RestartGame"/>
+			<method name="ButtonClickSound"/>
+			<method name="ShowStoreUI"/>
+			<method name="ButtonClickSound"/>
+			<method name="ToggleMusic"/>
+			<method name="ButtonClickSound"/>
+			<method name="GrabDailyReward"/>
+			<method name="ButtonClickSound"/>
+			<method name="ShowTutorial"/>
+			<method name="ButtonClickSound"/>
+			<method name="WatchRewardedAd"/>
+			<method name="ButtonClickSound"/>
+			<method name="ShowLeaderboardUI"/>
+			<method name="ButtonClickSound"/>
+			<method name="ToggleMusic"/>
+			<method name="ButtonClickSound"/>
+			<method name="ShowAchievementsUI"/>
+			<method name="ButtonClickSound"/>
+			<method name="PurchaseRemoveAds"/>
+			<method name="ButtonClickSound"/>
+			<method name="ShowCharacterSelectionScene"/>
+			<method name="ButtonClickSound"/>
+			<method name="RestorePurchase"/>
+		</type>
+		<type fullname="SgLib.RewardUIController">
+			<method name="Close"/>
+		</type>
+		<type fullname="SgLib.CharacterScroller">
+			<method name="UnlockHumanButton"/>
+			<method name="UnlockVehicleButton"/>
+			<method name="HandleConfirmButton"/>
+		</type>
+	</assembly>
+</linker>

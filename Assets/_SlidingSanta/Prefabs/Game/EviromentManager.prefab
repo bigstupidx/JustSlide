@@ -1,0 +1,237 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1594387506808438}
+  m_IsPrefabParent: 1
+--- !u!1 &1594387506808438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4016498207996050}
+  - component: {fileID: 114178830828596950}
+  m_Layer: 0
+  m_Name: EviromentManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4016498207996050
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1594387506808438}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114178830828596950
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1594387506808438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5608edb5f7b7b964192dd12159198dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultEnvironment:
+    character: {fileID: 0}
+    trees:
+    - {fileID: 1175423014952654, guid: 721d038770ebc91459f1cf3337a7447d, type: 2}
+    - {fileID: 1017660683894084, guid: 32c1d0aed1abd534dae0943f8f035f43, type: 2}
+    - {fileID: 1202008463395536, guid: 6b4a6f2ad5a41064f97248d4adf43c41, type: 2}
+    obstacles:
+    - {fileID: 142872, guid: f7729d9fb457744468cc1c0670199da0, type: 2}
+    - {fileID: 134068, guid: 20fc64affe8fe824f8ba86637ef1fb45, type: 2}
+    - {fileID: 108280, guid: 868a4e89bdc69af4b82f9cd1bb53b395, type: 2}
+    useCustomBackgroundMusic: 0
+    backgroundMusic:
+      clip: {fileID: 0}
+      simultaneousPlayCount: 0
+    planeColor:
+      serializedVersion: 2
+      rgba: 4292598747
+    enableFence: 1
+    fencePrefab: {fileID: 145234, guid: c99aa394d2f72494783bdf720e1dcace, type: 2}
+    enableBirds: 1
+    birdPrefabs:
+    - {fileID: 111446, guid: 78b4e4f2ecd0e5c40ac5d5a7da591985, type: 2}
+    - {fileID: 159998, guid: 1c3eba3687b94484a90924a004522653, type: 2}
+    - {fileID: 131440, guid: fa7419e540dc4634ab0eb18837d3bb11, type: 2}
+    - {fileID: 123508, guid: 6e988d88b653f694f992be122c0e1b67, type: 2}
+    - {fileID: 198516, guid: c66d444c8037e324d953b687de126d4d, type: 2}
+    - {fileID: 109892, guid: c7720df27db16de4ea6f35a5a2b690b0, type: 2}
+    enableFallingParticle: 1
+    fallingParticle: {fileID: 1689033878376530, guid: 0ad2f2376924f4c288b763988a6ba236,
+      type: 2}
+    numberOfObjectInAWall: 7
+    skyboxTopColor: {r: 0, g: 0.8352942, b: 1, a: 1}
+    skyboxBottomColor: {r: 0.6745098, g: 0.9450981, b: 1, a: 1}
+    mainHouse: {fileID: 1114210315407798, guid: 9ac575897232cef48b0d9982153acb7b,
+      type: 2}
+  environmentList:
+  - character: {fileID: 11416574, guid: 6518c422d7dbfe04ba718845eb9b03f7, type: 2}
+    trees:
+    - {fileID: 1579917973708950, guid: 900d3ce7c60741b40a054c8c26794922, type: 2}
+    - {fileID: 1844602018113598, guid: 866d8281bdf552d409d020b7a75de508, type: 2}
+    - {fileID: 1337137464202754, guid: 225aeea784825f344851fb3bf33fd232, type: 2}
+    obstacles:
+    - {fileID: 1856319150904538, guid: 66be289a5ed807a4c98cdb600ea629b8, type: 2}
+    - {fileID: 1057859982039758, guid: a11da6073606e89409c51174786e6ad6, type: 2}
+    - {fileID: 1290852557863684, guid: 3b5cf4c08c27c4a48a067734d621e2f1, type: 2}
+    useCustomBackgroundMusic: 1
+    backgroundMusic:
+      clip: {fileID: 8300000, guid: 9778b5f1ce5fd444cb09e528909d6b79, type: 3}
+      simultaneousPlayCount: 0
+    planeColor:
+      serializedVersion: 2
+      rgba: 4283591538
+    enableFence: 0
+    fencePrefab: {fileID: 0}
+    enableBirds: 0
+    birdPrefabs: []
+    enableFallingParticle: 0
+    fallingParticle: {fileID: 0}
+    numberOfObjectInAWall: 5
+    skyboxTopColor: {r: 1, g: 0.92941177, b: 0, a: 0}
+    skyboxBottomColor: {r: 0.2205882, g: 0.2205882, b: 0.2205882, a: 0}
+    mainHouse: {fileID: 1617901123340368, guid: 6760098141e1b4a4c91b5fbfbabd3e4b,
+      type: 2}
+  - character: {fileID: 11433822, guid: 76abaff586667884da72b4a2e4d9394d, type: 2}
+    trees:
+    - {fileID: 1583904874997890, guid: 515ed886a88ec954fa65b6ce4c0fe8db, type: 2}
+    - {fileID: 1535954422414244, guid: 9506f216cb841674c9d71ca62ca4f0d9, type: 2}
+    - {fileID: 1121073514190560, guid: 49e6ab3aae220ac45bbc0565eadd2ce8, type: 2}
+    obstacles:
+    - {fileID: 1541253119386316, guid: f851913e0f3812348b7b3fe1c4bf9148, type: 2}
+    - {fileID: 1561629722416028, guid: dfb33a93e6675e04fbeaee547efd7cf5, type: 2}
+    - {fileID: 1310117649960894, guid: 6fdc3c316f0318c409b7b0f793ff0f62, type: 2}
+    useCustomBackgroundMusic: 1
+    backgroundMusic:
+      clip: {fileID: 8300000, guid: 0e8e4c1b5c52d4c24b2a5aa35e8b3552, type: 3}
+      simultaneousPlayCount: 0
+    planeColor:
+      serializedVersion: 2
+      rgba: 4281085732
+    enableFence: 1
+    fencePrefab: {fileID: 1941609529089214, guid: d5db89df7461ad74697e0acea9ec1eab,
+      type: 2}
+    enableBirds: 0
+    birdPrefabs: []
+    enableFallingParticle: 0
+    fallingParticle: {fileID: 0}
+    numberOfObjectInAWall: 7
+    skyboxTopColor: {r: 0.10980392, g: 0.10980392, b: 0.10980392, a: 0}
+    skyboxBottomColor: {r: 1, g: 1, b: 1, a: 0}
+    mainHouse: {fileID: 1876466139618614, guid: 5e5ca216d24b81f4ca73c6d95d7f92c7,
+      type: 2}
+  - character: {fileID: 11480174, guid: 6db8c25eb2b072b4e8237a69eee97455, type: 2}
+    trees:
+    - {fileID: 1075801016139276, guid: e7dc1f906e90f494794e5677ca1b6960, type: 2}
+    - {fileID: 1359896033370344, guid: d1384bca0337ac24f8f0ac005242f259, type: 2}
+    - {fileID: 1844510224830754, guid: 863f020e136ab5942b8fec1edc42bf3d, type: 2}
+    obstacles:
+    - {fileID: 1859712515546126, guid: 9f6311b98f54c444ba0e2b7597d709cd, type: 2}
+    - {fileID: 1407997744260328, guid: deec5434077ad1f48a7355c70b3489f8, type: 2}
+    - {fileID: 1714329494953346, guid: b309787e82352c14c9ce5e2298e11f14, type: 2}
+    useCustomBackgroundMusic: 1
+    backgroundMusic:
+      clip: {fileID: 8300000, guid: 6ae508843baf84772869da45070009c3, type: 3}
+      simultaneousPlayCount: 0
+    planeColor:
+      serializedVersion: 2
+      rgba: 4283741674
+    enableFence: 0
+    fencePrefab: {fileID: 0}
+    enableBirds: 1
+    birdPrefabs:
+    - {fileID: 111446, guid: 78b4e4f2ecd0e5c40ac5d5a7da591985, type: 2}
+    - {fileID: 159998, guid: 1c3eba3687b94484a90924a004522653, type: 2}
+    - {fileID: 131440, guid: fa7419e540dc4634ab0eb18837d3bb11, type: 2}
+    - {fileID: 123508, guid: 6e988d88b653f694f992be122c0e1b67, type: 2}
+    - {fileID: 198516, guid: c66d444c8037e324d953b687de126d4d, type: 2}
+    - {fileID: 109892, guid: c7720df27db16de4ea6f35a5a2b690b0, type: 2}
+    enableFallingParticle: 0
+    fallingParticle: {fileID: 0}
+    numberOfObjectInAWall: 7
+    skyboxTopColor: {r: 0, g: 1, b: 0.41960788, a: 0}
+    skyboxBottomColor: {r: 0.16219723, g: 0.36764705, b: 0.24816558, a: 0}
+    mainHouse: {fileID: 1766347684071518, guid: 63487122d2c99a44597fccfb763f1e3b,
+      type: 2}
+  - character: {fileID: 11448222, guid: 8d12b89f8fdd19a45b62e388a1bea58d, type: 2}
+    trees:
+    - {fileID: 1927539345870882, guid: 6a949008257ae3b459bb306f2b3fc001, type: 2}
+    - {fileID: 1483130749555082, guid: 537a4747b8711aa4e8e33459885f91eb, type: 2}
+    - {fileID: 1066753637944294, guid: 76420f33607139c4d81825d2cc695378, type: 2}
+    obstacles:
+    - {fileID: 1023585177722650, guid: acc2b5cd71750804a8b5cfb536610b0a, type: 2}
+    - {fileID: 1664422662753222, guid: a0159db47048ead4781d6b05100021d8, type: 2}
+    - {fileID: 1637372446121414, guid: c84fe80a89a0e1744bd2e8a2fefe56a4, type: 2}
+    useCustomBackgroundMusic: 1
+    backgroundMusic:
+      clip: {fileID: 8300000, guid: 80f766a4eab0842389a4ebb8d48b2532, type: 3}
+      simultaneousPlayCount: 0
+    planeColor:
+      serializedVersion: 2
+      rgba: 4282743872
+    enableFence: 0
+    fencePrefab: {fileID: 0}
+    enableBirds: 1
+    birdPrefabs:
+    - {fileID: 111446, guid: 78b4e4f2ecd0e5c40ac5d5a7da591985, type: 2}
+    - {fileID: 159998, guid: 1c3eba3687b94484a90924a004522653, type: 2}
+    - {fileID: 131440, guid: fa7419e540dc4634ab0eb18837d3bb11, type: 2}
+    - {fileID: 123508, guid: 6e988d88b653f694f992be122c0e1b67, type: 2}
+    - {fileID: 198516, guid: c66d444c8037e324d953b687de126d4d, type: 2}
+    - {fileID: 109892, guid: c7720df27db16de4ea6f35a5a2b690b0, type: 2}
+    enableFallingParticle: 0
+    fallingParticle: {fileID: 0}
+    numberOfObjectInAWall: 5
+    skyboxTopColor: {r: 0.57254905, g: 0, b: 1, a: 0}
+    skyboxBottomColor: {r: 0.33169925, g: 0.09866999, b: 0.53676474, a: 0}
+    mainHouse: {fileID: 1381573633249020, guid: f6653a408daec104a891b175b7333ccb,
+      type: 2}
+  - character: {fileID: 11423666, guid: 90ec16e4a551a0f4782d677dac695552, type: 2}
+    trees:
+    - {fileID: 1248926503972508, guid: 3bc46a4d374500c478bed46256551a12, type: 2}
+    - {fileID: 1566432363029394, guid: a64ae78b3df3bb34992fb18618101769, type: 2}
+    - {fileID: 1411275779885516, guid: 44d9e191ce4fac64f863378a5b7d6b5d, type: 2}
+    obstacles:
+    - {fileID: 1406362037580602, guid: b969ec1daf579ec4ba54c361908d662f, type: 2}
+    - {fileID: 1983222753609932, guid: 3642f04c6ad4ada4ea7ed4a8eb85bb4d, type: 2}
+    - {fileID: 1340675631920108, guid: b43987331bbe6644fa77871ad41f03b9, type: 2}
+    useCustomBackgroundMusic: 1
+    backgroundMusic:
+      clip: {fileID: 8300000, guid: 9778b5f1ce5fd444cb09e528909d6b79, type: 3}
+      simultaneousPlayCount: 0
+    planeColor:
+      serializedVersion: 2
+      rgba: 4279900698
+    enableFence: 0
+    fencePrefab: {fileID: 0}
+    enableBirds: 0
+    birdPrefabs: []
+    enableFallingParticle: 0
+    fallingParticle: {fileID: 0}
+    numberOfObjectInAWall: 7
+    skyboxTopColor: {r: 0, g: 0.42068958, b: 1, a: 0}
+    skyboxBottomColor: {r: 0, g: 0, b: 0, a: 0}
+    mainHouse: {fileID: 1402144189431298, guid: d01655c04f5f4094d840a63284440f61,
+      type: 2}
