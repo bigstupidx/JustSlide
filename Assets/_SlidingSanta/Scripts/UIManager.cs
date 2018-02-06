@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections;
 using System;
+using UnityEngine.SocialPlatforms;
 
 #if EASY_MOBILE
 using EasyMobile;
@@ -12,6 +13,7 @@ namespace SgLib
 {
     public class UIManager : MonoBehaviour
     {
+        public static UIManager Instance { get; private set; }
         public static bool firstLoad = true;
 
         [Header("Object References")]
@@ -43,6 +45,7 @@ namespace SgLib
         public GameObject iapPurchaseBtn;
         public GameObject removeAdsBtn;
         public GameObject restorePurchaseBtn;
+        public bool isBannerOn = false;
 
         [Header("In-App Purchase Store")]
         public GameObject storeUI;
@@ -74,7 +77,7 @@ namespace SgLib
         {
             scoreAnimator = score.GetComponent<Animator>();
             dailyRewardAnimator = dailyRewardBtn.GetComponent<Animator>();
-
+            Instance = this;
             Reset();
             ShowStartUI();
         }
@@ -140,10 +143,10 @@ namespace SgLib
 
             // Enable or disable premium stuff
             bool enablePremium = IsPremiumFeaturesEnabled();
-            leaderboardBtn.SetActive(enablePremium);
-            iapPurchaseBtn.SetActive(enablePremium);
-            removeAdsBtn.SetActive(enablePremium);
-            restorePurchaseBtn.SetActive(enablePremium);
+            leaderboardBtn.SetActive(true);
+            iapPurchaseBtn.SetActive(true);
+            removeAdsBtn.SetActive(true);
+            restorePurchaseBtn.SetActive(true);
 
             // Hidden by default
             storeUI.SetActive(false);
@@ -152,7 +155,7 @@ namespace SgLib
 
             // These premium feature buttons are hidden by default
             // and shown when certain criteria are met (e.g. rewarded ad is loaded)
-            watchRewardedAdBtn.gameObject.SetActive(false);
+            //watchRewardedAdBtn.gameObject.SetActive(false);
         }
 
         public void StartGame()
@@ -168,6 +171,10 @@ namespace SgLib
                 else
                 {
                     GameManager.Instance.StartGame();
+                    if(!BannerAd.Instance.isBannerOn)
+                    {
+                        BannerAd.Instance.ShowBannerAd();
+                    }
                 }
             }
             else if (GameManager.Instance.GameState == GameState.GameOver)
@@ -206,7 +213,6 @@ namespace SgLib
         public void ShowLeaderboard()
         {
             Social.ShowLeaderboardUI();
-            Debug.Log("Leaderboard shown");
         }
 
         public void ShowStartUI()
@@ -251,15 +257,16 @@ namespace SgLib
             characterSelectBtn.SetActive(true);
             menuButtons.SetActive(true);
             settingsUI.SetActive(false);
-
+            ShowWatchForCoinsBtn();
             // Show 'daily reward' button
             ShowDailyRewardBtn();
-
+            
+            //ShowShareUI();
             // Show these if premium features are enabled (and relevant conditions are met)
             if (IsPremiumFeaturesEnabled())
             {
-                ShowShareUI();
-                ShowWatchForCoinsBtn();
+                
+                
             }
         }
 
@@ -277,6 +284,8 @@ namespace SgLib
         void ShowWatchForCoinsBtn()
         {
             // Only show "watch for coins button" if a rewarded ad is loaded and premium features are enabled
+            watchRewardedAdBtn.SetActive(true);
+            watchRewardedAdBtn.GetComponent<Animator>().SetTrigger("activate");
 #if EASY_MOBILE
             if (IsPremiumFeaturesEnabled() && AdDisplayer.Instance.CanShowRewardedAd() && AdDisplayer.Instance.watchAdToEarnCoins)
             {
@@ -368,6 +377,12 @@ namespace SgLib
                 // Update next time for the reward
                 DailyRewardController.Instance.ResetNextRewardTime();
             }
+        }
+
+        public void GrabVideoReward()
+        {
+            ShowRewardUI(30);
+            //CoinManager.Instance.AddCoins(50);
         }
 
         public void ShowRewardUI(int reward)

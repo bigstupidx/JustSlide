@@ -2,17 +2,96 @@
 All Assemblies
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 2197
-    Nested = 184
+  Total Type Removals = 2211
+    Nested = 187
     Interfaces = 138
-    Abstract Classes = 164
-    Generic Types = 77
+    Abstract Classes = 160
+    Generic Types = 76
     Generic Interfaces = 6
     Generic Abstract Classes = 3
-    Attributes = 167
-  Total Field Removals = 779
-  Total Method Removals = 11080
+    Attributes = 165
+  Total Field Removals = 675
+  Total Method Removals = 11244
 ---------------------------------------------------
+---------------------------------------------------
+Assembly: Apple
+---------------------------------------------------
+Summary:
+  Total Type Removals = 0
+    Nested = 0
+    Interfaces = 0
+    Abstract Classes = 0
+    Generic Types = 0
+    Generic Interfaces = 0
+    Generic Abstract Classes = 0
+    Attributes = 0
+  Total Field Removals = 0
+  Total Method Removals = 21
+  References Removed = 0
+---------------------------------------------------
+    UnityEngine.Purchasing.INativeAppleStore
+        get_canMakePayments()
+        get_simulateAskToBuy()
+        RefreshAppReceipt()
+        set_simulateAskToBuy(System.Boolean)
+        SetApplicationUsername(System.String)
+        SetStorePromotionOrder(System.String)
+        SetStorePromotionVisibility(System.String,System.String)
+    UnityEngine.Purchasing.iOSStoreBindings
+        get_canMakePayments()
+        get_simulateAskToBuy()
+        RefreshAppReceipt()
+        set_simulateAskToBuy(System.Boolean)
+        SetApplicationUsername(System.String)
+        SetStorePromotionOrder(System.String)
+        SetStorePromotionVisibility(System.String,System.String)
+    UnityEngine.Purchasing.OSXStoreBindings
+        get_canMakePayments()
+        get_simulateAskToBuy()
+        RefreshAppReceipt()
+        set_simulateAskToBuy(System.Boolean)
+        SetApplicationUsername(System.String)
+        SetStorePromotionOrder(System.String)
+        SetStorePromotionVisibility(System.String,System.String)
+---------------------------------------------------
+Assembly: ChannelPurchase
+---------------------------------------------------
+Summary:
+  Total Type Removals = 0
+    Nested = 0
+    Interfaces = 0
+    Abstract Classes = 0
+    Generic Types = 0
+    Generic Interfaces = 0
+    Generic Abstract Classes = 0
+    Attributes = 0
+  Total Field Removals = 0
+  Total Method Removals = 2
+  References Removed = 0
+---------------------------------------------------
+    UnityEngine.ChannelPurchase.PurchaseService
+        .ctor()
+        ConfirmPurchase(System.String,UnityEngine.ChannelPurchase.IPurchaseListener)
+---------------------------------------------------
+Assembly: FacebookStore
+---------------------------------------------------
+Summary:
+  Total Type Removals = 0
+    Nested = 0
+    Interfaces = 0
+    Abstract Classes = 0
+    Generic Types = 0
+    Generic Interfaces = 0
+    Generic Abstract Classes = 0
+    Attributes = 0
+  Total Field Removals = 0
+  Total Method Removals = 2
+  References Removed = 0
+---------------------------------------------------
+    UnityEngine.Purchasing.FacebookStoreBindings
+        ConsumeItem(System.String)
+    UnityEngine.Purchasing.INativeFacebookStore
+        ConsumeItem(System.String)
 ---------------------------------------------------
 Assembly: Mono.Security
 ---------------------------------------------------
@@ -26,7 +105,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 0
   Total Field Removals = 64
-  Total Method Removals = 315
+  Total Method Removals = 310
   References Removed = 0
 ---------------------------------------------------
     <PrivateImplementationDetails>
@@ -132,10 +211,6 @@ Summary:
         UIntFromBytes(System.Byte*,System.Byte[],System.Int32)
         ULongFromBytes(System.Byte*,System.Byte[],System.Int32)
         UShortFromBytes(System.Byte*,System.Byte[],System.Int32)
-    Mono.Security.Cryptography.ARC4Managed
-        get_CanTransformMultipleBlocks()
-        get_InputBlockSize()
-        get_OutputBlockSize()
     Mono.Security.Cryptography.BlockProcessor
     Mono.Security.Cryptography.CryptoConvert
         .ctor()
@@ -227,8 +302,6 @@ Summary:
         defaultKeySize
         add_KeyGenerated(Mono.Security.Cryptography.RSAManaged/KeyGeneratedEventHandler)
         get_IsCrtPossible()
-        get_KeyExchangeAlgorithm()
-        get_SignatureAlgorithm()
         get_UseKeyBlinding()
         remove_KeyGenerated(Mono.Security.Cryptography.RSAManaged/KeyGeneratedEventHandler)
         set_UseKeyBlinding(System.Boolean)
@@ -545,16 +618,16 @@ Summary:
 Assembly: mscorlib
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 663
-    Nested = 47
+  Total Type Removals = 631
+    Nested = 44
     Interfaces = 72
-    Abstract Classes = 60
+    Abstract Classes = 54
     Generic Types = 4
     Generic Interfaces = 0
     Generic Abstract Classes = 1
     Attributes = 81
-  Total Field Removals = 518
-  Total Method Removals = 4139
+  Total Field Removals = 380
+  Total Method Removals = 4038
   References Removed = 0
 ---------------------------------------------------
     <PrivateImplementationDetails>
@@ -756,7 +829,18 @@ Summary:
         FromDateTime(System.DateTime)
         FromUnsignedBigInteger(System.Byte[])
     Mono.Security.Authenticode.AuthenticodeBase
+        spcIndirectDataContext
+        get_CoffSymbolTableOffset()
+        get_SecurityOffset()
+        HashFile(System.String,System.String)
     Mono.Security.Authenticode.AuthenticodeDeformatter
+        get_Certificates()
+        get_FileName()
+        get_Hash()
+        get_Reason()
+        get_Signature()
+        get_Timestamp()
+        IsTrusted()
     Mono.Security.Authenticode.Authority
     Mono.Security.BitConverterLE
         .ctor()
@@ -769,29 +853,19 @@ Summary:
         ToBoolean(System.Byte[],System.Int32)
         ToChar(System.Byte[],System.Int32)
         ToInt64(System.Byte[],System.Int32)
-        ToUInt16(System.Byte[],System.Int32)
-        ToUInt32(System.Byte[],System.Int32)
         ToUInt64(System.Byte[],System.Int32)
     Mono.Security.Cryptography.BlockProcessor
         .ctor(System.Security.Cryptography.ICryptoTransform)
     Mono.Security.Cryptography.CryptoConvert
         .ctor()
-        FromCapiKeyBlobDSA(System.Byte[])
-        FromCapiKeyBlobDSA(System.Byte[],System.Int32)
         FromCapiPrivateKeyBlob(System.Byte[])
         FromCapiPrivateKeyBlobDSA(System.Byte[])
-        FromCapiPrivateKeyBlobDSA(System.Byte[],System.Int32)
         FromCapiPublicKeyBlobDSA(System.Byte[])
-        FromCapiPublicKeyBlobDSA(System.Byte[],System.Int32)
         ToCapiKeyBlob(System.Security.Cryptography.AsymmetricAlgorithm,System.Boolean)
         ToCapiKeyBlob(System.Security.Cryptography.DSA,System.Boolean)
-        ToCapiPrivateKeyBlob(System.Security.Cryptography.DSA)
-        ToCapiPublicKeyBlob(System.Security.Cryptography.DSA)
     Mono.Security.Cryptography.DSAManaged
         defaultKeySize
         .ctor()
-        get_KeyExchangeAlgorithm()
-        get_SignatureAlgorithm()
     Mono.Security.Cryptography.HMACAlgorithm
     Mono.Security.Cryptography.KeyBuilder
         .ctor()
@@ -799,14 +873,6 @@ Summary:
         get_Parameters()
     Mono.Security.Cryptography.PKCS1
         .ctor()
-        Decrypt_OAEP(System.Security.Cryptography.RSA,System.Security.Cryptography.HashAlgorithm,System.Byte[])
-        Decrypt_v15(System.Security.Cryptography.RSA,System.Byte[])
-        Encrypt_OAEP(System.Security.Cryptography.RSA,System.Security.Cryptography.HashAlgorithm,System.Security.Cryptography.RandomNumberGenerator,System.Byte[])
-        GetEmptyHash(System.Security.Cryptography.HashAlgorithm)
-        I2OSP(System.Int32,System.Int32)
-        MGF1(System.Security.Cryptography.HashAlgorithm,System.Byte[],System.Int32)
-        RSADP(System.Security.Cryptography.RSA,System.Byte[])
-        xor(System.Byte[],System.Byte[])
     Mono.Security.Cryptography.PKCS8
         .ctor()
         GetType(System.Byte[])
@@ -830,15 +896,8 @@ Summary:
         set_Version(System.Int32)
     Mono.Security.Cryptography.RSAManaged
         defaultKeySize
-        .ctor()
-        get_KeyExchangeAlgorithm()
-        get_SignatureAlgorithm()
         get_UseKeyBlinding()
         set_UseKeyBlinding(System.Boolean)
-    Mono.Security.Cryptography.SymmetricTransform
-        get_CanTransformMultipleBlocks()
-        get_InputBlockSize()
-        get_OutputBlockSize()
     Mono.Security.PKCS7
         .ctor()
         AlgorithmIdentifier(System.String)
@@ -859,7 +918,33 @@ Summary:
     Mono.Security.PKCS7/Oid
     Mono.Security.PKCS7/RecipientInfo
     Mono.Security.PKCS7/SignedData
+        signed
+        .ctor()
+        .ctor(System.Byte[])
+        get_ASN1()
+        get_Crls()
+        get_HashName()
+        get_UseAuthenticatedAttributes()
+        get_Version()
+        GetASN1()
+        GetBytes()
+        set_UseAuthenticatedAttributes(System.Boolean)
+        set_Version(System.Byte)
+        VerifySignature(System.Security.Cryptography.AsymmetricAlgorithm)
     Mono.Security.PKCS7/SignerInfo
+        key
+        x509
+        .ctor(System.Byte[])
+        get_ASN1()
+        get_Certificate()
+        get_Key()
+        get_SubjectKeyIdentifier()
+        GetASN1()
+        GetBytes()
+        set_Certificate(Mono.Security.X509.X509Certificate)
+        set_Key(System.Security.Cryptography.AsymmetricAlgorithm)
+        set_Signature(System.Byte[])
+        set_Version(System.Byte)
     Mono.Security.StrongName
         .ctor()
         .ctor(System.Int32)
@@ -907,6 +992,13 @@ Summary:
         IsReservedCharacter(System.Char)
         MakeRelative(Mono.Security.Uri)
     Mono.Security.X509.Extensions.BasicConstraintsExtension
+        NoPathLengthConstraint
+        .ctor()
+        .ctor(Mono.Security.ASN1)
+        get_Name()
+        get_PathLenConstraint()
+        set_CertificateAuthority(System.Boolean)
+        set_PathLenConstraint(System.Int32)
     Mono.Security.X509.Extensions.KeyUsageExtension
     Mono.Security.X509.Extensions.KeyUsages
     Mono.Security.X509.Extensions.SubjectKeyIdentifierExtension
@@ -977,58 +1069,38 @@ Summary:
         ReadQuoted(System.Text.StringBuilder,System.String,System.Int32)
         ReadValue(System.String,System.Int32&)
     Mono.Security.X509.X509Certificate
-        _rsa
-        <>f__switch$map13
-        <>f__switch$map14
-        <>f__switch$map15
-        certhash
         .ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
         CheckSignature(System.Byte[],System.String,System.Byte[])
-        get_Extensions()
-        get_Hash()
-        get_IsCurrent()
-        get_IsSelfSigned()
         get_IssuerUniqueIdentifier()
-        get_KeyAlgorithm()
-        get_RSA()
-        get_SerialNumber()
-        get_Signature()
         get_SignatureAlgorithm()
         get_SignatureAlgorithmParameters()
         get_SubjectUniqueIdentifier()
-        get_Version()
-        GetHashNameFromOID(System.String)
         set_DSA(System.Security.Cryptography.DSA)
         set_KeyAlgorithmParameters(System.Byte[])
         set_RSA(System.Security.Cryptography.RSA)
         VerifySignature(System.Security.Cryptography.AsymmetricAlgorithm)
         VerifySignature(System.Security.Cryptography.DSA)
-        VerifySignature(System.Security.Cryptography.RSA)
-        WasCurrent(System.DateTime)
     Mono.Security.X509.X509CertificateCollection
         .ctor(Mono.Security.X509.X509Certificate[])
         .ctor(Mono.Security.X509.X509CertificateCollection)
         AddRange(Mono.Security.X509.X509Certificate[])
-        AddRange(Mono.Security.X509.X509CertificateCollection)
-        Compare(System.Byte[],System.Byte[])
-        Contains(Mono.Security.X509.X509Certificate)
         CopyTo(Mono.Security.X509.X509Certificate[],System.Int32)
-        IndexOf(Mono.Security.X509.X509Certificate)
         Insert(System.Int32,Mono.Security.X509.X509Certificate)
         Remove(Mono.Security.X509.X509Certificate)
         set_Item(System.Int32,Mono.Security.X509.X509Certificate)
     Mono.Security.X509.X509Chain
-    Mono.Security.X509.X509ChainStatusFlags
+        .ctor(Mono.Security.X509.X509CertificateCollection)
+        FindByIssuerName(System.String)
+        get_Chain()
+        get_Root()
+        get_Status()
+        LoadCertificate(Mono.Security.X509.X509Certificate)
+        set_TrustAnchors(Mono.Security.X509.X509CertificateCollection)
     Mono.Security.X509.X509Crl
     Mono.Security.X509.X509Extension
         .ctor()
-        .ctor(Mono.Security.X509.X509Extension)
-        Encode()
         get_ASN1()
-        get_Critical()
         get_Name()
-        get_Oid()
-        get_Value()
         GetBytes()
         set_Critical(System.Boolean)
     Mono.Security.X509.X509ExtensionCollection
@@ -1039,16 +1111,45 @@ Summary:
         Contains(System.String)
         CopyTo(Mono.Security.X509.X509Extension[],System.Int32)
         get_Item(System.Int32)
-        get_Item(System.String)
         GetBytes()
         IndexOf(Mono.Security.X509.X509Extension)
-        IndexOf(System.String)
         Insert(System.Int32,Mono.Security.X509.X509Extension)
         Remove(Mono.Security.X509.X509Extension)
         Remove(System.String)
     Mono.Security.X509.X509Store
+        _crls
+        _name
+        BuildCrlsCollection(System.String)
+        Clear()
+        get_Crls()
+        get_Name()
+        GetUniqueName(Mono.Security.X509.X509Certificate)
+        GetUniqueName(Mono.Security.X509.X509Crl)
+        GetUniqueName(Mono.Security.X509.X509ExtensionCollection)
+        GetUniqueName(System.String,System.Byte[],System.String)
+        Import(Mono.Security.X509.X509Certificate)
+        Import(Mono.Security.X509.X509Crl)
+        LoadCrl(System.String)
+        Remove(Mono.Security.X509.X509Certificate)
+        Remove(Mono.Security.X509.X509Crl)
     Mono.Security.X509.X509StoreManager
+        .ctor()
+        get_IntermediateCACertificates()
+        get_IntermediateCACrls()
+        get_TrustedRootCACrls()
+        get_UntrustedCertificates()
     Mono.Security.X509.X509Stores
+        _intermediate
+        _other
+        _personal
+        _untrusted
+        Clear()
+        get_IntermediateCA()
+        get_OtherPeople()
+        get_Personal()
+        get_Untrusted()
+        Open(System.String,System.Boolean)
+    Mono.Security.X509.X509Stores/Names
     Mono.Security.X509.X520
     Mono.Xml.DefaultHandler
     Mono.Xml.SmallXmlParser/AttrListImpl
@@ -1179,13 +1280,11 @@ Summary:
     System.BitConverter
         GetBytes(System.Boolean)
         GetBytes(System.Char)
-        GetBytes(System.Int16)
         GetBytes(System.Int32)
         GetBytes(System.Int64)
         GetBytes(System.Single)
         GetBytes(System.UInt16)
         GetBytes(System.UInt32)
-        GetBytes(System.UInt64)
         Int64BitsToDouble(System.Int64)
         InternalInt64BitsToDouble(System.Int64)
         SwappableToDouble(System.Byte[],System.Int32)
@@ -1196,9 +1295,6 @@ Summary:
         ToInt32(System.Byte[],System.Int32)
         ToSingle(System.Byte[],System.Int32)
         ToString(System.Byte[],System.Int32)
-        ToUInt16(System.Byte[],System.Int32)
-        ToUInt32(System.Byte[],System.Int32)
-        ToUInt64(System.Byte[],System.Int32)
     System.Buffer
         GetByte(System.Array,System.Int32)
         GetByteInternal(System.Array,System.Int32)
@@ -1224,7 +1320,6 @@ Summary:
         IsLower(System.String,System.Int32)
         IsLowSurrogate(System.Char)
         IsLowSurrogate(System.String,System.Int32)
-        IsNumber(System.Char)
         IsNumber(System.String,System.Int32)
         IsPunctuation(System.Char)
         IsPunctuation(System.String,System.Int32)
@@ -1349,10 +1444,8 @@ Summary:
     System.Collections.Generic.Dictionary`2
         .ctor(System.Int32,System.Collections.Generic.IEqualityComparer`1<TKey>)
         get_Comparer()
-        System.Collections.IDictionary.Contains(System.Object)
         System.Collections.IDictionary.get_IsFixedSize()
         System.Collections.IDictionary.get_IsReadOnly()
-        System.Collections.IDictionary.get_Keys()
         System.Collections.IDictionary.get_Values()
     System.Collections.Generic.Dictionary`2/ShimEnumerator
         Dispose()
@@ -1416,10 +1509,8 @@ Summary:
         get_IsReadOnly()
     System.Collections.IDictionary
         Clear()
-        Contains(System.Object)
         get_IsFixedSize()
         get_IsReadOnly()
-        get_Keys()
         get_Values()
     System.Collections.ObjectModel.Collection`1
         .ctor(System.Collections.Generic.IList`1<T>)
@@ -1437,9 +1528,7 @@ Summary:
         .ctor(System.Collections.IComparer)
         .ctor(System.Collections.IDictionary)
         Clear()
-        get_Keys()
         get_Values()
-        GetKey(System.Int32)
         GetKeyList()
         Resize(System.Int32,System.Boolean)
         SetByIndex(System.Int32,System.Object)
@@ -1447,7 +1536,6 @@ Summary:
         TrimToSize()
     System.Collections.SortedList/Enumerator
         .ctor(System.Collections.SortedList)
-    System.Collections.SortedList/ListKeys
     System.Collections.SortedList/SynchedSortedList
     System.Collections.Stack
         default_capacity
@@ -1524,17 +1612,11 @@ Summary:
         ChangeType(System.Object,System.Type,System.IFormatProvider)
         ChangeType(System.Object,System.TypeCode)
         ChangeType(System.Object,System.TypeCode,System.IFormatProvider)
-        ConvertFromBase(System.String,System.Int32,System.Boolean)
         ConvertFromBase64(System.String,System.Int32,System.Boolean)
-        ConvertToBase16(System.Byte[])
-        ConvertToBase2(System.Byte[])
-        ConvertToBase8(System.Byte[])
-        EndianSwap(System.Byte[]&)
         FromBase64CharArray(System.Char[],System.Int32,System.Int32)
         GetTypeCode(System.Object)
         InternalFromBase64CharArray(System.Char[],System.Int32,System.Int32)
         IsDBNull(System.Object)
-        NotValidBase(System.Int32)
         ToBase64CharArray(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)
         ToBase64CharArray(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32,System.Base64FormattingOptions)
         ToBase64String(System.Byte[],System.Base64FormattingOptions)
@@ -1565,19 +1647,14 @@ Summary:
         ToDateTime(System.String)
         ToDecimal(System.Char)
         ToDecimal(System.DateTime)
-        ToDecimal(System.Object)
-        ToDecimal(System.String)
         ToDouble(System.Char)
         ToDouble(System.DateTime)
-        ToDouble(System.Object)
-        ToDouble(System.String)
         ToInt16(System.DateTime)
         ToInt16(System.String)
         ToInt16(System.String,System.Int32)
         ToInt32(System.DateTime)
         ToInt32(System.Int32)
         ToInt32(System.String)
-        ToInt32(System.String,System.Int32)
         ToInt64(System.DateTime)
         ToInt64(System.String,System.Int32)
         ToSByte(System.DateTime)
@@ -1593,7 +1670,6 @@ Summary:
         ToString(System.Boolean,System.IFormatProvider)
         ToString(System.Byte)
         ToString(System.Byte,System.IFormatProvider)
-        ToString(System.Byte,System.Int32)
         ToString(System.Char)
         ToString(System.Char,System.IFormatProvider)
         ToString(System.DateTime)
@@ -1605,7 +1681,6 @@ Summary:
         ToString(System.Int16)
         ToString(System.Int16,System.IFormatProvider)
         ToString(System.Int16,System.Int32)
-        ToString(System.Int32)
         ToString(System.Int32,System.IFormatProvider)
         ToString(System.Int32,System.Int32)
         ToString(System.Int64,System.IFormatProvider)
@@ -1653,7 +1728,6 @@ Summary:
         UnixEpoch
         w32file_epoch
         .ctor(System.Int32,System.Int32,System.Int32,System.Globalization.Calendar)
-        .ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.DateTimeKind)
         .ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Globalization.Calendar)
         .ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Globalization.Calendar)
         .ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Globalization.Calendar,System.DateTimeKind)
@@ -1666,25 +1740,7 @@ Summary:
         FromFileTime(System.Int64)
         FromFileTimeUtc(System.Int64)
         FromOADate(System.Double)
-        get_Date()
-        get_DayOfYear()
-        get_Millisecond()
-        get_TimeOfDay()
-        GetDateTimeFormats()
-        GetDateTimeFormats(System.Boolean,System.String[],System.Globalization.DateTimeFormatInfo)
         GetDateTimeFormats(System.Char)
-        GetDateTimeFormats(System.Char,System.IFormatProvider)
-        GetDateTimeFormats(System.IFormatProvider)
-        GetTypeCode()
-        IsDaylightSavingTime()
-        Parse(System.String)
-        ToFileTime()
-        ToFileTimeUtc()
-        ToLongDateString()
-        ToLongTimeString()
-        ToOADate()
-        ToShortDateString()
-        ToShortTimeString()
         TryParse(System.String,System.DateTime&)
         TryParse(System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime&)
         TryParseExact(System.String,System.String,System.IFormatProvider,System.Globalization.DateTimeStyles,System.DateTime&)
@@ -1766,7 +1822,6 @@ Summary:
         SCALE_SHIFT
         SIGN_FLAG
         Zero
-        .ctor(System.Int32[])
         Ceiling(System.Decimal)
         decimal2string(System.Decimal&,System.Int32,System.Int32,System.Char[],System.Int32,System.Int32&,System.Int32&)
         decimalIntDiv(System.Decimal&,System.Decimal&,System.Decimal&)
@@ -1783,7 +1838,6 @@ Summary:
         op_Modulus(System.Decimal,System.Decimal)
         op_UnaryNegation(System.Decimal)
         op_UnaryPlus(System.Decimal)
-        Parse(System.String)
         Parse(System.String,System.Globalization.NumberStyles)
         Remainder(System.Decimal,System.Decimal)
         Round(System.Decimal)
@@ -1791,7 +1845,6 @@ Summary:
         Round(System.Decimal,System.Int32,System.MidpointRounding)
         Round(System.Decimal,System.MidpointRounding)
         ToByte(System.Decimal)
-        ToDouble(System.Decimal)
         ToInt16(System.Decimal)
         ToInt32(System.Decimal)
         ToInt64(System.Decimal)
@@ -1904,12 +1957,10 @@ Summary:
     System.Double
         GetTypeCode()
         Parse(System.String,System.Globalization.NumberStyles)
-        ToString(System.String)
         TryParse(System.String,System.Double&)
     System.DuplicateWaitObjectException
     System.Enum
         GetNames(System.Type)
-        GetValues(System.Type)
     System.Exception
         FixRemotingException()
         get_Data()
@@ -2381,8 +2432,6 @@ Summary:
         ReadAllLines(System.IO.StreamReader)
         ReadAllLines(System.String)
         ReadAllLines(System.String,System.Text.Encoding)
-        ReadAllText(System.String)
-        ReadAllText(System.String,System.Text.Encoding)
         Replace(System.String,System.String,System.String)
         Replace(System.String,System.String,System.String,System.Boolean)
         SetAttributes(System.String,System.IO.FileAttributes)
@@ -2396,8 +2445,6 @@ Summary:
         WriteAllLines(System.IO.StreamWriter,System.String[])
         WriteAllLines(System.String,System.String[])
         WriteAllLines(System.String,System.String[],System.Text.Encoding)
-        WriteAllText(System.String,System.String)
-        WriteAllText(System.String,System.String,System.Text.Encoding)
     System.IO.FileInfo
     System.IO.FileLoadException
         .ctor(System.String)
@@ -2529,7 +2576,6 @@ Summary:
         .ctor(System.IO.Stream,System.Boolean)
         .ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)
         .ctor(System.String,System.Boolean)
-        .ctor(System.String,System.Text.Encoding)
         .ctor(System.String,System.Text.Encoding,System.Boolean)
         DataAvailable()
         DiscardBufferedData()
@@ -2544,7 +2590,6 @@ Summary:
         DefaultFileBufferSize
         MinimumBufferSize
         .ctor(System.String,System.Boolean)
-        .ctor(System.String,System.Boolean,System.Text.Encoding)
         get_AutoFlush()
         get_BaseStream()
         get_Encoding()
@@ -3508,7 +3553,6 @@ Summary:
         get_IsHideBySig()
         get_IsPrivate()
         get_IsSpecialName()
-        GetCurrentMethod()
         GetMethodBody()
         GetMethodBody(System.IntPtr)
         GetMethodBodyInternal(System.IntPtr)
@@ -3750,7 +3794,6 @@ Summary:
     System.Runtime.CompilerServices.CallConvStdcall
     System.Runtime.CompilerServices.CallConvThiscall
     System.Runtime.CompilerServices.CompilationRelaxationsAttribute
-        .ctor(System.Int32)
         get_CompilationRelaxations()
     System.Runtime.CompilerServices.CompilerGlobalScopeAttribute
     System.Runtime.CompilerServices.CompilerMarshalOverride
@@ -4334,8 +4377,6 @@ Summary:
     System.Runtime.InteropServices.ComDefaultInterfaceAttribute
         get_Value()
     System.Runtime.InteropServices.ComEventInterfaceAttribute
-    System.Runtime.InteropServices.COMException
-        .ctor(System.String,System.Exception)
     System.Runtime.InteropServices.ComRegisterFunctionAttribute
     System.Runtime.InteropServices.ComSourceInterfacesAttribute
     System.Runtime.InteropServices.ComTypes.BIND_OPTS
@@ -4439,7 +4480,6 @@ Summary:
         .ctor()
         RegisterObjectCreationCallback(System.Runtime.InteropServices.ObjectCreationDelegate)
     System.Runtime.InteropServices.ExternalException
-        .ctor(System.String,System.Exception)
         get_ErrorCode()
     System.Runtime.InteropServices.FieldOffsetAttribute
         get_Value()
@@ -4816,10 +4856,8 @@ Summary:
     System.Runtime.Remoting.Messaging.MethodDictionary
         .ctor(System.String[])
         Clear()
-        Contains(System.Object)
         get_IsFixedSize()
         get_IsReadOnly()
-        get_Keys()
         get_MethodKeys()
     System.Runtime.Remoting.Messaging.MethodResponse
         .ctor(System.Runtime.Remoting.Messaging.Header[],System.Runtime.Remoting.Messaging.IMethodCallMessage)
@@ -5089,8 +5127,6 @@ Summary:
         DefaultBindingFlags
         get_HasDeserializingCallbacks()
         get_HasSerializingCallbacks()
-    System.Runtime.Serialization.SerializationException
-        .ctor(System.String,System.Exception)
     System.Runtime.Serialization.SerializationInfo
         .ctor(System.Type)
         .ctor(System.Type,System.Runtime.Serialization.SerializationEntry[])
@@ -5164,6 +5200,24 @@ Summary:
     System.Security.AccessControl.CommonAce
     System.Security.AccessControl.CommonAcl
     System.Security.AccessControl.CommonObjectSecurity
+        access_rules
+        audit_rules
+        .ctor(System.Boolean)
+        AddAccessRule(System.Security.AccessControl.AccessRule)
+        AddAuditRule(System.Security.AccessControl.AuditRule)
+        GetAccessRules(System.Boolean,System.Boolean,System.Type)
+        GetAuditRules(System.Boolean,System.Boolean,System.Type)
+        ModifyAccess(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AccessRule,System.Boolean&)
+        ModifyAudit(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AuditRule,System.Boolean&)
+        RemoveAccessRule(System.Security.AccessControl.AccessRule)
+        RemoveAccessRuleAll(System.Security.AccessControl.AccessRule)
+        RemoveAccessRuleSpecific(System.Security.AccessControl.AccessRule)
+        RemoveAuditRule(System.Security.AccessControl.AuditRule)
+        RemoveAuditRuleAll(System.Security.AccessControl.AuditRule)
+        RemoveAuditRuleSpecific(System.Security.AccessControl.AuditRule)
+        ResetAccessRule(System.Security.AccessControl.AccessRule)
+        SetAccessRule(System.Security.AccessControl.AccessRule)
+        SetAuditRule(System.Security.AccessControl.AuditRule)
     System.Security.AccessControl.CommonSecurityDescriptor
     System.Security.AccessControl.CompoundAce
     System.Security.AccessControl.CompoundAceType
@@ -5172,6 +5226,24 @@ Summary:
     System.Security.AccessControl.CryptoKeyAuditRule
     System.Security.AccessControl.CryptoKeyRights
     System.Security.AccessControl.CryptoKeySecurity
+        .ctor()
+        .ctor(System.Security.AccessControl.CommonSecurityDescriptor)
+        AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)
+        AddAccessRule(System.Security.AccessControl.CryptoKeyAccessRule)
+        AddAuditRule(System.Security.AccessControl.CryptoKeyAuditRule)
+        AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)
+        get_AccessRightType()
+        get_AccessRuleType()
+        get_AuditRuleType()
+        RemoveAccessRule(System.Security.AccessControl.CryptoKeyAccessRule)
+        RemoveAccessRuleAll(System.Security.AccessControl.CryptoKeyAccessRule)
+        RemoveAccessRuleSpecific(System.Security.AccessControl.CryptoKeyAccessRule)
+        RemoveAuditRule(System.Security.AccessControl.CryptoKeyAuditRule)
+        RemoveAuditRuleAll(System.Security.AccessControl.CryptoKeyAuditRule)
+        RemoveAuditRuleSpecific(System.Security.AccessControl.CryptoKeyAuditRule)
+        ResetAccessRule(System.Security.AccessControl.CryptoKeyAccessRule)
+        SetAccessRule(System.Security.AccessControl.CryptoKeyAccessRule)
+        SetAuditRule(System.Security.AccessControl.CryptoKeyAuditRule)
     System.Security.AccessControl.CustomAce
     System.Security.AccessControl.DirectoryObjectSecurity
     System.Security.AccessControl.DirectorySecurity
@@ -5195,11 +5267,76 @@ Summary:
     System.Security.AccessControl.MutexRights
     System.Security.AccessControl.MutexSecurity
     System.Security.AccessControl.NativeObjectSecurity
+        .ctor()
+        .ctor(System.Boolean,System.Security.AccessControl.ResourceType)
+        .ctor(System.Boolean,System.Security.AccessControl.ResourceType,System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections)
+        .ctor(System.Boolean,System.Security.AccessControl.ResourceType,System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections,System.Security.AccessControl.NativeObjectSecurity/ExceptionFromErrorCode,System.Object)
+        .ctor(System.Boolean,System.Security.AccessControl.ResourceType,System.Security.AccessControl.NativeObjectSecurity/ExceptionFromErrorCode,System.Object)
+        .ctor(System.Boolean,System.Security.AccessControl.ResourceType,System.String,System.Security.AccessControl.AccessControlSections)
+        .ctor(System.Boolean,System.Security.AccessControl.ResourceType,System.String,System.Security.AccessControl.AccessControlSections,System.Security.AccessControl.NativeObjectSecurity/ExceptionFromErrorCode,System.Object)
+        Persist(System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections)
+        Persist(System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections,System.Object)
+        Persist(System.String,System.Security.AccessControl.AccessControlSections)
+        Persist(System.String,System.Security.AccessControl.AccessControlSections,System.Object)
+    System.Security.AccessControl.NativeObjectSecurity/ExceptionFromErrorCode
     System.Security.AccessControl.ObjectAccessRule
     System.Security.AccessControl.ObjectAce
     System.Security.AccessControl.ObjectAceFlags
     System.Security.AccessControl.ObjectAuditRule
     System.Security.AccessControl.ObjectSecurity
+        access_rules_modified
+        audit_rules_modified
+        group_modified
+        is_container
+        is_ds
+        owner_modified
+        .ctor()
+        .ctor(System.Boolean,System.Boolean)
+        AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)
+        AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)
+        get_AccessRightType()
+        get_AccessRulesModified()
+        get_AccessRuleType()
+        get_AreAccessRulesCanonical()
+        get_AreAccessRulesProtected()
+        get_AreAuditRulesCanonical()
+        get_AreAuditRulesProtected()
+        get_AuditRulesModified()
+        get_AuditRuleType()
+        get_GroupModified()
+        get_IsContainer()
+        get_IsDS()
+        get_OwnerModified()
+        GetGroup(System.Type)
+        GetOwner(System.Type)
+        GetSecurityDescriptorBinaryForm()
+        GetSecurityDescriptorSddlForm(System.Security.AccessControl.AccessControlSections)
+        IsSddlConversionSupported()
+        ModifyAccess(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AccessRule,System.Boolean&)
+        ModifyAccessRule(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AccessRule,System.Boolean&)
+        ModifyAudit(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AuditRule,System.Boolean&)
+        ModifyAuditRule(System.Security.AccessControl.AccessControlModification,System.Security.AccessControl.AuditRule,System.Boolean&)
+        Persist(System.Boolean,System.String,System.Security.AccessControl.AccessControlSections)
+        Persist(System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections)
+        Persist(System.String,System.Security.AccessControl.AccessControlSections)
+        PurgeAccessRules(System.Security.Principal.IdentityReference)
+        PurgeAuditRules(System.Security.Principal.IdentityReference)
+        ReadLock()
+        ReadUnlock()
+        set_AccessRulesModified(System.Boolean)
+        set_AuditRulesModified(System.Boolean)
+        set_GroupModified(System.Boolean)
+        set_OwnerModified(System.Boolean)
+        SetAccessRuleProtection(System.Boolean,System.Boolean)
+        SetAuditRuleProtection(System.Boolean,System.Boolean)
+        SetGroup(System.Security.Principal.IdentityReference)
+        SetOwner(System.Security.Principal.IdentityReference)
+        SetSecurityDescriptorBinaryForm(System.Byte[])
+        SetSecurityDescriptorBinaryForm(System.Byte[],System.Security.AccessControl.AccessControlSections)
+        SetSecurityDescriptorSddlForm(System.String)
+        SetSecurityDescriptorSddlForm(System.String,System.Security.AccessControl.AccessControlSections)
+        WriteLock()
+        WriteUnlock()
     System.Security.AccessControl.PrivilegeNotHeldException
     System.Security.AccessControl.PropagationFlags
     System.Security.AccessControl.QualifiedAce
@@ -5230,362 +5367,6 @@ Summary:
         ThrowExecutionEngineException(System.Security.Permissions.SecurityAction)
         ThrowSecurityException(System.Object,System.String,System.Security.SecurityFrame,System.Security.Permissions.SecurityAction,System.Security.IPermission)
         Union(System.Security.IPermission)
-    System.Security.Cryptography.AsymmetricAlgorithm
-        Create()
-        Create(System.String)
-        get_KeyExchangeAlgorithm()
-        get_LegalKeySizes()
-        get_SignatureAlgorithm()
-    System.Security.Cryptography.AsymmetricKeyExchangeDeformatter
-    System.Security.Cryptography.AsymmetricKeyExchangeFormatter
-        CreateKeyExchange(System.Byte[],System.Type)
-        get_Parameters()
-        SetKey(System.Security.Cryptography.AsymmetricAlgorithm)
-    System.Security.Cryptography.AsymmetricSignatureDeformatter
-        VerifySignature(System.Security.Cryptography.HashAlgorithm,System.Byte[])
-    System.Security.Cryptography.AsymmetricSignatureFormatter
-        CreateSignature(System.Security.Cryptography.HashAlgorithm)
-    System.Security.Cryptography.CryptoAPITransform
-    System.Security.Cryptography.CryptoConfig
-        default3DES
-        defaultAES
-        defaultBase64
-        defaultC14N
-        defaultC14NWithComments
-        defaultDES
-        defaultDSA
-        defaultDSASigDesc
-        defaultEnveloped
-        defaultExcC14N
-        defaultExcC14NWithComments
-        defaultHMAC
-        defaultHMACMD5
-        defaultHMACRIPEMD160
-        defaultHMACSHA256
-        defaultHMACSHA384
-        defaultHMACSHA512
-        defaultKeyName
-        defaultKeyValueDSA
-        defaultKeyValueRSA
-        defaultMAC3DES
-        defaultMD5
-        defaultNamespace
-        defaultRC2
-        defaultRetrievalMethod
-        defaultRIPEMD160
-        defaultRNG
-        defaultRSA
-        defaultRSASigDesc
-        defaultSHA1
-        defaultSHA256
-        defaultSHA384
-        defaultSHA512
-        defaultX509Chain
-        defaultX509Data
-        defaultXmlDecryption
-        defaultXPath
-        defaultXslt
-        managedSHA1
-        name3DESa
-        name3DESb
-        name3DESc
-        name3DESd
-        name3DESKeyWrap
-        nameAESa
-        nameAESb
-        nameAESc
-        nameDESa
-        nameDESb
-        nameDSAa
-        nameDSAb
-        nameHMACa
-        nameHMACb
-        nameHMACMD5a
-        nameHMACMD5b
-        nameHMACRIPEMD160a
-        nameHMACRIPEMD160b
-        nameHMACSHA1a
-        nameHMACSHA1b
-        nameHMACSHA256a
-        nameHMACSHA256b
-        nameHMACSHA384a
-        nameHMACSHA384b
-        nameHMACSHA512a
-        nameHMACSHA512b
-        nameKeyHasha
-        nameMAC3DESa
-        nameMAC3DESb
-        nameMD5a
-        nameMD5b
-        nameRC2a
-        nameRC2b
-        nameRIPEMD160a
-        nameRIPEMD160b
-        nameRIPEMD160c
-        nameRNGa
-        nameRNGb
-        nameRSAa
-        nameRSAb
-        nameRSAc
-        nameSHA1a
-        nameSHA1b
-        nameSHA1c
-        nameSHA1d
-        nameSHA256a
-        nameSHA256b
-        nameSHA256c
-        nameSHA384a
-        nameSHA384b
-        nameSHA384c
-        nameSHA512a
-        nameSHA512b
-        nameSHA512c
-        nameX509BasicConstraints
-        nameX509Chain
-        nameX509EnhancedKeyUsage
-        nameX509KeyUsage
-        nameX509SubjectKeyIdentifier
-        oid3DES
-        oid3DESKeyWrap
-        oidDES
-        oidDSA
-        oidMD5
-        oidRC2
-        oidSHA1
-        oidSHA256
-        oidSHA384
-        oidSHA512
-        oidX509BasicConstraints
-        oidX509EnhancedKeyUsage
-        oidX509KeyUsage
-        oidX509SubjectKeyIdentifier
-        urlBase64
-        urlC14N
-        urlC14NWithComments
-        urlDSASHA1
-        urlEnveloped
-        urlExcC14N
-        urlExcC14NWithComments
-        urlHMACRIPEMD160
-        urlHMACSHA256
-        urlHMACSHA384
-        urlHMACSHA512
-        urlKeyName
-        urlKeyValueDSA
-        urlKeyValueRSA
-        urlRetrievalMethod
-        urlRSASHA1
-        urlSHA1
-        urlSHA256
-        urlSHA512
-        urlX509Data
-        urlXmlDecryption
-        urlXmlDsig
-        urlXPath
-        urlXslt
-        .ctor()
-        LoadConfig(System.String,System.Collections.Hashtable,System.Collections.Hashtable)
-    System.Security.Cryptography.CryptoConfig/CryptoHandler
-    System.Security.Cryptography.CryptographicException
-        .ctor(System.Int32)
-    System.Security.Cryptography.CryptographicUnexpectedOperationException
-        .ctor(System.String,System.Exception)
-        .ctor(System.String,System.String)
-    System.Security.Cryptography.CryptoStream
-    System.Security.Cryptography.CryptoStreamMode
-    System.Security.Cryptography.CspKeyContainerInfo
-    System.Security.Cryptography.CspParameters
-        _password
-        _windowHandle
-        .ctor(System.Int32,System.String,System.String,System.Security.AccessControl.CryptoKeySecurity,System.IntPtr)
-        .ctor(System.Int32,System.String,System.String,System.Security.AccessControl.CryptoKeySecurity,System.Security.SecureString)
-        get_CryptoKeySecurity()
-        get_KeyPassword()
-        get_ParentWindowHandle()
-        set_CryptoKeySecurity(System.Security.AccessControl.CryptoKeySecurity)
-        set_KeyPassword(System.Security.SecureString)
-        set_ParentWindowHandle(System.IntPtr)
-    System.Security.Cryptography.DeriveBytes
-    System.Security.Cryptography.DES
-        keySizeByte
-    System.Security.Cryptography.DSACryptoServiceProvider
-        PROV_DSS_DH
-        .ctor(System.Security.Cryptography.CspParameters)
-        ExportCspBlob(System.Boolean)
-        get_CspKeyContainerInfo()
-        get_KeyExchangeAlgorithm()
-        get_PersistKeyInCsp()
-        get_SignatureAlgorithm()
-        get_UseMachineKeyStore()
-        ImportCspBlob(System.Byte[])
-        set_PersistKeyInCsp(System.Boolean)
-        set_UseMachineKeyStore(System.Boolean)
-        SignData(System.Byte[])
-        SignData(System.Byte[],System.Int32,System.Int32)
-        SignData(System.IO.Stream)
-        SignHash(System.Byte[],System.String)
-        VerifyData(System.Byte[],System.Byte[])
-        VerifyHash(System.Byte[],System.String,System.Byte[])
-    System.Security.Cryptography.DSASignatureFormatter
-        .ctor(System.Security.Cryptography.AsymmetricAlgorithm)
-    System.Security.Cryptography.FromBase64Transform
-    System.Security.Cryptography.FromBase64TransformMode
-    System.Security.Cryptography.HashAlgorithm
-        Clear()
-        ComputeHash(System.IO.Stream)
-        Create()
-        get_CanTransformMultipleBlocks()
-        get_InputBlockSize()
-        get_OutputBlockSize()
-    System.Security.Cryptography.HMAC
-        get_HashName()
-    System.Security.Cryptography.HMACSHA1
-        .ctor(System.Byte[],System.Boolean)
-    System.Security.Cryptography.HMACSHA384
-        get_ProduceLegacyHmacValues()
-    System.Security.Cryptography.HMACSHA512
-        get_ProduceLegacyHmacValues()
-    System.Security.Cryptography.ICryptoTransform
-        get_CanTransformMultipleBlocks()
-        get_InputBlockSize()
-        get_OutputBlockSize()
-    System.Security.Cryptography.ICspAsymmetricAlgorithm
-        ExportCspBlob(System.Boolean)
-        get_CspKeyContainerInfo()
-        ImportCspBlob(System.Byte[])
-    System.Security.Cryptography.KeyedHashAlgorithm
-        Create()
-        Create(System.String)
-    System.Security.Cryptography.KeyNumber
-    System.Security.Cryptography.MACTripleDES
-        .ctor(System.Byte[])
-        .ctor(System.String,System.Byte[])
-        get_Padding()
-        set_Padding(System.Security.Cryptography.PaddingMode)
-    System.Security.Cryptography.MaskGenerationMethod
-    System.Security.Cryptography.MD5CryptoServiceProvider
-        BLOCK_SIZE_BYTES
-        HASH_SIZE_BYTES
-    System.Security.Cryptography.PasswordDeriveBytes
-    System.Security.Cryptography.PKCS1MaskGenerationMethod
-    System.Security.Cryptography.RC2
-        set_EffectiveKeySize(System.Int32)
-    System.Security.Cryptography.RC2CryptoServiceProvider
-        _useSalt
-        get_UseSalt()
-        set_EffectiveKeySize(System.Int32)
-        set_UseSalt(System.Boolean)
-    System.Security.Cryptography.Rfc2898DeriveBytes
-    System.Security.Cryptography.RijndaelManagedTransform
-        Clear()
-        get_BlockSizeValue()
-        get_CanTransformMultipleBlocks()
-        get_InputBlockSize()
-        get_OutputBlockSize()
-        Reset()
-    System.Security.Cryptography.RIPEMD160
-        Create()
-        Create(System.String)
-    System.Security.Cryptography.RIPEMD160Managed
-        BLOCK_SIZE_BYTES
-    System.Security.Cryptography.RSACryptoServiceProvider
-        <>f__switch$map29
-        PROV_RSA_FULL
-        .ctor(System.Int32,System.Security.Cryptography.CspParameters)
-        Decrypt(System.Byte[],System.Boolean)
-        Encrypt(System.Byte[],System.Boolean)
-        ExportCspBlob(System.Boolean)
-        get_CspKeyContainerInfo()
-        get_KeyExchangeAlgorithm()
-        get_PersistKeyInCsp()
-        get_SignatureAlgorithm()
-        get_UseMachineKeyStore()
-        GetHash(System.Object)
-        GetHashNameFromOID(System.String)
-        ImportCspBlob(System.Byte[])
-        set_PersistKeyInCsp(System.Boolean)
-        set_UseMachineKeyStore(System.Boolean)
-        SignData(System.Byte[],System.Int32,System.Int32,System.Object)
-        SignData(System.Byte[],System.Object)
-        SignData(System.IO.Stream,System.Object)
-        SignHash(System.Byte[],System.String)
-        VerifyData(System.Byte[],System.Object,System.Byte[])
-        VerifyHash(System.Byte[],System.String,System.Byte[])
-    System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter
-    System.Security.Cryptography.RSAOAEPKeyExchangeFormatter
-    System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter
-    System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter
-        .ctor()
-        CreateKeyExchange(System.Byte[],System.Type)
-        get_Parameters()
-        get_Rng()
-        set_Rng(System.Security.Cryptography.RandomNumberGenerator)
-        SetKey(System.Security.Cryptography.AsymmetricAlgorithm)
-    System.Security.Cryptography.RSAPKCS1SHA1SignatureDescription
-        CreateDeformatter(System.Security.Cryptography.AsymmetricAlgorithm)
-    System.Security.Cryptography.RSAPKCS1SignatureFormatter
-        .ctor(System.Security.Cryptography.AsymmetricAlgorithm)
-    System.Security.Cryptography.SHA1Internal
-        BLOCK_SIZE_BYTES
-        HASH_SIZE_BYTES
-    System.Security.Cryptography.SHA256Managed
-        BLOCK_SIZE_BYTES
-        HASH_SIZE_BYTES
-    System.Security.Cryptography.SignatureDescription
-        .ctor(System.Security.SecurityElement)
-        CreateDeformatter(System.Security.Cryptography.AsymmetricAlgorithm)
-        CreateDigest()
-        CreateFormatter(System.Security.Cryptography.AsymmetricAlgorithm)
-        get_DeformatterAlgorithm()
-        get_DigestAlgorithm()
-        get_FormatterAlgorithm()
-        get_KeyAlgorithm()
-    System.Security.Cryptography.SymmetricAlgorithm
-        Create()
-        get_LegalBlockSizes()
-        set_FeedbackSize(System.Int32)
-        ValidKeySize(System.Int32)
-    System.Security.Cryptography.ToBase64Transform
-        inputBlockSize
-        outputBlockSize
-        .ctor()
-        Clear()
-        get_CanTransformMultipleBlocks()
-    System.Security.Cryptography.X509Certificates.X509Certificate
-        .ctor(System.Byte[],System.Security.SecureString)
-        .ctor(System.Byte[],System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
-        .ctor(System.Byte[],System.String)
-        .ctor(System.Byte[],System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
-        .ctor(System.IntPtr)
-        .ctor(System.String)
-        .ctor(System.String,System.Security.SecureString)
-        .ctor(System.String,System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
-        .ctor(System.String,System.String)
-        .ctor(System.String,System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
-        CreateFromCertFile(System.String)
-        CreateFromSignedFile(System.String)
-        Export(System.Security.Cryptography.X509Certificates.X509ContentType)
-        Export(System.Security.Cryptography.X509Certificates.X509ContentType,System.Byte[])
-        Export(System.Security.Cryptography.X509Certificates.X509ContentType,System.Security.SecureString)
-        Export(System.Security.Cryptography.X509Certificates.X509ContentType,System.String)
-        get_Handle()
-        GetFormat()
-        GetKeyAlgorithm()
-        GetKeyAlgorithmParameters()
-        GetKeyAlgorithmParametersString()
-        GetPublicKeyString()
-        GetRawCertDataString()
-        GetSerialNumber()
-        GetSerialNumberString()
-        Import(System.Byte[])
-        Import(System.Byte[],System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
-        Import(System.String)
-        Import(System.String,System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
-        Import(System.String,System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
-        InitFromHandle(System.IntPtr)
-        Load(System.String)
-    System.Security.Cryptography.X509Certificates.X509Certificate/CertificateContext
-    System.Security.Cryptography.X509Certificates.X509ContentType
     System.Security.HostProtectionException
     System.Security.HostSecurityManager
     System.Security.HostSecurityManagerOptions
@@ -6153,7 +5934,6 @@ Summary:
         Parse(System.String)
         Parse(System.String,System.Globalization.NumberStyles)
         Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)
-        ToString(System.String)
         TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Single&)
         TryParse(System.String,System.Single&)
     System.STAThreadAttribute
@@ -6232,13 +6012,11 @@ Summary:
         get_BodyName()
         get_CodePage()
         get_EncodingName()
-        get_HeaderName()
         get_IsBrowserDisplay()
         get_IsBrowserSave()
         get_IsMailNewsDisplay()
         get_IsMailNewsSave()
         get_IsSingleByte()
-        get_WebName()
         get_WindowsCodePage()
         GetCharCount(System.Byte*,System.Int32)
         GetCharCount(System.Byte[])
@@ -6259,13 +6037,11 @@ Summary:
         ISOLATIN_CODE_PAGE
         get_BodyName()
         get_EncodingName()
-        get_HeaderName()
         get_IsBrowserDisplay()
         get_IsBrowserSave()
         get_IsMailNewsDisplay()
         get_IsMailNewsSave()
         get_IsSingleByte()
-        get_WebName()
         IsAlwaysNormalized(System.Text.NormalizationForm)
     System.Text.MLangCodePageEncoding
     System.Text.StringBuilder
@@ -6458,11 +6234,485 @@ Summary:
     System.WeakReference
         set_Target(System.Object)
 ---------------------------------------------------
+Assembly: Purchasing.Common
+---------------------------------------------------
+Summary:
+  Total Type Removals = 2
+    Nested = 0
+    Interfaces = 0
+    Abstract Classes = 1
+    Generic Types = 0
+    Generic Interfaces = 0
+    Generic Abstract Classes = 0
+    Attributes = 0
+  Total Field Removals = 1
+  Total Method Removals = 9
+  References Removed = 0
+---------------------------------------------------
+    <PrivateImplementationDetails>
+    UnityEngine.Purchasing.MiniJson
+        .ctor()
+    UnityEngine.Purchasing.MiniJSON.Json/Parser
+        WORD_BREAK
+    UnityEngine.Purchasing.MiniJSON.MiniJsonExtensions
+        ArrayListFromJson(System.String)
+        Get<T>(System.Collections.Generic.Dictionary`2<System.String,System.Object>,System.String)
+        GetBool(System.Collections.Generic.Dictionary`2<System.String,System.Object>,System.String)
+        GetEnum<T>(System.Collections.Generic.Dictionary`2<System.String,System.Object>,System.String)
+        GetHash(System.Collections.Generic.Dictionary`2<System.String,System.Object>,System.String)
+        GetLong(System.Collections.Generic.Dictionary`2<System.String,System.Object>,System.String)
+        GetStringList(System.Collections.Generic.Dictionary`2<System.String,System.Object>,System.String)
+        toJson(System.String[])
+    UnityEngine.Purchasing.VersionCheck
+---------------------------------------------------
+Assembly: Security
+---------------------------------------------------
+Summary:
+  Total Type Removals = 22
+    Nested = 1
+    Interfaces = 0
+    Abstract Classes = 1
+    Generic Types = 0
+    Generic Interfaces = 0
+    Generic Abstract Classes = 0
+    Attributes = 0
+  Total Field Removals = 8
+  Total Method Removals = 126
+  References Removed = 0
+---------------------------------------------------
+    LCLib.Asn1Processor.Asn1Util
+    LipingShare.LCLib.Asn1Processor.Asn1Node
+        BitStringUnusedFiledLength
+        defaultLineLen
+        indentStep
+        minLineLen
+        TagLength
+        Clone()
+        get_DataOffset()
+        get_IsEmptyData()
+        get_IsIndefiniteLength()
+        get_LengthFieldBytes()
+        get_ParseEncapsulatedData()
+        get_Path()
+        get_RequireRecalculatePar()
+        get_UnusedBits()
+        GetDecendantNodeByOid(System.String,LipingShare.LCLib.Asn1Processor.Asn1Node)
+        GetDescendantNodeByPath(System.String)
+        GetDescendantNodeCount(LipingShare.LCLib.Asn1Processor.Asn1Node)
+        GetLabel(System.UInt32)
+        GetRawData()
+        InsertChild(LipingShare.LCLib.Asn1Processor.Asn1Node,LipingShare.LCLib.Asn1Processor.Asn1Node)
+        InsertChild(LipingShare.LCLib.Asn1Processor.Asn1Node,System.Int32)
+        InsertChildAfter(LipingShare.LCLib.Asn1Processor.Asn1Node,LipingShare.LCLib.Asn1Processor.Asn1Node)
+        InsertChildAfter(LipingShare.LCLib.Asn1Processor.Asn1Node,System.Int32)
+        LoadData(System.Byte[])
+        RemoveChild(LipingShare.LCLib.Asn1Processor.Asn1Node)
+        RemoveChild(System.Int32)
+        set_Data(System.Byte[])
+        set_IsIndefiniteLength(System.Boolean)
+        set_ParseEncapsulatedData(System.Boolean)
+        set_Tag(System.Byte)
+        set_UnusedBits(System.Byte)
+        SetData(System.Byte[])
+    LipingShare.LCLib.Asn1Processor.Asn1Node/TagTextMask
+    LipingShare.LCLib.Asn1Processor.Asn1Parser
+        get_ParseEncapsulatedData()
+        get_RawData()
+        GetNodeByOid(System.String)
+        GetNodeByPath(System.String)
+        LoadData(System.String)
+        LoadPemData(System.String)
+        SaveData(System.String)
+        set_ParseEncapsulatedData(System.Boolean)
+    LipingShare.LCLib.Asn1Processor.Asn1Tag
+    LipingShare.LCLib.Asn1Processor.Asn1TagClasses
+    LipingShare.LCLib.Asn1Processor.Asn1Util
+        PemEndStr
+        PemStartStr
+        .ctor()
+        BitPrecision(System.UInt64)
+        BytesToPem(System.Byte[])
+        BytesToPem(System.Byte[],System.String)
+        GetHexDigitsVal(System.Char)
+        GetPemFileHeader(System.String)
+        GetPemHeader(System.String)
+        HexStrToBytes(System.String)
+        IsAsn1EncodedHexStr(System.String)
+        IsEqual(System.Byte[],System.Byte[])
+        IsHexStr(System.String)
+        IsPemFormated(System.String)
+        IsPemFormatedFile(System.String)
+        IsValidHexDigits(System.Char)
+        PemToBytes(System.String)
+        PemToStream(System.String)
+        ReadRegInfo(System.String,System.String)
+        StringToBytes(System.String)
+        WriteRegInfo(System.String,System.String,System.Object)
+    LipingShare.LCLib.Asn1Processor.IAsn1Node
+        AddChild(LipingShare.LCLib.Asn1Processor.Asn1Node)
+        ClearAll()
+        Clone()
+        get_ChildNodeCount()
+        get_Data()
+        get_DataLength()
+        get_DataOffset()
+        get_Deepness()
+        get_LengthFieldBytes()
+        get_MaskedTag()
+        get_ParentNode()
+        get_ParseEncapsulatedData()
+        get_Path()
+        get_Tag()
+        get_TagName()
+        get_UnusedBits()
+        GetChildNode(System.Int32)
+        GetDataStr(System.Boolean)
+        GetDescendantNodeByPath(System.String)
+        GetLabel(System.UInt32)
+        GetText(LipingShare.LCLib.Asn1Processor.Asn1Node,System.Int32)
+        InsertChild(LipingShare.LCLib.Asn1Processor.Asn1Node,LipingShare.LCLib.Asn1Processor.Asn1Node)
+        InsertChild(LipingShare.LCLib.Asn1Processor.Asn1Node,System.Int32)
+        InsertChildAfter(LipingShare.LCLib.Asn1Processor.Asn1Node,LipingShare.LCLib.Asn1Processor.Asn1Node)
+        InsertChildAfter(LipingShare.LCLib.Asn1Processor.Asn1Node,System.Int32)
+        LoadData(System.IO.Stream)
+        RemoveChild(LipingShare.LCLib.Asn1Processor.Asn1Node)
+        RemoveChild(System.Int32)
+        SaveData(System.IO.Stream)
+        set_Data(System.Byte[])
+        set_ParseEncapsulatedData(System.Boolean)
+        set_Tag(System.Byte)
+    LipingShare.LCLib.Asn1Processor.Oid
+        Encode(System.IO.Stream,System.String)
+        Encode(System.String)
+        EncodeValue(System.IO.Stream,System.UInt64)
+    LipingShare.LCLib.Asn1Processor.RelativeOid
+        Encode(System.IO.Stream,System.String)
+    UnityEngine.Purchasing.Security.AppleInAppPurchaseReceipt
+        get_cancellationDate()
+        get_originalPurchaseDate()
+        get_originalTransactionIdentifier()
+        get_purchaseDate()
+        get_quantity()
+        get_subscriptionExpirationDate()
+    UnityEngine.Purchasing.Security.AppleReceipt
+        <expirationDate>k__BackingField
+        get_appVersion()
+        get_bundleID()
+        get_expirationDate()
+        get_hash()
+        get_opaque()
+        get_originalApplicationVersion()
+        get_receiptCreationDate()
+        set_expirationDate(System.DateTime)
+    UnityEngine.Purchasing.Security.AppleValidator
+    UnityEngine.Purchasing.Security.CrossPlatformValidator
+    UnityEngine.Purchasing.Security.DistinguishedName
+        get_SerialNumber()
+    UnityEngine.Purchasing.Security.GenericValidationException
+    UnityEngine.Purchasing.Security.GooglePlayReceipt
+    UnityEngine.Purchasing.Security.GooglePlayValidator
+    UnityEngine.Purchasing.Security.GooglePurchaseState
+    UnityEngine.Purchasing.Security.IAPSecurityException
+        .ctor(System.String)
+    UnityEngine.Purchasing.Security.InvalidBundleIdException
+    UnityEngine.Purchasing.Security.InvalidPublicKeyException
+    UnityEngine.Purchasing.Security.InvalidReceiptDataException
+    UnityEngine.Purchasing.Security.InvalidSignatureException
+    UnityEngine.Purchasing.Security.IPurchaseReceipt
+        get_productID()
+        get_purchaseDate()
+        get_transactionID()
+    UnityEngine.Purchasing.Security.MissingStoreSecretException
+    UnityEngine.Purchasing.Security.Obfuscator
+    UnityEngine.Purchasing.Security.PKCS7
+        Load(System.Byte[])
+        ValidateChain(UnityEngine.Purchasing.Security.X509Cert,UnityEngine.Purchasing.Security.X509Cert,System.DateTime)
+        Verify(UnityEngine.Purchasing.Security.X509Cert,System.DateTime)
+    UnityEngine.Purchasing.Security.RSAKey
+        .ctor(System.Byte[])
+        get_rsa()
+        Verify(System.Byte[],System.Byte[])
+    UnityEngine.Purchasing.Security.SignerInfo
+        get_EncryptedDigest()
+        get_IssuerSerialNumber()
+    UnityEngine.Purchasing.Security.StoreNotSupportedException
+    UnityEngine.Purchasing.Security.UnityChannelReceipt
+    UnityEngine.Purchasing.Security.UnityChannelReceiptParser
+    UnityEngine.Purchasing.Security.UnityChannelValidator
+    UnityEngine.Purchasing.Security.UnsupportedDigestAlgorithm
+    UnityEngine.Purchasing.Security.UnsupportedEncryptionAlgorithm
+    UnityEngine.Purchasing.Security.X509Cert
+        .ctor(System.Byte[])
+        CheckCertTime(System.DateTime)
+        CheckSignature(UnityEngine.Purchasing.Security.X509Cert)
+        get_PubKey()
+        get_SelfSigned()
+        get_SerialNumber()
+        get_Signature()
+        get_ValidAfter()
+        get_ValidBefore()
+---------------------------------------------------
+Assembly: Stores
+---------------------------------------------------
+Summary:
+  Total Type Removals = 34
+    Nested = 10
+    Interfaces = 0
+    Abstract Classes = 2
+    Generic Types = 1
+    Generic Interfaces = 0
+    Generic Abstract Classes = 0
+    Attributes = 0
+  Total Field Removals = 28
+  Total Method Removals = 132
+  References Removed = 0
+---------------------------------------------------
+    <>f__AnonymousType0`2
+    Uniject.IUtil
+        get_currentTime()
+        get_deviceModel()
+        get_deviceName()
+        get_deviceType()
+        get_isEditor()
+        get_operatingSystem()
+        get_persistentDataPath()
+        get_platform()
+        GetAnyComponentsOfType<T>()
+        GetWaitForSeconds(System.Int32)
+    UnityEngine.Purchasing.AmazonApps
+    UnityEngine.Purchasing.AmazonAppStoreStoreExtensions
+        get_amazonUserId()
+        NotifyUnableToFulfillUnavailableProduct(System.String)
+    UnityEngine.Purchasing.AndroidStore
+    UnityEngine.Purchasing.AndroidStoreMeta
+    UnityEngine.Purchasing.AppleAppStore
+    UnityEngine.Purchasing.AppleStoreImpl
+        get_appReceipt()
+        get_canMakePayments()
+        get_simulateAskToBuy()
+        RefreshAppReceipt(System.Action`1<System.String>,System.Action)
+        set_simulateAskToBuy(System.Boolean)
+        SetApplicationUsername(System.String)
+        SetStorePromotionOrder(System.Collections.Generic.List`1<UnityEngine.Purchasing.Product>)
+        SetStorePromotionVisibility(UnityEngine.Purchasing.Product,UnityEngine.Purchasing.AppleStorePromotionVisibility)
+    UnityEngine.Purchasing.AppleStorePromotionVisibility
+    UnityEngine.Purchasing.AppStoreMeta
+    UnityEngine.Purchasing.CloudMoolahModule
+    UnityEngine.Purchasing.FacebookStore
+    UnityEngine.Purchasing.FacebookStoreImpl
+        consumeItem(System.String)
+    UnityEngine.Purchasing.FakeAmazonExtensions
+        get_amazonUserId()
+        NotifyUnableToFulfillUnavailableProduct(System.String)
+    UnityEngine.Purchasing.FakeAppleConfiguation
+        get_appReceipt()
+        get_canMakePayments()
+    UnityEngine.Purchasing.FakeAppleExtensions
+        <simulateAskToBuy>k__BackingField
+        m_FailRefresh
+        get_simulateAskToBuy()
+        RefreshAppReceipt(System.Action`1<System.String>,System.Action)
+        set_simulateAskToBuy(System.Boolean)
+        SetApplicationUsername(System.String)
+        SetStorePromotionOrder(System.Collections.Generic.List`1<UnityEngine.Purchasing.Product>)
+        SetStorePromotionVisibility(UnityEngine.Purchasing.Product,UnityEngine.Purchasing.AppleStorePromotionVisibility)
+    UnityEngine.Purchasing.FakeGooglePlayConfiguration
+        SetPublicKey(System.String)
+    UnityEngine.Purchasing.FakeMoolahConfiguration
+        m_notificationURL
+        get_appKey()
+        get_hashKey()
+        get_notificationURL()
+        set_notificationURL(System.String)
+    UnityEngine.Purchasing.FakeMoolahExtensions
+        ValidateReceipt(System.String,System.String,System.Action`3<System.String,UnityEngine.Purchasing.ValidateReceiptState,System.String>)
+    UnityEngine.Purchasing.FakeStore
+        Name
+        restoreCalled
+        RegisterPurchaseForRestore(System.String)
+        RestoreTransactions(System.Action`1<System.Boolean>)
+        set_unavailableProductId(System.String)
+    UnityEngine.Purchasing.FakeUnityChannelConfiguration
+        get_fetchReceiptPayloadOnPurchase()
+    UnityEngine.Purchasing.FakeUnityChannelExtensions
+        ConfirmPurchase(System.String,System.Action`3<System.Boolean,System.String,System.String>)
+    UnityEngine.Purchasing.FastRegisterError
+    UnityEngine.Purchasing.GooglePlay
+    UnityEngine.Purchasing.IAmazonExtensions
+        get_amazonUserId()
+        NotifyUnableToFulfillUnavailableProduct(System.String)
+    UnityEngine.Purchasing.IAndroidStoreSelection
+        get_androidStore()
+        get_appStore()
+    UnityEngine.Purchasing.IAppleConfiguration
+        get_appReceipt()
+        get_canMakePayments()
+    UnityEngine.Purchasing.IAppleExtensions
+        get_simulateAskToBuy()
+        RefreshAppReceipt(System.Action`1<System.String>,System.Action)
+        set_simulateAskToBuy(System.Boolean)
+        SetApplicationUsername(System.String)
+        SetStorePromotionOrder(System.Collections.Generic.List`1<UnityEngine.Purchasing.Product>)
+        SetStorePromotionVisibility(UnityEngine.Purchasing.Product,UnityEngine.Purchasing.AppleStorePromotionVisibility)
+    UnityEngine.Purchasing.IFakeExtensions
+        get_unavailableProductId()
+        set_unavailableProductId(System.String)
+    UnityEngine.Purchasing.IGooglePlayConfiguration
+        SetPublicKey(System.String)
+    UnityEngine.Purchasing.IMicrosoftConfiguration
+        get_useMockBillingSystem()
+    UnityEngine.Purchasing.IMoolahConfiguration
+        get_appKey()
+        get_hashKey()
+        get_notificationURL()
+        set_notificationURL(System.String)
+    UnityEngine.Purchasing.IMoolahExtension
+        ValidateReceipt(System.String,System.String,System.Action`3<System.String,UnityEngine.Purchasing.ValidateReceiptState,System.String>)
+    UnityEngine.Purchasing.INativeStoreProvider
+        GetFacebookStore(UnityEngine.Purchasing.IUnityCallback,UnityEngine.Purchasing.Extension.IPurchasingBinder)
+    UnityEngine.Purchasing.INativeUnityChannelStore
+        ConfirmPurchase(System.String,System.Action`3<System.Boolean,System.String,System.String>)
+    UnityEngine.Purchasing.IUnityChannelConfiguration
+        get_fetchReceiptPayloadOnPurchase()
+    UnityEngine.Purchasing.IUnityChannelExtensions
+        ConfirmPurchase(System.String,System.Action`3<System.Boolean,System.String,System.String>)
+    UnityEngine.Purchasing.JSONSerializer
+        .ctor()
+        SerializeProductDescs(UnityEngine.Purchasing.Extension.ProductDescription)
+    UnityEngine.Purchasing.LocaleExtensions
+    UnityEngine.Purchasing.LocalizedProductDescription
+        Clone()
+        EncodeNonLatinCharacters(System.String)
+        set_Description(System.String)
+        set_Title(System.String)
+    UnityEngine.Purchasing.LoginResultState
+    UnityEngine.Purchasing.MacAppStore
+    UnityEngine.Purchasing.MoolahAppStore
+    UnityEngine.Purchasing.MoolahUtil
+    UnityEngine.Purchasing.NativeStoreProvider
+        GetFacebookStore(UnityEngine.Purchasing.IUnityCallback,UnityEngine.Purchasing.Extension.IPurchasingBinder)
+    UnityEngine.Purchasing.PayMethod
+        .ctor()
+        showPaySuccess(System.String,System.String)
+    UnityEngine.Purchasing.ProductCatalog
+        appleSKU
+        kCatalogPath
+        Add(UnityEngine.Purchasing.ProductCatalogItem)
+        Remove(UnityEngine.Purchasing.ProductCatalogItem)
+        Serialize(UnityEngine.Purchasing.ProductCatalog)
+    UnityEngine.Purchasing.ProductCatalogItem
+        pricingTemplateID
+        screenshotPath
+        AddDescription(UnityEngine.Purchasing.TranslationLocale)
+        AddPayout()
+        Clone()
+        get_HasAvailableLocale()
+        get_NextAvailableLocale()
+        get_Payouts()
+        get_translatedDescriptions()
+        GetOrCreateDescription(UnityEngine.Purchasing.TranslationLocale)
+        GetStoreID(System.String)
+        RemoveDescription(UnityEngine.Purchasing.TranslationLocale)
+        RemovePayout(UnityEngine.Purchasing.ProductCatalogPayout)
+        SetStoreID(System.String,System.String)
+        SetStoreIDs(System.Collections.Generic.ICollection`1<UnityEngine.Purchasing.StoreID>)
+    UnityEngine.Purchasing.ProductCatalogItem/<>c__DisplayClass16_0
+    UnityEngine.Purchasing.ProductCatalogItem/<>c__DisplayClass17_0
+    UnityEngine.Purchasing.ProductCatalogItem/<>c__DisplayClass20_0
+    UnityEngine.Purchasing.ProductCatalogItem/<>c__DisplayClass24_0
+    UnityEngine.Purchasing.ProductCatalogPayout
+        MaxDataLength
+        MaxSubtypeLength
+        q
+        get_data()
+        get_quantity()
+        get_subtype()
+        get_type()
+        get_typeString()
+        set_data(System.String)
+        set_quantity(System.Double)
+        set_subtype(System.String)
+        set_type(UnityEngine.Purchasing.ProductCatalogPayout/ProductCatalogPayoutType)
+    UnityEngine.Purchasing.ProductDefinitionExtensions
+    UnityEngine.Purchasing.Promo
+        .ctor(System.String,System.String,System.String)
+        .ctor(System.String,System.String,System.String,System.String)
+        get_imageUrl()
+        get_localizedPriceString()
+        get_localizedTitle()
+        get_productId()
+        ProvideProductsToAds(System.Collections.Generic.HashSet`1<UnityEngine.Purchasing.Product>,UnityEngine.Purchasing.JSONStore,UnityEngine.Purchasing.Extension.IStoreCallback)
+        set_imageUrl(System.String)
+        set_localizedPriceString(System.String)
+        set_localizedTitle(System.String)
+        set_productId(System.String)
+        UpdatePromoProductList()
+    UnityEngine.Purchasing.RequestPayOutState
+    UnityEngine.Purchasing.SamsungApps
+    UnityEngine.Purchasing.StandardPurchasingModule
+        k_PackageVersion
+        usingMockMicrosoft
+        get_androidStore()
+        get_useMockBillingSystem()
+        Instance(UnityEngine.Purchasing.AndroidStore)
+        set_useMockBillingSystem(System.Boolean)
+    UnityEngine.Purchasing.StandardPurchasingModule/MicrosoftConfiguration
+        get_useMockBillingSystem()
+    UnityEngine.Purchasing.StoreConfiguration
+        Serialize(UnityEngine.Purchasing.StoreConfiguration)
+    UnityEngine.Purchasing.StoreID
+        .ctor(System.String,System.String)
+    UnityEngine.Purchasing.TizenStore
+    UnityEngine.Purchasing.UIFakeStore
+        EnvironmentDescriptionPostfix
+        m_Util
+        RetrieveProductsDescriptionCount
+        SuccessString
+        .ctor(Uniject.IUtil)
+    UnityEngine.Purchasing.UnifiedReceipt
+        Store
+        TransactionID
+    UnityEngine.Purchasing.UnityChannelBindings
+        ConfirmPurchase(System.String,System.Action`3<System.Boolean,System.String,System.String>)
+    UnityEngine.Purchasing.UnityChannelBindings/<>c__DisplayClass17_0
+    UnityEngine.Purchasing.UnityChannelImpl
+        k_DuplicateTransaction
+        k_Unknown
+        ConfirmPurchase(System.String,System.Action`3<System.Boolean,System.String,System.String>)
+    UnityEngine.Purchasing.UnityChannelPurchaseReceipt
+        error
+        json
+        signature
+    UnityEngine.Purchasing.WindowsPhone8
+    UnityEngine.Purchasing.WindowsStore
+    UnityEngine.Purchasing.WinRT
+    UnityEngine.Purchasing.WinRTStore
+        count
+        log(System.String)
+        logError(System.String)
+        OnProductListError(System.String)
+        OnProductListReceived(UnityEngine.Purchasing.Default.WinProductDescription[])
+        OnPurchaseFailed(System.String,System.String)
+        OnPurchaseSucceeded(System.String,System.String,System.String)
+    UnityEngine.Purchasing.WinRTStore/<>c
+        <>9__15_1
+        <>9__15_2
+        <OnProductListReceived>b__15_1(UnityEngine.Purchasing.Default.WinProductDescription)
+        <OnProductListReceived>b__15_2(<>f__AnonymousType0`2<UnityEngine.Purchasing.Default.WinProductDescription,UnityEngine.Purchasing.ProductMetadata>)
+    UnityEngine.Purchasing.WinRTStore/<>c__DisplayClass15_0
+    UnityEngine.Purchasing.WinRTStore/<>c__DisplayClass16_0
+    UnityEngine.Purchasing.WinRTStore/<>c__DisplayClass17_0
+    UnityEngine.Purchasing.WinRTStore/<>c__DisplayClass19_0
+    UnityEngine.Purchasing.WinRTStore/<>c__DisplayClass20_0
+    UnityEngine.Purchasing.XiaomiMiPay
+    UnityEngine.Purchasing.XiaomiPriceTiers
+        .ctor()
+---------------------------------------------------
 Assembly: System
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 532
-    Nested = 18
+  Total Type Removals = 527
+    Nested = 15
     Interfaces = 30
     Abstract Classes = 42
     Generic Types = 4
@@ -6470,7 +6720,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 36
   Total Field Removals = 75
-  Total Method Removals = 943
+  Total Method Removals = 936
   References Removed = 0
 ---------------------------------------------------
     <PrivateImplementationDetails>
@@ -6520,19 +6770,14 @@ Summary:
         .ctor(System.Boolean)
         .ctor(System.Int32)
         Clear()
-        Contains(System.Object)
         get_IsFixedSize()
         get_IsReadOnly()
-        get_Keys()
         get_Values()
     System.Collections.Specialized.IOrderedDictionary
     System.Collections.Specialized.ListDictionary
-        Contains(System.Object)
         get_IsFixedSize()
         get_IsReadOnly()
-        get_Keys()
         get_Values()
-    System.Collections.Specialized.ListDictionary/DictionaryNodeCollection
     System.Collections.Specialized.NameObjectCollectionBase
         .ctor(System.Collections.IEqualityComparer)
         .ctor(System.Collections.IEqualityComparer,System.Collections.IComparer,System.Collections.IHashCodeProvider)
@@ -6574,6 +6819,18 @@ Summary:
     System.Collections.Specialized.ProcessStringDictionary
     System.Collections.Specialized.StringCollection
     System.Collections.Specialized.StringDictionary
+        Add(System.String,System.String)
+        Clear()
+        ContainsKey(System.String)
+        ContainsValue(System.String)
+        CopyTo(System.Array,System.Int32)
+        get_Count()
+        get_IsSynchronized()
+        get_Keys()
+        get_SyncRoot()
+        get_Values()
+        Remove(System.String)
+        set_Item(System.String,System.String)
     System.Collections.Specialized.StringEnumerator
     System.ComponentModel.ArrayConverter
     System.ComponentModel.AsyncCompletedEventArgs
@@ -7851,12 +8108,6 @@ Summary:
         get_RawData()
         GetCertContentType(System.Byte[])
         GetCertContentType(System.String)
-        Import(System.Byte[])
-        Import(System.Byte[],System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
-        Import(System.String)
-        Import(System.String,System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
-        Import(System.String,System.String,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
-        Load(System.String)
         set_Archived(System.Boolean)
         set_FriendlyName(System.String)
         set_PrivateKey(System.Security.Cryptography.AsymmetricAlgorithm)
@@ -7939,13 +8190,9 @@ Summary:
         RemoveRange(System.Security.Cryptography.X509Certificates.X509Certificate2Collection)
     System.SRDescriptionAttribute
     System.Text.RegularExpressions.BaseMachine
-        LTRReplace(System.Text.RegularExpressions.Regex,System.String,System.Text.RegularExpressions.BaseMachine/MatchAppendEvaluator,System.Int32,System.Int32)
-        LTRReplace(System.Text.RegularExpressions.Regex,System.String,System.Text.RegularExpressions.BaseMachine/MatchAppendEvaluator,System.Int32,System.Int32,System.Boolean)
         Replace(System.Text.RegularExpressions.Regex,System.String,System.String,System.Int32,System.Int32)
         Result(System.String,System.Text.RegularExpressions.Match)
-        RTLReplace(System.Text.RegularExpressions.Regex,System.String,System.Text.RegularExpressions.MatchEvaluator,System.Int32,System.Int32)
         Split(System.Text.RegularExpressions.Regex,System.String,System.Int32,System.Int32)
-    System.Text.RegularExpressions.BaseMachine/MatchAppendEvaluator
     System.Text.RegularExpressions.CaptureCollection
         get_IsReadOnly()
         get_Item(System.Int32)
@@ -7960,7 +8207,6 @@ Summary:
         Synchronized(System.Text.RegularExpressions.Group)
     System.Text.RegularExpressions.GroupCollection
         get_IsReadOnly()
-        get_Item(System.String)
     System.Text.RegularExpressions.ICompiler
         Reset()
     System.Text.RegularExpressions.IMachine
@@ -7983,7 +8229,6 @@ Summary:
         Synchronized(System.Text.RegularExpressions.Match)
     System.Text.RegularExpressions.MatchCollection
         get_IsReadOnly()
-    System.Text.RegularExpressions.MatchEvaluator
     System.Text.RegularExpressions.PatternCompiler
         DecodeOp(System.UInt16,System.Text.RegularExpressions.OpCode&,System.Text.RegularExpressions.OpFlags&)
         Reset()
@@ -8006,7 +8251,6 @@ Summary:
         GetGroupNames()
         GetGroupNumbers()
         GroupNameFromNumber(System.Int32)
-        GroupNumberFromName(System.String)
         InitializeReferences()
         IsMatch(System.String,System.String)
         IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions)
@@ -8021,11 +8265,7 @@ Summary:
         Replace(System.String,System.String,System.Int32,System.Int32)
         Replace(System.String,System.String,System.String)
         Replace(System.String,System.String,System.String,System.Text.RegularExpressions.RegexOptions)
-        Replace(System.String,System.String,System.Text.RegularExpressions.MatchEvaluator)
-        Replace(System.String,System.String,System.Text.RegularExpressions.MatchEvaluator,System.Text.RegularExpressions.RegexOptions)
-        Replace(System.String,System.Text.RegularExpressions.MatchEvaluator)
         Replace(System.String,System.Text.RegularExpressions.MatchEvaluator,System.Int32)
-        Replace(System.String,System.Text.RegularExpressions.MatchEvaluator,System.Int32,System.Int32)
         set_CacheSize(System.Int32)
         Split(System.String)
         Split(System.String,System.Int32)
@@ -8034,7 +8274,6 @@ Summary:
         Split(System.String,System.String,System.Text.RegularExpressions.RegexOptions)
         Unescape(System.String)
         UseOptionR()
-    System.Text.RegularExpressions.Regex/Adapter
     System.Text.RegularExpressions.RegexCompilationInfo
     System.Text.RegularExpressions.ReplacementEvaluator
     System.Text.RegularExpressions.RxInterpreter
@@ -8148,16 +8387,16 @@ Summary:
 Assembly: System.Core
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 115
-    Nested = 46
+  Total Type Removals = 113
+    Nested = 44
     Interfaces = 11
     Abstract Classes = 9
-    Generic Types = 63
+    Generic Types = 61
     Generic Interfaces = 6
     Generic Abstract Classes = 2
     Attributes = 5
   Total Field Removals = 32
-  Total Method Removals = 281
+  Total Method Removals = 270
   References Removed = 0
 ---------------------------------------------------
     <PrivateImplementationDetails>
@@ -8168,12 +8407,7 @@ Summary:
     Mono.Security.Cryptography.BlockProcessor
     Mono.Security.Cryptography.KeyBuilder
         .ctor()
-    Mono.Security.Cryptography.SymmetricTransform
-        get_CanTransformMultipleBlocks()
-        get_InputBlockSize()
-        get_OutputBlockSize()
     System.Collections.Generic.HashSet`1
-        .ctor(System.Collections.Generic.IEnumerable`1<T>)
         .ctor(System.Collections.Generic.IEqualityComparer`1<T>)
         CheckIsSubsetOf(System.Collections.Generic.IEnumerable`1<T>)
         CheckIsSupersetOf(System.Collections.Generic.IEnumerable`1<T>)
@@ -8191,7 +8425,6 @@ Summary:
         SetEquals(System.Collections.Generic.IEnumerable`1<T>)
         SymmetricExceptWith(System.Collections.Generic.IEnumerable`1<T>)
         TrimExcess()
-        UnionWith(System.Collections.Generic.IEnumerable`1<T>)
     System.Func`1
     System.Func`4
     System.Func`5
@@ -8202,7 +8435,6 @@ Summary:
         Source1AndSource2(System.Object,System.Object)
         SourceAndCollectionSelectorAndResultSelector(System.Object,System.Object,System.Object)
         SourceAndCollectionSelectors(System.Object,System.Object,System.Object)
-        SourceAndFunc(System.Object,System.Object)
         SourceAndFuncAndSelector(System.Object,System.Object,System.Object)
         SourceAndKeyResultSelectors(System.Object,System.Object,System.Object)
         SourceAndKeySelector(System.Object,System.Object)
@@ -8280,7 +8512,6 @@ Summary:
         <ToLookup`2>m__4D<TSource,TKey>(TSource)
         Aggregate<TSource,TAccumulate,TResult>(System.Collections.Generic.IEnumerable`1<TSource>,TAccumulate,System.Func`3<TAccumulate,TSource,TAccumulate>,System.Func`2<TAccumulate,TResult>)
         Aggregate<TSource,TAccumulate>(System.Collections.Generic.IEnumerable`1<TSource>,TAccumulate,System.Func`3<TAccumulate,TSource,TAccumulate>)
-        Aggregate<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`3<TSource,TSource,TSource>)
         All<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
         Any<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
         AsEnumerable<TSource>(System.Collections.Generic.IEnumerable`1<TSource>)
@@ -8322,7 +8553,6 @@ Summary:
         CreateRangeIterator(System.Int32,System.Int32)
         CreateRepeatIterator<TResult>(TResult,System.Int32)
         CreateReverseIterator<TSource>(System.Collections.Generic.IEnumerable`1<TSource>)
-        CreateSelectIterator<TSource,TResult>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`3<TSource,System.Int32,TResult>)
         CreateSelectManyIterator<TSource,TCollection,TResult>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Collections.Generic.IEnumerable`1<TCollection>>,System.Func`3<TSource,TCollection,TResult>)
         CreateSelectManyIterator<TSource,TCollection,TResult>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`3<TSource,System.Int32,System.Collections.Generic.IEnumerable`1<TCollection>>,System.Func`3<TSource,TCollection,TResult>)
         CreateSelectManyIterator<TSource,TResult>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Collections.Generic.IEnumerable`1<TResult>>)
@@ -8330,7 +8560,6 @@ Summary:
         CreateSkipIterator<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Int32)
         CreateSkipWhileIterator<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
         CreateSkipWhileIterator<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`3<TSource,System.Int32,System.Boolean>)
-        CreateTakeIterator<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Int32)
         CreateTakeWhileIterator<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
         CreateTakeWhileIterator<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`3<TSource,System.Int32,System.Boolean>)
         CreateUnionIterator<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Collections.Generic.IEnumerable`1<TSource>,System.Collections.Generic.IEqualityComparer`1<TSource>)
@@ -8425,7 +8654,6 @@ Summary:
         Range(System.Int32,System.Int32)
         Repeat<TResult>(TResult,System.Int32)
         Reverse<TSource>(System.Collections.Generic.IEnumerable`1<TSource>)
-        Select<TSource,TResult>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`3<TSource,System.Int32,TResult>)
         SelectMany<TSource,TCollection,TResult>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Collections.Generic.IEnumerable`1<TCollection>>,System.Func`3<TSource,TCollection,TResult>)
         SelectMany<TSource,TCollection,TResult>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`3<TSource,System.Int32,System.Collections.Generic.IEnumerable`1<TCollection>>,System.Func`3<TSource,TCollection,TResult>)
         SelectMany<TSource,TResult>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Collections.Generic.IEnumerable`1<TResult>>)
@@ -8462,7 +8690,6 @@ Summary:
         Sum<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Nullable`1<System.Single>>)
         Sum<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Single>)
         SumNullable<TA,TR>(System.Collections.Generic.IEnumerable`1<TA>,TR,System.Func`3<TR,TA,TR>)
-        Take<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Int32)
         TakeWhile<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
         TakeWhile<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`3<TSource,System.Int32,System.Boolean>)
         ThenBy<TSource,TKey>(System.Linq.IOrderedEnumerable`1<TSource>,System.Func`2<TSource,TKey>)
@@ -8492,7 +8719,6 @@ Summary:
     System.Linq.Enumerable/<CreateRangeIterator>c__IteratorD
     System.Linq.Enumerable/<CreateRepeatIterator>c__IteratorE`1
     System.Linq.Enumerable/<CreateReverseIterator>c__IteratorF`1
-    System.Linq.Enumerable/<CreateSelectIterator>c__Iterator11`2
     System.Linq.Enumerable/<CreateSelectManyIterator>c__Iterator12`2
     System.Linq.Enumerable/<CreateSelectManyIterator>c__Iterator13`2
     System.Linq.Enumerable/<CreateSelectManyIterator>c__Iterator14`3
@@ -8500,7 +8726,6 @@ Summary:
     System.Linq.Enumerable/<CreateSkipIterator>c__Iterator16`1
     System.Linq.Enumerable/<CreateSkipWhileIterator>c__Iterator17`1
     System.Linq.Enumerable/<CreateSkipWhileIterator>c__Iterator18`1
-    System.Linq.Enumerable/<CreateTakeIterator>c__Iterator19`1
     System.Linq.Enumerable/<CreateTakeWhileIterator>c__Iterator1A`1
     System.Linq.Enumerable/<CreateTakeWhileIterator>c__Iterator1B`1
     System.Linq.Enumerable/<CreateUnionIterator>c__Iterator1C`1
@@ -8600,19 +8825,39 @@ Summary:
     System.TimeZoneInfo
     System.TimeZoneNotFoundException
 ---------------------------------------------------
+Assembly: Tizen
+---------------------------------------------------
+Summary:
+  Total Type Removals = 0
+    Nested = 0
+    Interfaces = 0
+    Abstract Classes = 0
+    Generic Types = 0
+    Generic Interfaces = 0
+    Generic Abstract Classes = 0
+    Attributes = 0
+  Total Field Removals = 0
+  Total Method Removals = 3
+  References Removed = 0
+---------------------------------------------------
+    UnityEngine.Purchasing.TizenStoreBindings
+        AddTransactionObserver()
+        RefreshAppReceipt()
+        RestoreTransactions()
+---------------------------------------------------
 Assembly: UnityEngine
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 808
+  Total Type Removals = 801
     Nested = 51
     Interfaces = 22
-    Abstract Classes = 45
+    Abstract Classes = 43
     Generic Types = 6
     Generic Interfaces = 0
     Generic Abstract Classes = 0
-    Attributes = 45
-  Total Field Removals = 90
-  Total Method Removals = 5335
+    Attributes = 43
+  Total Field Removals = 84
+  Total Method Removals = 5294
   References Removed = 0
 ---------------------------------------------------
     <PrivateImplementationDetails>
@@ -8642,11 +8887,9 @@ Summary:
         .ctor(System.Int32)
     SimpleJson.JsonObject
         .ctor(System.Collections.Generic.IEqualityComparer`1<System.String>)
-        ContainsKey(System.String)
         get_Item(System.Int32)
         GetAtIndex(System.Collections.Generic.IDictionary`2<System.String,System.Object>,System.Int32)
         Remove(System.String)
-        TryGetValue(System.String,System.Object&)
     SimpleJson.PocoJsonSerializerStrategy
         DeserializeObject(System.Object,System.Type)
     SimpleJson.Reflection.ReflectionUtils
@@ -8807,7 +9050,6 @@ Summary:
         SetUserId(System.String)
         Transaction(System.String,System.Decimal,System.String)
         Transaction(System.String,System.Decimal,System.String,System.String,System.String)
-        Transaction(System.String,System.Decimal,System.String,System.String,System.String,System.Boolean)
     UnityEngine.Analytics.CustomEventData
         .ctor()
     UnityEngine.Analytics.Gender
@@ -8817,7 +9059,6 @@ Summary:
         get_deviceStatsEnabled()
         get_enabled()
         get_limitUserTracking()
-        InternalTransaction(System.String,System.Double,System.String,System.String,System.String,System.Boolean)
         set_deviceStatsEnabled(System.Boolean)
         set_enabled(System.Boolean)
         set_limitUserTracking(System.Boolean)
@@ -8826,15 +9067,12 @@ Summary:
         SetUserId(System.String)
         Transaction(System.String,System.Double,System.String)
         Transaction(System.String,System.Double,System.String,System.String,System.String)
-        Transaction(System.String,System.Double,System.String,System.String,System.String,System.Boolean)
     UnityEngine.AnchoredJoint2D
     UnityEngine.AndroidActivityIndicatorStyle
     UnityEngine.AndroidInput
     UnityEngine.AndroidJavaObject
-        _Set<FieldType>(System.String,FieldType)
         _SetStatic<FieldType>(System.String,FieldType)
         DebugPrint(System.String,System.String,System.String,System.Object[])
-        Set<FieldType>(System.String,FieldType)
         SetStatic<FieldType>(System.String,FieldType)
     UnityEngine.AndroidJavaProxy
         equals(UnityEngine.AndroidJavaObject)
@@ -8886,22 +9124,13 @@ Summary:
         PopLocalFrame(System.IntPtr)
         PushLocalFrame(System.Int32)
         SetBooleanArrayElement(System.IntPtr,System.Int32,System.Byte)
-        SetBooleanField(System.IntPtr,System.IntPtr,System.Boolean)
         SetByteArrayElement(System.IntPtr,System.Int32,System.SByte)
-        SetByteField(System.IntPtr,System.IntPtr,System.Byte)
         SetCharArrayElement(System.IntPtr,System.Int32,System.Char)
-        SetCharField(System.IntPtr,System.IntPtr,System.Char)
         SetDoubleArrayElement(System.IntPtr,System.Int32,System.Double)
-        SetDoubleField(System.IntPtr,System.IntPtr,System.Double)
         SetFloatArrayElement(System.IntPtr,System.Int32,System.Single)
-        SetFloatField(System.IntPtr,System.IntPtr,System.Single)
         SetIntArrayElement(System.IntPtr,System.Int32,System.Int32)
-        SetIntField(System.IntPtr,System.IntPtr,System.Int32)
         SetLongArrayElement(System.IntPtr,System.Int32,System.Int64)
-        SetLongField(System.IntPtr,System.IntPtr,System.Int64)
-        SetObjectField(System.IntPtr,System.IntPtr,System.IntPtr)
         SetShortArrayElement(System.IntPtr,System.Int32,System.Int16)
-        SetShortField(System.IntPtr,System.IntPtr,System.Int16)
         SetStaticBooleanField(System.IntPtr,System.IntPtr,System.Boolean)
         SetStaticByteField(System.IntPtr,System.IntPtr,System.Byte)
         SetStaticCharField(System.IntPtr,System.IntPtr,System.Char)
@@ -8912,7 +9141,6 @@ Summary:
         SetStaticObjectField(System.IntPtr,System.IntPtr,System.IntPtr)
         SetStaticShortField(System.IntPtr,System.IntPtr,System.Int16)
         SetStaticStringField(System.IntPtr,System.IntPtr,System.String)
-        SetStringField(System.IntPtr,System.IntPtr,System.String)
         Throw(System.IntPtr)
         ThrowNew(System.IntPtr,System.String)
         ToObjectArray(System.IntPtr[])
@@ -8933,15 +9161,6 @@ Summary:
     UnityEngine.AndroidJNISafe
         .ctor()
         FromObjectArray(System.IntPtr)
-        SetBooleanField(System.IntPtr,System.IntPtr,System.Boolean)
-        SetByteField(System.IntPtr,System.IntPtr,System.Byte)
-        SetCharField(System.IntPtr,System.IntPtr,System.Char)
-        SetDoubleField(System.IntPtr,System.IntPtr,System.Double)
-        SetFloatField(System.IntPtr,System.IntPtr,System.Single)
-        SetIntField(System.IntPtr,System.IntPtr,System.Int32)
-        SetLongField(System.IntPtr,System.IntPtr,System.Int64)
-        SetObjectField(System.IntPtr,System.IntPtr,System.IntPtr)
-        SetShortField(System.IntPtr,System.IntPtr,System.Int16)
         SetStaticBooleanField(System.IntPtr,System.IntPtr,System.Boolean)
         SetStaticByteField(System.IntPtr,System.IntPtr,System.Byte)
         SetStaticCharField(System.IntPtr,System.IntPtr,System.Char)
@@ -8952,7 +9171,6 @@ Summary:
         SetStaticObjectField(System.IntPtr,System.IntPtr,System.IntPtr)
         SetStaticShortField(System.IntPtr,System.IntPtr,System.Int16)
         SetStaticStringField(System.IntPtr,System.IntPtr,System.String)
-        SetStringField(System.IntPtr,System.IntPtr,System.String)
         ToObjectArray(System.IntPtr[])
     UnityEngine.AndroidReflection
         RELECTION_HELPER_CLASS_NAME
@@ -9351,7 +9569,6 @@ Summary:
         get_absoluteURL()
         get_backgroundLoadingPriority()
         get_buildGUID()
-        get_cloudProjectId()
         get_companyName()
         get_dataPath()
         get_genuine()
@@ -9373,7 +9590,6 @@ Summary:
         get_levelCount()
         get_loadedLevel()
         get_loadedLevelName()
-        get_persistentDataPath()
         get_productName()
         get_runInBackground()
         get_sandboxType()
@@ -10306,9 +10522,7 @@ Summary:
         LogAssertionFormat(System.String,System.Object[])
         LogAssertionFormat(UnityEngine.Object,System.String,System.Object[])
         LogErrorFormat(System.String,System.Object[])
-        LogFormat(System.String,System.Object[])
         LogFormat(UnityEngine.Object,System.String,System.Object[])
-        LogWarningFormat(System.String,System.Object[])
         OpenConsoleFile()
         set_developerConsoleVisible(System.Boolean)
         SetDiagnosticSwitch(System.String,System.Object,System.Boolean)
@@ -10319,7 +10533,6 @@ Summary:
     UnityEngine.DetailPrototype
     UnityEngine.DetailRenderMode
     UnityEngine.DeviceOrientation
-    UnityEngine.DeviceType
     UnityEngine.Diagnostics.PlayerConnection
     UnityEngine.DiagnosticSwitch
     UnityEngine.DiagnosticSwitchFlags
@@ -10422,7 +10635,6 @@ Summary:
         add_Delegate(UnityEngine.Events.UnityAction`4<T1,T2,T3,T4>)
         remove_Delegate(UnityEngine.Events.UnityAction`4<T1,T2,T3,T4>)
     UnityEngine.Events.InvokableCallList
-        Clear()
         get_Count()
     UnityEngine.Events.PersistentCall
         get_callState()
@@ -10452,7 +10664,6 @@ Summary:
     UnityEngine.Events.UnityEvent`2
         AddListener(UnityEngine.Events.UnityAction`2<T0,T1>)
         GetDelegate(UnityEngine.Events.UnityAction`2<T0,T1>)
-        Invoke(T0,T1)
         RemoveListener(UnityEngine.Events.UnityAction`2<T0,T1>)
     UnityEngine.Events.UnityEvent`3
         AddListener(UnityEngine.Events.UnityAction`3<T0,T1,T2>)
@@ -10469,7 +10680,6 @@ Summary:
         GetPersistentEventCount()
         GetPersistentMethodName(System.Int32)
         GetPersistentTarget(System.Int32)
-        RemoveAllListeners()
         SetPersistentListenerState(System.Int32,UnityEngine.Events.UnityEventCallState)
     UnityEngine.ExitGUIException
         .ctor()
@@ -10639,14 +10849,12 @@ Summary:
     UnityEngine.FullScreenMovieControlMode
     UnityEngine.FullScreenMovieScalingMode
     UnityEngine.GameObject
-        .ctor()
         AddComponentInternal(System.String)
         BroadcastMessage(System.String)
         BroadcastMessage(System.String,System.Object)
         BroadcastMessage(System.String,System.Object,UnityEngine.SendMessageOptions)
         BroadcastMessage(System.String,UnityEngine.SendMessageOptions)
         CreatePrimitive(UnityEngine.PrimitiveType)
-        Find(System.String)
         FindGameObjectsWithTag(System.String)
         FindGameObjectWithTag(System.String)
         FindWithTag(System.String)
@@ -11338,6 +11546,7 @@ Summary:
     UnityEngine.Hash128
     UnityEngine.HeadDoF
     UnityEngine.HelpURLAttribute
+        get_URL()
     UnityEngine.HingeJoint
     UnityEngine.HingeJoint2D
     UnityEngine.HostData
@@ -11367,16 +11576,11 @@ Summary:
         get_logEnabled()
         get_logHandler()
         IsLogTypeAllowed(UnityEngine.LogType)
-        Log(System.Object)
-        Log(System.String,System.Object)
         Log(System.String,System.Object,UnityEngine.Object)
         Log(UnityEngine.LogType,System.String,System.Object)
         Log(UnityEngine.LogType,System.String,System.Object,UnityEngine.Object)
-        LogError(System.String,System.Object)
         LogError(System.String,System.Object,UnityEngine.Object)
         LogException(System.Exception)
-        LogFormat(UnityEngine.LogType,System.String,System.Object[])
-        LogWarning(System.String,System.Object)
         LogWarning(System.String,System.Object,UnityEngine.Object)
         set_filterLogType(UnityEngine.LogType)
         set_logEnabled(System.Boolean)
@@ -11462,6 +11666,9 @@ Summary:
     UnityEngine.JointSuspension2D
     UnityEngine.JointTranslationLimits2D
     UnityEngine.JsonUtility
+        FromJsonOverwrite(System.String,System.Object)
+        ToJson(System.Object)
+        ToJson(System.Object,System.Boolean)
     UnityEngine.LayerMask
         get_value()
         GetMask(System.String[])
@@ -11496,16 +11703,11 @@ Summary:
         kNoTagFormat
         kTagFormat
         .ctor()
-        Log(System.Object)
-        Log(System.String,System.Object)
         Log(System.String,System.Object,UnityEngine.Object)
         Log(UnityEngine.LogType,System.String,System.Object)
         Log(UnityEngine.LogType,System.String,System.Object,UnityEngine.Object)
-        LogError(System.String,System.Object)
         LogError(System.String,System.Object,UnityEngine.Object)
         LogException(System.Exception)
-        LogFormat(UnityEngine.LogType,System.String,System.Object[])
-        LogWarning(System.String,System.Object)
         LogWarning(System.String,System.Object,UnityEngine.Object)
     UnityEngine.MasterServer
     UnityEngine.MasterServerEvent
@@ -11840,12 +12042,8 @@ Summary:
     UnityEngine.Networking.DownloadHandler
         CompleteContent()
         get_isDone()
-        get_text()
         GetCheckedDownloader<T>(UnityEngine.Networking.UnityWebRequest)
-        GetContentType()
         GetProgress()
-        GetText()
-        GetTextEncoder()
         INTERNAL_CALL_InternalCreateAssetBundleCached(UnityEngine.Networking.DownloadHandler,System.String,System.String,UnityEngine.Hash128&,System.UInt32)
         InternalCreateAssetBundle(System.String,System.UInt32)
         InternalCreateAssetBundleCached(System.String,System.String,UnityEngine.Hash128,System.UInt32)
@@ -11856,7 +12054,6 @@ Summary:
     UnityEngine.Networking.DownloadHandlerAudioClip
         get_audioClip()
         GetContent(UnityEngine.Networking.UnityWebRequest)
-        GetText()
     UnityEngine.Networking.DownloadHandlerBuffer
         GetContent(UnityEngine.Networking.UnityWebRequest)
     UnityEngine.Networking.DownloadHandlerMovieTexture
@@ -11942,7 +12139,6 @@ Summary:
         kHttpVerbPUT
         .ctor()
         .ctor(System.String)
-        .ctor(System.String,System.String)
         Abort()
         Delete(System.String)
         GenerateBoundary()
@@ -11976,12 +12172,10 @@ Summary:
         InternalGetError()
         InternalGetMethod()
         InternalGetResponseHeaderKeys()
-        InternalSetRequestHeader(System.String,System.String)
         Post(System.String,System.Collections.Generic.Dictionary`2<System.String,System.String>)
         Post(System.String,System.Collections.Generic.List`1<UnityEngine.Networking.IMultipartFormSection>)
         Post(System.String,System.Collections.Generic.List`1<UnityEngine.Networking.IMultipartFormSection>,System.Byte[])
         Post(System.String,System.String)
-        Post(System.String,UnityEngine.WWWForm)
         Put(System.String,System.Byte[])
         Put(System.String,System.String)
         SerializeFormSections(System.Collections.Generic.List`1<UnityEngine.Networking.IMultipartFormSection>,System.Byte[])
@@ -11990,22 +12184,27 @@ Summary:
         set_redirectLimit(System.Int32)
         set_timeout(System.Int32)
         set_useHttpContinue(System.Boolean)
-        SetRequestHeader(System.String,System.String)
     UnityEngine.Networking.UnityWebRequest/UnityWebRequestError
     UnityEngine.Networking.UnityWebRequestMultimedia
     UnityEngine.Networking.UnityWebRequestTexture
     UnityEngine.Networking.UploadHandler
-        .ctor()
         get_contentType()
         get_data()
         get_progress()
         GetContentType()
         GetData()
         GetProgress()
-        InternalCreateRaw(System.Byte[])
         set_contentType(System.String)
         SetContentType(System.String)
     UnityEngine.Networking.UploadHandlerRaw
+        GetContentType()
+        GetData()
+        GetProgress()
+        InternalGetContentType()
+        InternalGetData()
+        InternalGetProgress()
+        InternalSetContentType(System.String)
+        SetContentType(System.String)
     UnityEngine.Networking.Utility
     UnityEngine.Networking.WebRequestWWW
     UnityEngine.NetworkLogLevel
@@ -12970,7 +13169,6 @@ Summary:
         DeleteKey(System.String)
         GetFloat(System.String)
         GetFloat(System.String,System.Single)
-        GetInt(System.String)
         GetString(System.String)
         HasKey(System.String)
         SetFloat(System.String,System.Single)
@@ -13380,7 +13578,6 @@ Summary:
     UnityEngine.Resources
         .ctor()
         FindObjectsOfTypeAll<T>()
-        Load(System.String)
         Load<T>(System.String)
         LoadAll(System.String)
         LoadAll(System.String,System.Type)
@@ -14006,7 +14203,6 @@ Summary:
         get_image()
         get_isFriend()
         get_state()
-        get_userName()
     UnityEngine.SocialPlatforms.Local
         <>f__am$cache0
         <SortScores>m__0(UnityEngine.SocialPlatforms.Impl.Score,UnityEngine.SocialPlatforms.Impl.Score)
@@ -14124,9 +14320,6 @@ Summary:
         get_batteryLevel()
         get_batteryStatus()
         get_copyTextureSupport()
-        get_deviceModel()
-        get_deviceName()
-        get_deviceType()
         get_deviceUniqueIdentifier()
         get_graphicsDeviceID()
         get_graphicsDeviceName()
@@ -14142,7 +14335,6 @@ Summary:
         get_maxRenderTextureSize()
         get_maxTextureSize()
         get_npotSupport()
-        get_operatingSystem()
         get_processorCount()
         get_processorFrequency()
         get_processorType()
@@ -14358,6 +14550,9 @@ Summary:
     UnityEngine.TextAreaAttribute
         .ctor()
     UnityEngine.TextAsset
+        .ctor()
+        get_bytes()
+        Internal_CreateTextAsset(UnityEngine.TextAsset)
     UnityEngine.TextEditor
         graphicalCursorPos
         graphicalSelectCursorPos
@@ -14561,13 +14756,11 @@ Summary:
         get_maximumParticleDeltaTime()
         get_renderedFrameCount()
         get_smoothDeltaTime()
-        get_timeScale()
         get_timeSinceLevelLoad()
         set_captureFramerate(System.Int32)
         set_fixedDeltaTime(System.Single)
         set_maximumDeltaTime(System.Single)
         set_maximumParticleDeltaTime(System.Single)
-        set_timeScale(System.Single)
     UnityEngine.Touch
         get_altitudeAngle()
         get_azimuthAngle()
@@ -14701,6 +14894,7 @@ Summary:
         .ctor()
     UnityEngine.UnassignedReferenceException
     UnityEngine.UnityAPICompatibilityVersionAttribute
+        get_version()
     UnityEngine.UnityEventQueueSystem
     UnityEngine.UnityLogWriter
         get_Encoding()
@@ -14952,6 +15146,26 @@ Summary:
         TryGetRotation(UnityEngine.Quaternion&)
         TryGetVelocity(UnityEngine.Vector3&)
     UnityEngine.VR.VRSettings
+        get_eyeTextureHeight()
+        get_eyeTextureWidth()
+        get_isDeviceActive()
+        get_loadedDevice()
+        get_loadedDeviceName()
+        get_occlusionMaskScale()
+        get_renderScale()
+        get_renderViewportScale()
+        get_renderViewportScaleInternal()
+        get_showDeviceView()
+        get_supportedDevices()
+        LoadDeviceByName(System.String)
+        LoadDeviceByName(System.String[])
+        set_enabled(System.Boolean)
+        set_loadedDevice(UnityEngine.VR.VRDeviceType)
+        set_occlusionMaskScale(System.Single)
+        set_renderScale(System.Single)
+        set_renderViewportScale(System.Single)
+        set_renderViewportScaleInternal(System.Single)
+        set_showDeviceView(System.Boolean)
     UnityEngine.VR.VRStats
     UnityEngine.VR.WSA.PositionalLocatorState
     UnityEngine.WaitUntil
@@ -14976,7 +15190,6 @@ Summary:
         .ctor(System.String,System.Byte[],System.Collections.Generic.Dictionary`2<System.String,System.String>)
         .ctor(System.String,System.Byte[],System.Collections.Hashtable)
         .ctor(System.String,System.String,UnityEngine.Hash128,System.UInt32)
-        .ctor(System.String,UnityEngine.WWWForm)
         FlattenedHeadersFrom(System.Collections.Generic.Dictionary`2<System.String,System.String>)
         get_assetBundle()
         get_audioClip()
@@ -14986,7 +15199,6 @@ Summary:
         get_progress()
         get_responseHeaders()
         get_size()
-        get_text()
         get_textureNonReadable()
         get_threadPriority()
         get_uploadProgress()
@@ -15003,21 +15215,10 @@ Summary:
         UnEscapeURL(System.String,System.Text.Encoding)
     UnityEngine.WWWAudioExtensions
     UnityEngine.WWWForm
-        boundary
-        containsFiles
-        fieldNames
-        fileNames
-        formData
-        types
-        .ctor()
         AddBinaryData(System.String,System.Byte[])
         AddBinaryData(System.String,System.Byte[],System.String)
         AddBinaryData(System.String,System.Byte[],System.String,System.String)
         AddField(System.String,System.Int32)
-        AddField(System.String,System.String)
-        AddField(System.String,System.String,System.Text.Encoding)
-        get_data()
-        get_headers()
     UnityEngine.WWWTranscoder
         .ctor()
         Decode(System.Byte[],System.Byte,System.Byte)
@@ -15027,14 +15228,10 @@ Summary:
         QPDecode(System.String,System.Text.Encoding)
         QPEncode(System.Byte[])
         QPEncode(System.String)
-        QPEncode(System.String,System.Text.Encoding)
-        SevenBitClean(System.Byte[])
         SevenBitClean(System.String)
-        SevenBitClean(System.String,System.Text.Encoding)
         URLDecode(System.Byte[])
         URLDecode(System.String)
         URLDecode(System.String,System.Text.Encoding)
-        URLEncode(System.Byte[])
         URLEncode(System.String)
     UnityEngineInternal.APIUpdaterRuntimeServices
     UnityEngineInternal.FastCallExceptionHandler
@@ -15117,6 +15314,53 @@ Summary:
         remove_OnError(System.EventHandler`1<UnityEngine.Advertisements.ErrorEventArgs>)
         remove_OnReady(System.EventHandler`1<UnityEngine.Advertisements.ReadyEventArgs>)
 ---------------------------------------------------
+Assembly: UnityEngine.Purchasing
+---------------------------------------------------
+Summary:
+  Total Type Removals = 1
+    Nested = 0
+    Interfaces = 0
+    Abstract Classes = 0
+    Generic Types = 0
+    Generic Interfaces = 0
+    Generic Abstract Classes = 0
+    Attributes = 0
+  Total Field Removals = 3
+  Total Method Removals = 16
+  References Removed = 0
+---------------------------------------------------
+    UnityEngine.Purchasing.CloudCatalogManager
+        kMaxRetryDelayInSeconds
+    UnityEngine.Purchasing.ConfigurationBuilder
+        AddProducts(System.Collections.Generic.IEnumerable`1<UnityEngine.Purchasing.ProductDefinition>)
+        set_useCloudCatalog(System.Boolean)
+    UnityEngine.Purchasing.Extension.IStoreCallback
+        get_useTransactionLog()
+        set_useTransactionLog(System.Boolean)
+    UnityEngine.Purchasing.Extension.ProductDescription
+        .ctor(System.String,UnityEngine.Purchasing.ProductMetadata,System.String,System.String,UnityEngine.Purchasing.ProductType)
+    UnityEngine.Purchasing.Extension.PurchaseFailureDescription
+        get_message()
+    UnityEngine.Purchasing.IDs
+        Add(System.String,System.Object[])
+    UnityEngine.Purchasing.IStoreController
+        ConfirmPendingPurchase(UnityEngine.Purchasing.Product)
+        FetchAdditionalProducts(System.Collections.Generic.HashSet`1<UnityEngine.Purchasing.ProductDefinition>,System.Action,System.Action`1<UnityEngine.Purchasing.InitializationFailureReason>)
+        InitiatePurchase(System.String,System.String)
+    UnityEngine.Purchasing.ProductDefinition
+        .ctor()
+    UnityEngine.Purchasing.PurchaseFailedEventArgs
+    UnityEngine.Purchasing.PurchasingManager
+        <>f__am$cache0
+        <FetchAdditionalProducts>m__0(UnityEngine.Purchasing.ProductDefinition)
+        FetchAdditionalProducts(System.Collections.Generic.HashSet`1<UnityEngine.Purchasing.ProductDefinition>,System.Action,System.Action`1<UnityEngine.Purchasing.InitializationFailureReason>)
+    UnityEngine.Purchasing.TransactionLog
+        Clear()
+    UnityEngine.Purchasing.UnityPurchasing
+        kCatalogURL
+        .ctor()
+        ClearTransactionLog()
+---------------------------------------------------
 Assembly: UnityEngine.UI
 ---------------------------------------------------
 Summary:
@@ -15195,3 +15439,59 @@ Summary:
     UnityEngine.UI.VertexHelper
         AddUIVertexStream(System.Collections.Generic.List`1<UnityEngine.UIVertex>,System.Collections.Generic.List`1<System.Int32>)
         get_currentIndexCount()
+---------------------------------------------------
+Assembly: UnityStore
+---------------------------------------------------
+Summary:
+  Total Type Removals = 0
+    Nested = 0
+    Interfaces = 0
+    Abstract Classes = 0
+    Generic Types = 0
+    Generic Interfaces = 0
+    Generic Abstract Classes = 0
+    Attributes = 0
+  Total Field Removals = 0
+  Total Method Removals = 2
+  References Removed = 0
+---------------------------------------------------
+    UnityEngine.Store.ResultCode
+        .ctor()
+    UnityEngine.Store.StoreService
+        .ctor()
+---------------------------------------------------
+Assembly: winrt
+---------------------------------------------------
+Summary:
+  Total Type Removals = 1
+    Nested = 0
+    Interfaces = 0
+    Abstract Classes = 0
+    Generic Types = 0
+    Generic Interfaces = 0
+    Generic Abstract Classes = 0
+    Attributes = 0
+  Total Field Removals = 0
+  Total Method Removals = 16
+  References Removed = 0
+---------------------------------------------------
+    UnityEngine.Purchasing.Default.Factory
+        .ctor()
+    UnityEngine.Purchasing.Default.IWindowsIAPCallback
+        log(System.String)
+        logError(System.String)
+        OnProductListError(System.String)
+        OnProductListReceived(UnityEngine.Purchasing.Default.WinProductDescription[])
+        OnPurchaseFailed(System.String,System.String)
+        OnPurchaseSucceeded(System.String,System.String,System.String)
+    UnityEngine.Purchasing.Default.WinProductDescription
+        get_consumable()
+        get_description()
+        get_ISOCurrencyCode()
+        get_platformSpecificID()
+        get_price()
+        get_priceDecimal()
+        get_receipt()
+        get_title()
+        get_transactionID()
+    UnityEngine.Purchasing.HttpManager

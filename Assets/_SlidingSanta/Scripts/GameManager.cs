@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms;
 using System;
 
 namespace SgLib
@@ -99,9 +100,9 @@ namespace SgLib
 
         [Header("Game Center")]
         private string ios_Leaderboard = "christmasdefense_normalmode";
-        private string android_Leaderboard = "CgkI9Lat8aMREAIQAA";
+        private string android_Leaderboard = "CgkItYWW9sgKEAIQAA";
         private string leaderboard;
-
+        
         private List<GameObject> listLeftWall = new List<GameObject>();
         //Stored the left twall
         private List<GameObject> listRightWall = new List<GameObject>();
@@ -151,6 +152,7 @@ namespace SgLib
                 Destroy(Instance.gameObject);
                 Instance = this;
             }
+            //GooglePlayGames.PlayGamesPlatform.Activate();
         }
 
         void OnDestroy()
@@ -185,6 +187,7 @@ namespace SgLib
             {
                 //PlayGamesPlatform.Activate();
                 leaderboard = android_Leaderboard;
+                
             }
             else if (Application.platform == RuntimePlatform.IPhonePlayer)
             {
@@ -196,15 +199,18 @@ namespace SgLib
             }
 
             Social.localUser.Authenticate(success => { if (success) { Debug.Log("==iOS GC authenticate OK"); } else { Debug.Log("==iOS GC authenticate Failed"); } });
+            Debug.Log("Username GC " + Social.localUser.userName);
 
             PrepareGame();
             
         }
 
+
         //Show Unity Ads
         public void ShowAd(string zone)
         {
             UnityAds.ads.ShowAd(zone);
+            
         }
 
         //Report score to the leaderboard
@@ -297,6 +303,8 @@ namespace SgLib
             GameState = GameState.GameOver;
             GameCount++;
             ReportScore();
+
+            
             StartCoroutine(CRStopMusic(1f));
         }
 

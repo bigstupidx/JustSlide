@@ -1,85 +1,80 @@
 ﻿using UnityEngine;
 using UnityEngine.Advertisements;
 using System.Collections;
+using SgLib;
 
 public class UnityAds : MonoBehaviour {
 
     public static UnityAds ads;
     public string rewardZone;
 
-    void Start()
+    void Awake()
     {
         ads = this;
 
         if(Application.platform == RuntimePlatform.Android)
         {
-            Advertisement.Initialize("1179839", false);
+            Advertisement.Initialize("1688999", false);
         }
         else if(Application.platform == RuntimePlatform.IPhonePlayer)
         {
-            Advertisement.Initialize("1179838", false);
+            Advertisement.Initialize("1689000", false);
         }
         else
         {
-            Advertisement.Initialize("1179838", false);
+            Advertisement.Initialize("1689000", false);
         }
         
     }
 
     public void ShowAd(string zone = "")
     {
-        rewardZone = zone;
-		/*
-        if(string.Equals(zone, ""))
-        {
+#if UNITY_EDITOR
+        StartCoroutine(WaitForAd());
+#endif
+
+        if (string.Equals(zone, ""))
             zone = null;
-            rewardZone = null;
-        }*/
 
         ShowOptions options = new ShowOptions();
-        options.resultCallback = AdCallbackHandler;
+        options.resultCallback = AdCallbackhandler;
 
-		//Debug.Log ("Ad Free Status " + Player.adFree);
-		Debug.Log ("Rewardzone Status " + rewardZone);
-        /*
-		if (!Player.adFree || (Player.adFree && rewardZone.Equals("rewardedVideo")))
-		{
-			if (Advertisement.IsReady(zone))
-			{
-				Advertisement.Show(zone, options);
-			}
-		}*/
-        
+        if (Advertisement.IsReady(zone))
+        {
+            Advertisement.Show(zone, options);
+            Debug.Log("Show AD");
+        }
+            
 
         
     }
 
-    void AdCallbackHandler(ShowResult result)
+    void AdCallbackhandler(ShowResult result)
     {
-        switch(result)
+        switch (result)
         {
-			case ShowResult.Finished:
-                if(rewardZone == "video")
-                {
-                    //GameHUDManager.gameHudManager.ShowInfoPanel(8);
-                    
-                }
-                else
-                {
-                    Debug.Log("Reward Player");
-                    //GameHUDManager.gameHudManager.ShowInfoPanel(0);
-                    //Player.snowFlakes++;
-                    //GameHUDManager.gameHudManager.MenuHudUpdate();
-                    Debug.Log("Snowflake added, make a panel for it :)");
-                }
+            case ShowResult.Finished:
+                Debug.Log("Ad Finished. Rewarding player...");
+                UIManager.Instance.GrabVideoReward();
                 break;
             case ShowResult.Skipped:
-                Debug.Log("Ad skipped");
-                //GameHUDManager.gameHudManager.ShowInfoPanel(8);
+                Debug.Log("Ad skipped. Son, I am dissapointed in you");
                 break;
             case ShowResult.Failed:
-                Debug.Log("Ad Failed");
+                Debug.Log("I swear this has never happened to me before");
                 break;
         }
+    }
+
+    IEnumerator WaitForAd()
+    {
+        float currentTimeScale = Time.timeScale;
+        Time.timeScale = 0f;
+        yield return null;
+
+        while (Advertisement.isShowing)
+            yield return null;
+
+        Time.timeScale = currentTimeScale;
     }
 }

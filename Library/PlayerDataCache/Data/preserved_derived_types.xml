@@ -1,5 +1,14 @@
 <linker>
+<assembly fullname="Assembly-CSharp-firstpass">
+<type fullname="AppStoresSupport.AppStoreSettings" preserve="all"/>
+<type fullname="UnityEngine.Purchasing.DemoInventory" preserve="all"/>
+<type fullname="UnityEngine.Purchasing.IAPButton" preserve="all"/>
+<type fullname="IAPDemo" preserve="all"/>
+<type fullname="IAPDemoProductUI" preserve="all"/>
+<type fullname="UnityEngine.Purchasing.IAPListener" preserve="all"/>
+</assembly>
 <assembly fullname="Assembly-CSharp">
+<type fullname="BannerAd" preserve="all"/>
 <type fullname="SgLib.CameraController" preserve="all"/>
 <type fullname="SgLib.Character" preserve="all"/>
 <type fullname="SgLib.CharacterScroller" preserve="all"/>
@@ -18,6 +27,7 @@
 <type fullname="SgLib.RatingRequester" preserve="all"/>
 <type fullname="SgLib.ScoreReporter" preserve="all"/>
 <type fullname="SgLib.ScreenshotSharer" preserve="all"/>
+<type fullname="Purchaser" preserve="all"/>
 <type fullname="SgLib.RewardUIController" preserve="all"/>
 <type fullname="AppInfo" preserve="all"/>
 <type fullname="SgLib.CoinManager" preserve="all"/>
@@ -32,6 +42,12 @@
 <type fullname="UnityStandardAssets_ImageEffects.PostEffectsBase" preserve="all"/>
 <type fullname="UnityStandardAssets_ImageEffects.PostEffectsHelper" preserve="all"/>
 <type fullname="SgLib.VehicleManager" preserve="all"/>
+<type fullname="GoogleMobileAds.Common.MobileAdsEventExecutor" preserve="all"/>
+<type fullname="GoogleMobileAds.Android.AdLoaderClient" preserve="all"/>
+<type fullname="GoogleMobileAds.Android.BannerClient" preserve="all"/>
+<type fullname="GoogleMobileAds.Android.InterstitialClient" preserve="all"/>
+<type fullname="GoogleMobileAds.Android.NativeExpressAdClient" preserve="all"/>
+<type fullname="GoogleMobileAds.Android.RewardBasedVideoAdClient" preserve="all"/>
 <type fullname="GooglePlayGames.OurUtils.PlayGamesHelperObject" preserve="all"/>
 <type fullname="GooglePlayGames.Android.AndroidClient/StatsResultCallback" preserve="all"/>
 <type fullname="GooglePlayGames.Android.TokenResultCallback" preserve="all"/>
@@ -85,10 +101,29 @@
 <type fullname="UnityEngine.UI.PositionAsUV1" preserve="all"/>
 <type fullname="UnityEngine.UI.Shadow" preserve="all"/>
 </assembly>
+<assembly fullname="Stores">
+<type fullname="UnityEngine.Purchasing.JavaBridge" preserve="all"/>
+<type fullname="UnityEngine.Purchasing.MoolahStoreImpl" preserve="all"/>
+<type fullname="UnityEngine.Purchasing.SamsungAppsJavaBridge" preserve="all"/>
+<type fullname="UnityEngine.Purchasing.SamsungAppsStoreExtensions" preserve="all"/>
+<type fullname="UnityEngine.Purchasing.UIFakeStore/LifecycleNotifier" preserve="all"/>
+<type fullname="UnityEngine.Purchasing.AsyncWebUtil" preserve="all"/>
+<type fullname="UnityEngine.Purchasing.Extension.UnityUtil" preserve="all"/>
+</assembly>
+<assembly fullname="UnityEngine.Purchasing">
+<type fullname="UnityEngine.Purchasing.AsyncUtil" preserve="all"/>
+</assembly>
+<assembly fullname="UnityStore">
+<type fullname="UnityEngine.Store.MainThreadDispatcher" preserve="all"/>
+<type fullname="UnityEngine.Store.LoginForwardCallback" preserve="all"/>
+</assembly>
 <assembly fullname="UnityEngine.Advertisements">
 <type fullname="UnityEngine.Advertisements.Advertisement" preserve="all"/>
 <type fullname="UnityEngine.Advertisements.CallbackExecutor" preserve="all"/>
 <type fullname="UnityEngine.Advertisements.Android.Platform" preserve="all"/>
 <type fullname="UnityEngine.Advertisements.Editor.Placeholder" preserve="all"/>
+</assembly>
+<assembly fullname="ChannelPurchase">
+<type fullname="UnityEngine.ChannelPurchase.PurchaseForwardCallback" preserve="all"/>
 </assembly>
 </linker>

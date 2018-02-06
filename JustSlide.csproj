@@ -88,8 +88,45 @@
     <Reference Include="UnityEditor.iOS.Extensions.Common">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
+    <Reference Include="ChannelPurchase">
+      <HintPath>Assets\Plugins\UnityChannel\ChannelPurchase.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityStore">
+      <HintPath>Assets\Plugins\UnityChannel\UnityStore.dll</HintPath>
+    </Reference>
+    <Reference Include="FacebookStore">
+      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Facebook\FacebookStore.dll</HintPath>
+    </Reference>
+    <Reference Include="Security">
+      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Security\live\Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Purchasing.Common">
+      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Purchasing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Apple">
+      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Apple\Apple.dll</HintPath>
+    </Reference>
+    <Reference Include="Stores">
+      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Stores.dll</HintPath>
+    </Reference>
+    <Reference Include="Tizen">
+      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Tizen\Tizen.dll</HintPath>
+    </Reference>
+    <Reference Include="winrt">
+      <HintPath>Assets\Plugins\UnityPurchasing\winrt\winrt.dll</HintPath>
+    </Reference>
+    <Reference Include="Editor">
+      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Editor.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="JustSlide.Plugins.csproj">
+      <Project>{6D67986E-7555-7E16-9450-14B788696C84}</Project>
+      <Name>JustSlide.Plugins</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\_SlidingSanta\Scripts\BannerAd.cs" />
     <Compile Include="Assets\_SlidingSanta\Scripts\CameraController.cs" />
     <Compile Include="Assets\_SlidingSanta\Scripts\Character.cs" />
     <Compile Include="Assets\_SlidingSanta\Scripts\CharacterScroller.cs" />
@@ -108,6 +145,7 @@
     <Compile Include="Assets\_SlidingSanta\Scripts\PremiumFeatures\RatingRequester.cs" />
     <Compile Include="Assets\_SlidingSanta\Scripts\PremiumFeatures\ScoreReporter.cs" />
     <Compile Include="Assets\_SlidingSanta\Scripts\PremiumFeatures\ScreenshotSharer.cs" />
+    <Compile Include="Assets\_SlidingSanta\Scripts\Purchaser.cs" />
     <Compile Include="Assets\_SlidingSanta\Scripts\RewardUIController.cs" />
     <Compile Include="Assets\_SlidingSanta\Scripts\Services\AppInfo.cs" />
     <Compile Include="Assets\_SlidingSanta\Scripts\Services\CoinManager.cs" />
@@ -124,6 +162,50 @@
     <Compile Include="Assets\_SlidingSanta\Scripts\UnityImageEffects\PostEffectsBase.cs" />
     <Compile Include="Assets\_SlidingSanta\Scripts\UnityImageEffects\PostEffectsHelper.cs" />
     <Compile Include="Assets\_SlidingSanta\Scripts\VehicleManager.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\AdFailedToLoadEventArgs.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\AdLoader.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\AdPosition.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\AdRequest.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\AdSize.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\BannerView.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\CustomNativeEventArgs.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\CustomNativeTemplateAd.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\Gender.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\InterstitialAd.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\Mediation\MediationExtras.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\MobileAds.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\NativeExpressAdView.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\Reward.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\RewardBasedVideoAd.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\DummyClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\IAdLoaderClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\IBannerClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\ICustomNativeTemplateClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\IInterstitialClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\IMobileAdsClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\INativeExpressAdClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\IRewardBasedVideoAdClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\MobileAdsEventExecutor.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Common\Utils.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\Android\AdLoaderClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\Android\BannerClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\Android\CustomNativeTemplateClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\Android\InterstitialClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\Android\MobileAdsClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\Android\NativeExpressAdClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\Android\RewardBasedVideoAdClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\Android\Utils.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\GoogleMobileAdsClientFactory.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\AdLoaderClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\BannerClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\CustomNativeTemplateClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\Externs.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\InterstitialClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\MobileAdsClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\MonoPInvokeCallbackAttribute.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\NativeExpressAdClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\RewardBasedVideoAdClient.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Platforms\iOS\Utils.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\Achievement.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\CommonStatusCodes.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\CommonTypes.cs" />
@@ -305,8 +387,10 @@
     <Compile Include="Assets\GooglePlayGames\Platforms\PlayGamesClientFactory.cs" />
     <Compile Include="Assets\GooglePlayGames\Platforms\TokenClient.cs" />
     <Compile Include="Assets\GooglePlayGames\PluginVersion.cs" />
+    <Compile Include="Assets\GPGSIds.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\GoogleMobileAds\Editor\GoogleMobileAdsDependencies.xml" />
     <None Include="Assets\GooglePlayGames\Editor\GooglePlayGamesPluginDependencies.xml" />
     <None Include="Assets\GooglePlayGames\Editor\GooglePlayGamesPlugin_v0.9.50.txt" />
     <None Include="Assets\GooglePlayGames\Editor\m2repository\com\google\games\gpgs-plugin-support\maven-metadata.xml" />
@@ -315,27 +399,36 @@
     <None Include="Assets\GooglePlayGames\Editor\template-GameInfo.txt" />
     <None Include="Assets\GooglePlayGames\Plugins\Android\GooglePlayGamesManifest.plugin\AndroidManifest.xml" />
     <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.61.0.txt" />
-    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-auth-api-phone-license-11.6.2\AndroidManifest.xml" />
-    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-auth-api-phone-license-11.6.2\third_party_licenses.txt" />
-    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-auth-base-license-11.6.2\AndroidManifest.xml" />
-    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-auth-base-license-11.6.2\third_party_licenses.txt" />
-    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-base-license-11.6.2\AndroidManifest.xml" />
-    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-base-license-11.6.2\third_party_licenses.txt" />
-    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-basement-license-11.6.2\AndroidManifest.xml" />
-    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-basement-license-11.6.2\third_party_licenses.txt" />
-    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-drive-license-11.6.2\AndroidManifest.xml" />
-    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-drive-license-11.6.2\third_party_licenses.txt" />
-    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-games-license-11.6.2\AndroidManifest.xml" />
-    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-games-license-11.6.2\third_party_licenses.txt" />
-    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-nearby-license-11.6.2\AndroidManifest.xml" />
-    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-nearby-license-11.6.2\third_party_licenses.txt" />
-    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-tasks-license-11.6.2\AndroidManifest.xml" />
-    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-tasks-license-11.6.2\third_party_licenses.txt" />
+    <None Include="Assets\Plugins\Android\GoogleMobileAdsPlugin\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-ads-license-11.8.0\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-ads-license-11.8.0\third_party_licenses.txt" />
+    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-ads-lite-license-11.8.0\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-ads-lite-license-11.8.0\third_party_licenses.txt" />
+    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-auth-api-phone-license-11.8.0\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-auth-api-phone-license-11.8.0\third_party_licenses.txt" />
+    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-auth-base-license-11.8.0\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-auth-base-license-11.8.0\third_party_licenses.txt" />
+    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-base-license-11.8.0\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-base-license-11.8.0\third_party_licenses.txt" />
+    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-basement-license-11.8.0\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-basement-license-11.8.0\third_party_licenses.txt" />
+    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-drive-license-11.8.0\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-drive-license-11.8.0\third_party_licenses.txt" />
+    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-games-license-11.8.0\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-games-license-11.8.0\third_party_licenses.txt" />
+    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-gass-license-11.8.0\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-gass-license-11.8.0\third_party_licenses.txt" />
+    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-nearby-license-11.8.0\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-nearby-license-11.8.0\third_party_licenses.txt" />
+    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-tasks-license-11.8.0\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\com.google.android.gms.play-services-tasks-license-11.8.0\third_party_licenses.txt" />
     <None Include="Assets\Plugins\Android\com.google.games.gpgs-plugin-support-0.9.50\AndroidManifest.xml" />
     <None Include="Assets\Plugins\Android\com.google.games.gpgs-plugin-support-0.9.50\R.txt" />
     <None Include="Assets\Plugins\Android\com.google.games.gpgs-plugin-support-0.9.50\res\values-v11\values-v11.xml" />
     <None Include="Assets\Plugins\Android\com.google.games.gpgs-plugin-support-0.9.50\res\values-v14\values-v14.xml" />
     <None Include="Assets\Plugins\Android\com.google.games.gpgs-plugin-support-0.9.50\res\values\values.xml" />
+    <None Include="Assets\Plugins\UnityPurchasing\Android\proguard-user.txt.OPTIONAL.txt" />
+    <None Include="Assets\Plugins\UnityPurchasing\script\link.xml" />
     <None Include="Assets\_SlidingSanta\Shaders\GradientSkybox.shader" />
     <None Include="Assets\_SlidingSanta\Shaders\MobileBlur.shader" />
     <None Include="Assets\_SlidingSanta\Shaders\VerticalGradient.shader" />
