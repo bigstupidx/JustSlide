@@ -94,29 +94,29 @@
     <Reference Include="UnityStore">
       <HintPath>Assets\Plugins\UnityChannel\UnityStore.dll</HintPath>
     </Reference>
+    <Reference Include="Editor">
+      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Purchasing.Common">
+      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Purchasing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Stores">
+      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Stores.dll</HintPath>
+    </Reference>
+    <Reference Include="Apple">
+      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Apple\Apple.dll</HintPath>
+    </Reference>
     <Reference Include="FacebookStore">
       <HintPath>Assets\Plugins\UnityPurchasing\Bin\Facebook\FacebookStore.dll</HintPath>
     </Reference>
     <Reference Include="Security">
       <HintPath>Assets\Plugins\UnityPurchasing\Bin\Security\live\Security.dll</HintPath>
     </Reference>
-    <Reference Include="Purchasing.Common">
-      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Purchasing.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Apple">
-      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Apple\Apple.dll</HintPath>
-    </Reference>
-    <Reference Include="Stores">
-      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Stores.dll</HintPath>
-    </Reference>
     <Reference Include="Tizen">
       <HintPath>Assets\Plugins\UnityPurchasing\Bin\Tizen\Tizen.dll</HintPath>
     </Reference>
     <Reference Include="winrt">
       <HintPath>Assets\Plugins\UnityPurchasing\winrt\winrt.dll</HintPath>
-    </Reference>
-    <Reference Include="Editor">
-      <HintPath>Assets\Plugins\UnityPurchasing\Bin\Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -133,9 +133,11 @@
     <Compile Include="Assets\_SlidingSanta\Scripts\EnvironmentManager.cs" />
     <Compile Include="Assets\_SlidingSanta\Scripts\GameManager.cs" />
     <Compile Include="Assets\_SlidingSanta\Scripts\GoldController.cs" />
+    <Compile Include="Assets\_SlidingSanta\Scripts\GoogleManager.cs" />
     <Compile Include="Assets\_SlidingSanta\Scripts\HumanManager.cs" />
     <Compile Include="Assets\_SlidingSanta\Scripts\MouseOverDetector.cs" />
     <Compile Include="Assets\_SlidingSanta\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\_SlidingSanta\Scripts\PlayGamesScript.cs" />
     <Compile Include="Assets\_SlidingSanta\Scripts\PreCrashDetector.cs" />
     <Compile Include="Assets\_SlidingSanta\Scripts\PremiumFeatures\AchievementUnlocker.cs" />
     <Compile Include="Assets\_SlidingSanta\Scripts\PremiumFeatures\AdDisplayer.cs" />

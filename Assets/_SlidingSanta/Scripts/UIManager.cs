@@ -171,10 +171,6 @@ namespace SgLib
                 else
                 {
                     GameManager.Instance.StartGame();
-                    if(!BannerAd.Instance.isBannerOn)
-                    {
-                        BannerAd.Instance.ShowBannerAd();
-                    }
                 }
             }
             else if (GameManager.Instance.GameState == GameState.GameOver)
@@ -212,7 +208,7 @@ namespace SgLib
         //Show Leaderboard
         public void ShowLeaderboard()
         {
-            Social.ShowLeaderboardUI();
+            PlayGamesScript.ShowLeaderboardsUI();
         }
 
         public void ShowStartUI()

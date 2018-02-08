@@ -182,24 +182,9 @@ namespace SgLib
         void Start()
         {
             // Initial setup
+            //GooglePlayGames.PlayGamesPlatform.Activate();
             Application.targetFrameRate = targetFrameRate;
-            if (Application.platform == RuntimePlatform.Android)
-            {
-                //PlayGamesPlatform.Activate();
-                leaderboard = android_Leaderboard;
-                
-            }
-            else if (Application.platform == RuntimePlatform.IPhonePlayer)
-            {
-                leaderboard = ios_Leaderboard;
-            }
-            else
-            {
-                leaderboard = ios_Leaderboard;
-            }
-
-            Social.localUser.Authenticate(success => { if (success) { Debug.Log("==iOS GC authenticate OK"); } else { Debug.Log("==iOS GC authenticate Failed"); } });
-            Debug.Log("Username GC " + Social.localUser.userName);
+            
 
             PrepareGame();
             
@@ -213,20 +198,6 @@ namespace SgLib
             
         }
 
-        //Report score to the leaderboard
-        void ReportScore()
-        {
-            if (Social.localUser.authenticated)
-            {
-                Social.ReportScore(ScoreManager.Instance.Score, leaderboard, success =>
-                { if (success) { Debug.Log("==iOS GC report score ok: " + ScoreManager.Instance.Score + "\n"); } else { Debug.Log("==iOS GC report score Failed: " + leaderboard + "\n"); } });
-
-            }
-            else
-            {
-                Debug.Log("==iOS GC can't report score, not authenticated\n");
-            }
-        }
 
 
 
@@ -302,7 +273,11 @@ namespace SgLib
         {
             GameState = GameState.GameOver;
             GameCount++;
-            ReportScore();
+            if(GameCount % 5 == 0)
+            {
+                UnityAds.ads.ShowAd();
+            }
+            GoogleManager.ReportScore();
 
             
             StartCoroutine(CRStopMusic(1f));

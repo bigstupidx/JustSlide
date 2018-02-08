@@ -11,7 +11,7 @@ Summary:
     Generic Abstract Classes = 3
     Attributes = 165
   Total Field Removals = 675
-  Total Method Removals = 11244
+  Total Method Removals = 11232
 ---------------------------------------------------
 ---------------------------------------------------
 Assembly: Apple
@@ -8857,7 +8857,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 43
   Total Field Removals = 84
-  Total Method Removals = 5294
+  Total Method Removals = 5282
   References Removed = 0
 ---------------------------------------------------
     <PrivateImplementationDetails>
@@ -14097,8 +14097,6 @@ Summary:
         LoadAchievements(System.Action`1<UnityEngine.SocialPlatforms.IAchievement[]>)
         LoadScores(System.String,System.Action`1<UnityEngine.SocialPlatforms.IScore[]>)
         LoadUsers(System.String[],System.Action`1<UnityEngine.SocialPlatforms.IUserProfile[]>)
-        ReportProgress(System.String,System.Double,System.Action`1<System.Boolean>)
-        ShowAchievementsUI()
     UnityEngine.SocialPlatforms.IAchievement
         get_completed()
         get_hidden()
@@ -14136,13 +14134,7 @@ Summary:
     UnityEngine.SocialPlatforms.Impl.Achievement
         .ctor()
         .ctor(System.String,System.Double)
-        .ctor(System.String,System.Double,System.Boolean,System.Boolean,System.DateTime)
         ReportProgress(System.Action`1<System.Boolean>)
-        set_id(System.String)
-        set_percentCompleted(System.Double)
-        SetCompleted(System.Boolean)
-        SetHidden(System.Boolean)
-        SetLastReportedDate(System.DateTime)
     UnityEngine.SocialPlatforms.Impl.AchievementDescription
         get_image()
         SetImage(UnityEngine.Texture2D)
@@ -14197,8 +14189,6 @@ Summary:
         LoadScores(System.String,System.Action`1<UnityEngine.SocialPlatforms.IScore[]>)
         LoadScores(UnityEngine.SocialPlatforms.ILeaderboard,System.Action`1<System.Boolean>)
         LoadUsers(System.String[],System.Action`1<UnityEngine.SocialPlatforms.IUserProfile[]>)
-        ReportProgress(System.String,System.Double,System.Action`1<System.Boolean>)
-        ShowAchievementsUI()
     UnityEngine.SocialPlatforms.IUserProfile
         get_image()
         get_isFriend()
@@ -14212,9 +14202,7 @@ Summary:
         LoadAchievements(System.Action`1<UnityEngine.SocialPlatforms.IAchievement[]>)
         LoadScores(System.String,System.Action`1<UnityEngine.SocialPlatforms.IScore[]>)
         LoadUsers(System.String[],System.Action`1<UnityEngine.SocialPlatforms.IUserProfile[]>)
-        ReportProgress(System.String,System.Double,System.Action`1<System.Boolean>)
         SetLocalPlayerScore(UnityEngine.SocialPlatforms.Impl.Leaderboard)
-        ShowAchievementsUI()
         SortScores(UnityEngine.SocialPlatforms.Impl.Leaderboard)
         UnityEngine.SocialPlatforms.ISocialPlatform.Authenticate(UnityEngine.SocialPlatforms.ILocalUser,System.Action`2<System.Boolean,System.String>)
         UnityEngine.SocialPlatforms.ISocialPlatform.LoadFriends(UnityEngine.SocialPlatforms.ILocalUser,System.Action`1<System.Boolean>)

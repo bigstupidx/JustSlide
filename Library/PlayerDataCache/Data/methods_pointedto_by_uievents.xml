@@ -25,21 +25,18 @@
 			<method name="ButtonClickSound"/>
 			<method name="HideSettingsUI"/>
 			<method name="ButtonClickSound"/>
-			<method name="ToggleSound"/>
 			<method name="ButtonClickSound"/>
+			<method name="ToggleSound"/>
 			<method name="ButtonClickSound"/>
 			<method name="HideStoreUI"/>
 			<method name="ButtonClickSound"/>
 			<method name="ToggleSound"/>
 			<method name="ButtonClickSound"/>
-			<method name="ButtonClickSound"/>
 			<method name="OpenFacebookPage"/>
 			<method name="ButtonClickSound"/>
-			<method name="CloseCharacterSelectionScene"/>
+			<method name="RestartGame"/>
 			<method name="ButtonClickSound"/>
 			<method name="ShowStoreUI"/>
-			<method name="ButtonClickSound"/>
-			<method name="RestartGame"/>
 			<method name="ButtonClickSound"/>
 			<method name="ToggleMusic"/>
 			<method name="ButtonClickSound"/>
@@ -47,12 +44,15 @@
 			<method name="ButtonClickSound"/>
 			<method name="ShowTutorial"/>
 			<method name="ButtonClickSound"/>
+			<method name="CloseCharacterSelectionScene"/>
+			<method name="ButtonClickSound"/>
 			<method name="ButtonClickSound"/>
 			<method name="ShowLeaderboard"/>
 			<method name="ButtonClickSound"/>
 			<method name="ToggleMusic"/>
 			<method name="ButtonClickSound"/>
 			<method name="ShowAchievementsUI"/>
+			<method name="ButtonClickSound"/>
 			<method name="ButtonClickSound"/>
 			<method name="ButtonClickSound"/>
 			<method name="ShowCharacterSelectionScene"/>
@@ -63,8 +63,8 @@
 		</type>
 		<type fullname="SgLib.CharacterScroller">
 			<method name="UnlockHumanButton"/>
-			<method name="UnlockVehicleButton"/>
 			<method name="HandleConfirmButton"/>
+			<method name="UnlockVehicleButton"/>
 		</type>
 		<type fullname="UnityAds">
 			<method name="ShowAd"/>

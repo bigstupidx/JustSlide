@@ -4,38 +4,31 @@ using GoogleMobileAds;
 using GoogleMobileAds.Api;
 
 
-
 // Example script showing how to invoke the Google Mobile Ads Unity plugin.
 public class BannerAd : MonoBehaviour
 {
-    public static BannerAd Instance { get; private set; }
+    public static BannerAd Instance;
+
     private BannerView bannerView;
     private InterstitialAd interstitial;
     private RewardBasedVideoAd rewardBasedVideo;
     private float deltaTime = 0.0f;
     private static string outputMessage = "";
-    private string appId;
-    public bool isBannerOn = false;
     public bool isAdFree = false;
+    string bannerID = "ca-app-pub-3940256099942544/6300978111"; //"ca-app-pub-5229788927100372/8321228797";
 
     public static string OutputMessage
     {
         set { outputMessage = value; }
     }
 
+    void Awake()
+    {
+        MobileAds.Initialize("ca-app-pub-5229788927100372~3985084888");
+    }
     void Start()
     {
         Instance = this;
-#if UNITY_ANDROID
-        appId = "ca-app-pub-5229788927100372~3985084888";
-#elif UNITY_IPHONE
-            string appId = "ca-app-pub-3940256099942544~1458002511";
-#else
-            string appId = "unexpected_platform";
-#endif
-
-        // Initialize the Google Mobile Ads SDK.
-        MobileAds.Initialize(appId);
 
         // Get singleton reward based video ad reference.
         rewardBasedVideo = RewardBasedVideoAd.Instance;
@@ -49,22 +42,14 @@ public class BannerAd : MonoBehaviour
         rewardBasedVideo.OnAdClosed += HandleRewardBasedVideoClosed;
         rewardBasedVideo.OnAdLeavingApplication += HandleRewardBasedVideoLeftApplication;
 
-        ShowBannerAd();
-
-        if(PlayerPrefs.GetInt("AdFree") == 0)
-        {
-            isAdFree = false;
-        }
-        else
+        if(PlayerPrefs.GetInt("AdFree") == 1)
         {
             isAdFree = true;
         }
-        
-    }
-
-    public void ShowBannerAd()
-    {
-        RequestBanner();
+        if(!isAdFree)
+        {
+            RequestBanner();
+        }
         
     }
 
@@ -123,8 +108,8 @@ public class BannerAd : MonoBehaviour
         if (GUI.Button(showInterstitialRect, "Show Interstitial"))
         {
             ShowInterstitial();
-        }*/
-        /*
+        }
+        
                 Rect requestRewardedRect = new Rect(0.1f * Screen.width, 0.675f * Screen.height,
                                                0.8f * Screen.width, 0.1f * Screen.height);
                 if (GUI.Button(requestRewardedRect, "Request Rewarded Video"))
@@ -138,30 +123,35 @@ public class BannerAd : MonoBehaviour
                 {
                     ShowRewardBasedVideo();
                 }
-                */
-       /* Rect textOutputRect = new Rect(0.1f * Screen.width, 0.925f * Screen.height,
+                
+        Rect textOutputRect = new Rect(0.1f * Screen.width, 0.925f * Screen.height,
                                   0.8f * Screen.width, 0.05f * Screen.height);
         GUI.Label(textOutputRect, outputMessage);
     }*/
 
     private void RequestBanner()
     {
-        if(!isAdFree)
-        {
-            Debug.Log("Banner Requested");
-            // Create a 320x50 banner at the top of the screen.
-            bannerView = new BannerView(appId, AdSize.SmartBanner, AdPosition.Bottom);
-            // Register for ad events.
-            bannerView.OnAdLoaded += HandleAdLoaded;
-            bannerView.OnAdFailedToLoad += HandleAdFailedToLoad;
-            bannerView.OnAdLoaded += HandleAdOpened;
-            bannerView.OnAdClosed += HandleAdClosed;
-            bannerView.OnAdLeavingApplication += HandleAdLeftApplication;
-            // Load a banner ad.
-            bannerView.LoadAd(createAdRequest());
-
-            bannerView.Show();
-        }
+#if UNITY_EDITOR
+        string adUnitId = "ca-app-pub-3940256099942544/6300978111";
+#elif UNITY_ANDROID
+            string adUnitId = "ca-app-pub-3940256099942544/6300978111";
+#elif (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+            string adUnitId = "ca-app-pub-3940256099942544/6300978111";
+#else
+            string adUnitId = "unexpected_platform";
+#endif
+        Debug.Log("Ad Unit ID: " + bannerID);
+        // Create a 320x50 banner at the top of the screen.
+        bannerView = new BannerView(bannerID, AdSize.SmartBanner, AdPosition.Bottom);
+        // Register for ad events.
+        bannerView.OnAdLoaded += HandleAdLoaded;
+        bannerView.OnAdFailedToLoad += HandleAdFailedToLoad;
+        bannerView.OnAdLoaded += HandleAdOpened;
+        bannerView.OnAdClosed += HandleAdClosed;
+        bannerView.OnAdLeavingApplication += HandleAdLeftApplication;
+        // Load a banner ad.
+        bannerView.LoadAd(createAdRequest());
+        bannerView.Show();
         
     }
 
@@ -223,12 +213,10 @@ public class BannerAd : MonoBehaviour
         if (interstitial.IsLoaded())
         {
             interstitial.Show();
-            
         }
         else
         {
             print("Interstitial is not ready yet.");
-            
         }
     }
 
@@ -254,25 +242,21 @@ public class BannerAd : MonoBehaviour
     public void HandleAdFailedToLoad(object sender, AdFailedToLoadEventArgs args)
     {
         print("HandleFailedToReceiveAd event received with message: " + args.Message);
-        isBannerOn = false;
     }
 
     public void HandleAdOpened(object sender, EventArgs args)
     {
         print("HandleAdOpened event received");
-        isBannerOn = true;
     }
 
     void HandleAdClosing(object sender, EventArgs args)
     {
         print("HandleAdClosing event received");
-        isBannerOn = false;
     }
 
     public void HandleAdClosed(object sender, EventArgs args)
     {
         print("HandleAdClosed event received");
-        isBannerOn = false;
     }
 
     public void HandleAdLeftApplication(object sender, EventArgs args)
@@ -357,5 +341,4 @@ public class BannerAd : MonoBehaviour
     }
 
     #endregion
-
 }
