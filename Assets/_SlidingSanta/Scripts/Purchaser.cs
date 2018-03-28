@@ -251,6 +251,7 @@ public class Purchaser : MonoBehaviour, IStoreListener
         {
             Debug.Log(string.Format("ProcessPurchase: PASS. Product: '{0}'", args.purchasedProduct.definition.id));
             PlayerPrefs.SetInt("AdFree", 1);
+            BannerAd.Instance.HideAds();
             BannerAd.Instance.isAdFree = true;
         }
         // Or ... an unknown product has been purchased by this user. Fill in additional products here....

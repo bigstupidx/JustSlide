@@ -5,12 +5,12 @@ using SgLib;
 
 public class UnityAds : MonoBehaviour {
 
-    public static UnityAds ads;
-    public string rewardZone;
+    public static UnityAds instance;
+    public bool rewardZone;
 
     void Awake()
     {
-        ads = this;
+        instance = this;
 
         if(Application.platform == RuntimePlatform.Android)
         {
@@ -35,6 +35,8 @@ public class UnityAds : MonoBehaviour {
 
         if (string.Equals(zone, ""))
             zone = null;
+        else
+            rewardZone = true;
 
         ShowOptions options = new ShowOptions();
         options.resultCallback = AdCallbackhandler;
@@ -55,7 +57,8 @@ public class UnityAds : MonoBehaviour {
         {
             case ShowResult.Finished:
                 Debug.Log("Ad Finished. Rewarding player...");
-                UIManager.Instance.GrabVideoReward();
+                if(rewardZone)
+                    UIManager.Instance.GrabVideoReward();
                 break;
             case ShowResult.Skipped:
                 Debug.Log("Ad skipped. Son, I am dissapointed in you");

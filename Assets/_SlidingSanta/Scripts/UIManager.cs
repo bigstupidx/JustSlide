@@ -208,7 +208,7 @@ namespace SgLib
         //Show Leaderboard
         public void ShowLeaderboard()
         {
-            PlayGamesScript.ShowLeaderboardsUI();
+            Social.ShowLeaderboardUI();
         }
 
         public void ShowStartUI()

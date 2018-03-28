@@ -15,7 +15,7 @@ public class BannerAd : MonoBehaviour
     private float deltaTime = 0.0f;
     private static string outputMessage = "";
     public bool isAdFree = false;
-    string bannerID = "ca-app-pub-3940256099942544/6300978111"; //"ca-app-pub-5229788927100372/8321228797";
+    string bannerID = "ca-app-pub-5229788927100372/8321228797"; //"ca-app-pub-5229788927100372/8321228797";
 
     public static string OutputMessage
     {
@@ -51,6 +51,12 @@ public class BannerAd : MonoBehaviour
             RequestBanner();
         }
         
+    }
+
+    public void HideAds()
+    {
+        bannerView.Hide();
+        Debug.Log("Ads Hidden");
     }
 
     void Update()
@@ -132,7 +138,7 @@ public class BannerAd : MonoBehaviour
     private void RequestBanner()
     {
 #if UNITY_EDITOR
-        string adUnitId = "ca-app-pub-3940256099942544/6300978111";
+        //string adUnitId = "ca-app-pub-3940256099942544/6300978111";
 #elif UNITY_ANDROID
             string adUnitId = "ca-app-pub-3940256099942544/6300978111";
 #elif (UNITY_5 && UNITY_IOS) || UNITY_IPHONE

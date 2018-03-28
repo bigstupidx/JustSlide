@@ -19,7 +19,6 @@
 <type fullname="SgLib.HumanManager" preserve="all"/>
 <type fullname="SgLib.MouseOverDetector" preserve="all"/>
 <type fullname="SgLib.PlayerController" preserve="all"/>
-<type fullname="PlayGamesScript" preserve="all"/>
 <type fullname="SgLib.PreCrashDetector" preserve="all"/>
 <type fullname="SgLib.AchievementUnlocker" preserve="all"/>
 <type fullname="SgLib.AdDisplayer" preserve="all"/>

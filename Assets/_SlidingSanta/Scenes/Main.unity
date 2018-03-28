@@ -6738,7 +6738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10719ae26c88a4a44a13de75e4ca4af0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rewardZone: 
+  rewardZone: 144
 --- !u!114 &1228792609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6761,7 +6761,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f76e52e39333974db9989985af01335, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isBannerOn: 0
   isAdFree: 0
 --- !u!1 &1236770002
 GameObject:
@@ -12044,7 +12043,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1297906557}
         m_MethodName: RestorePurchases
         m_Mode: 1
         m_Arguments:

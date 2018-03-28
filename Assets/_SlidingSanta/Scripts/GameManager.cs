@@ -194,7 +194,7 @@ namespace SgLib
         //Show Unity Ads
         public void ShowAd(string zone)
         {
-            UnityAds.ads.ShowAd(zone);
+            UnityAds.instance.ShowAd(zone);
             
         }
 
@@ -275,7 +275,7 @@ namespace SgLib
             GameCount++;
             if(GameCount % 5 == 0)
             {
-                UnityAds.ads.ShowAd();
+                //UnityAds.instance.ShowAd();
             }
             GoogleManager.ReportScore();
 
