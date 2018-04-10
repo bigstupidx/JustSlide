@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{1C8771A0-C037-0284-15B9-8C530BA1265E}|">
+  <MonoDevelop.Ide.ItemProperties.JustSlide PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_SlidingSanta/Scripts/UnityAds.cs">
+    <Files>
+      <File FileName="Assets/_SlidingSanta/Scripts/GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/_SlidingSanta/Scripts/UIManager.cs" Line="1" Column="3" />
+      <File FileName="Assets/_SlidingSanta/Scripts/UnityAds.cs" Line="2" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

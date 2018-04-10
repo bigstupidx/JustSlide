@@ -15,7 +15,7 @@ public class BannerAd : MonoBehaviour
     private float deltaTime = 0.0f;
     private static string outputMessage = "";
     public bool isAdFree = false;
-    string bannerID = "ca-app-pub-3940256099942544/6300978111"; //"ca-app-pub-5229788927100372/8321228797";
+    string bannerID = "ca-app-pub-5229788927100372/8321228797"; //"ca-app-pub-5229788927100372/8321228797";
 
     public static string OutputMessage
     {
@@ -24,7 +24,11 @@ public class BannerAd : MonoBehaviour
 
     void Awake()
     {
-        MobileAds.Initialize("ca-app-pub-5229788927100372~3985084888");
+        if(PlayerPrefs.GetInt("AdFree") == 0)
+        {
+            MobileAds.Initialize("ca-app-pub-5229788927100372~3985084888");
+        }
+        
     }
     void Start()
     {
@@ -51,6 +55,11 @@ public class BannerAd : MonoBehaviour
             RequestBanner();
         }
         
+    }
+
+    public void HideAds()
+    {
+        bannerView.Hide();
     }
 
     void Update()
@@ -131,15 +140,7 @@ public class BannerAd : MonoBehaviour
 
     private void RequestBanner()
     {
-#if UNITY_EDITOR
-        string adUnitId = "ca-app-pub-3940256099942544/6300978111";
-#elif UNITY_ANDROID
-            string adUnitId = "ca-app-pub-3940256099942544/6300978111";
-#elif (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
-            string adUnitId = "ca-app-pub-3940256099942544/6300978111";
-#else
-            string adUnitId = "unexpected_platform";
-#endif
+
         Debug.Log("Ad Unit ID: " + bannerID);
         // Create a 320x50 banner at the top of the screen.
         bannerView = new BannerView(bannerID, AdSize.SmartBanner, AdPosition.Bottom);

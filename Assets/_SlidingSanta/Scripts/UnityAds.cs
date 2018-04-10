@@ -5,12 +5,12 @@ using SgLib;
 
 public class UnityAds : MonoBehaviour {
 
-    public static UnityAds ads;
+    public static UnityAds instance;
     public string rewardZone;
 
     void Awake()
     {
-        ads = this;
+        instance = this;
 
         if(Application.platform == RuntimePlatform.Android)
         {

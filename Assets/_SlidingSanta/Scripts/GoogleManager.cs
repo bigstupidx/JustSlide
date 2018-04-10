@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using GooglePlayGames;
-using GooglePlayGames.BasicApi;
+//using GooglePlayGames;
+//using GooglePlayGames.BasicApi;
 using UnityEngine;
 using UnityEngine.UI;
 using SgLib;
@@ -10,7 +10,7 @@ public class GoogleManager : MonoBehaviour
 {
 
     string androidLeaderboard = "CgkItYWW9sgKEAIQAA";
-    string iosLeaderboard = "Replace This";
+    string iosLeaderboard = "justslide.highscore";
     static string leaderboard;
 
     // Use this for initialization
@@ -32,8 +32,8 @@ public class GoogleManager : MonoBehaviour
         }
 
 
-        PlayGamesPlatform.DebugLogEnabled = true;
-        PlayGamesPlatform.Activate();
+        //PlayGamesPlatform.DebugLogEnabled = true;
+        //PlayGamesPlatform.Activate();
         LogIn();
     }
 
@@ -63,6 +63,6 @@ public class GoogleManager : MonoBehaviour
     public void LogOut()
     {
         Debug.Log("LogOut");
-        ((PlayGamesPlatform)Social.Active).SignOut();
+        //((PlayGamesPlatform)Social.Active).SignOut();
     }
 }

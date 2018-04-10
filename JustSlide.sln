@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio for Mac
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustSlide", "JustSlide.csproj", "{1C8771A0-C037-0284-15B9-8C530BA1265E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustSlide.Plugins", "JustSlide.Plugins.csproj", "{6D67986E-7555-7E16-9450-14B788696C84}"

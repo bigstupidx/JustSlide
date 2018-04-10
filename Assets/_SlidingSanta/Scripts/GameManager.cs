@@ -26,6 +26,7 @@ namespace SgLib
 
         public GameState GameState
         {
+
             get
             {
                 return _gameState;
@@ -190,11 +191,16 @@ namespace SgLib
             
         }
 
+        void Update()
+        {
+            UIManager.Instance.SetFPS(1.0f / Time.deltaTime);
+        }
+
 
         //Show Unity Ads
         public void ShowAd(string zone)
         {
-            UnityAds.ads.ShowAd(zone);
+            //UnityAds.instance.ShowAd(zone);
             
         }
 
@@ -275,9 +281,11 @@ namespace SgLib
             GameCount++;
             if(GameCount % 5 == 0)
             {
-                UnityAds.ads.ShowAd();
+                //UnityAds.instance.ShowAd();
             }
             GoogleManager.ReportScore();
+            AppsFlyerMMP.Score(ScoreManager.Instance.Score);
+            
 
             
             StartCoroutine(CRStopMusic(1f));

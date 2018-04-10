@@ -37,6 +37,7 @@ namespace SgLib
         public GameObject soundOffBtn;
         public GameObject musicOnBtn;
         public GameObject musicOffBtn;
+        public Text FPS;
 
         [Header("Premium Features Buttons")]
         public GameObject watchRewardedAdBtn;
@@ -64,6 +65,7 @@ namespace SgLib
         {
             GameManager.GameStateChanged += GameManager_GameStateChanged;
             ScoreManager.ScoreUpdated += OnScoreUpdated;
+
         }
 
         void OnDisable()
@@ -85,6 +87,7 @@ namespace SgLib
         // Update is called once per frame
         void Update()
         {
+
             score.text = ScoreManager.Instance.Score.ToString();
             bestScore.text = ScoreManager.Instance.HighScore.ToString();
             coinText.text = CoinManager.Instance.Coins.ToString();
@@ -109,6 +112,11 @@ namespace SgLib
                 UpdateMuteButtons();
                 UpdateMusicButtons();
             }
+        }
+
+        public void SetFPS(float fps)
+        {
+            FPS.text = "FPS: " + fps;
         }
 
         void GameManager_GameStateChanged(GameState newState, GameState oldState)
@@ -144,9 +152,9 @@ namespace SgLib
             // Enable or disable premium stuff
             bool enablePremium = IsPremiumFeaturesEnabled();
             leaderboardBtn.SetActive(true);
-            iapPurchaseBtn.SetActive(true);
-            removeAdsBtn.SetActive(true);
-            restorePurchaseBtn.SetActive(true);
+            //iapPurchaseBtn.SetActive(true);
+            //removeAdsBtn.SetActive(true);
+            //restorePurchaseBtn.SetActive(true);
 
             // Hidden by default
             storeUI.SetActive(false);
@@ -208,7 +216,7 @@ namespace SgLib
         //Show Leaderboard
         public void ShowLeaderboard()
         {
-            PlayGamesScript.ShowLeaderboardsUI();
+            Social.ShowLeaderboardUI();
         }
 
         public void ShowStartUI()

@@ -20,7 +20,7 @@ PlayerSettings:
   m_SplashScreenOverlayOpacity: 1
   m_SplashScreenAnimation: 1
   m_SplashScreenLogoStyle: 1
-  m_SplashScreenDrawMode: 0
+  m_SplashScreenDrawMode: 1
   m_SplashScreenBackgroundAnimationZoom: 1
   m_SplashScreenLogoAnimationZoom: 1
   m_SplashScreenBackgroundLandscapeAspect: 1
@@ -38,7 +38,9 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos:
-  - logo: {fileID: 21300000, guid: 57063eeffde5f8a408317ae02197fcc8, type: 3}
+  - logo: {fileID: 10404, guid: 0000000000000000e000000000000000, type: 0}
+    duration: 2
+  - logo: {fileID: 21300000, guid: 8d865fa4959284021977b28ca6b2ddd7, type: 3}
     duration: 2
   m_SplashScreenBackgroundLandscape: {fileID: 0}
   m_SplashScreenBackgroundPortrait: {fileID: 0}
@@ -123,7 +125,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.0
+  bundleVersion: 1.1
   preloadedAssets: []
   metroInputSource: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -146,10 +148,10 @@ PlayerSettings:
     Android: com.belizard.justslide
     Standalone: unity.Your Company.Sliding Santa
     Tizen: com.Company.ProductName
-    iOS: com.sglib.demogame
+    iOS: com.belizard.justslide
     tvOS: com.Company.ProductName
   buildNumber:
-    iOS: 0
+    iOS: 3
   AndroidBundleVersionCode: 5
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
@@ -239,7 +241,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 8e277db4c07cf423f9fe7c3075ca6006, type: 3}
+      m_Icon: {fileID: 2800000, guid: 3be74f1d0308544bf9c361d9187d5300, type: 3}
       m_Width: 128
       m_Height: 128
   m_BuildTargetBatching: []
@@ -687,7 +689,7 @@ PlayerSettings:
   facebookSdkVersion: 7.9.1
   apiCompatibilityLevel: 2
   cloudProjectId: 62c275f7-3784-457c-988d-3bd523b53489
-  projectName: JustSlide
+  projectName: Belizard - Just Slide
   organizationId: beratbekce
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
