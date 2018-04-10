@@ -1,0 +1,343 @@
+<aars>
+  <explodeData>
+    <aar>com.google.games.gpgs-plugin-support-0.9.50</aar>
+    <modificationTime>2018-04-09T16:00:56.0081293-07:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android\com.google.games.gpgs-plugin-support-0.9.50</path>
+    <targetAbi>fat</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.google.android.gms.play-services-tasks-license-11.8.0</aar>
+    <modificationTime>2018-04-09T16:00:55.9976014-07:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android\com.google.android.gms.play-services-tasks-license-11.8.0</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.google.android.gms.play-services-tasks-11.8.0</aar>
+    <modificationTime>2018-04-09T16:00:55.9915857-07:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android/com.google.android.gms.play-services-tasks-11.8.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.google.android.gms.play-services-nearby-license-11.8.0</aar>
+    <modificationTime>2018-04-09T16:00:55.9855700-07:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android\com.google.android.gms.play-services-nearby-license-11.8.0</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.google.android.gms.play-services-nearby-11.8.0</aar>
+    <modificationTime>2018-04-09T16:00:55.9780496-07:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android/com.google.android.gms.play-services-nearby-11.8.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.google.android.gms.play-services-gass-license-11.8.0</aar>
+    <modificationTime>2018-04-09T16:00:55.9720339-07:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android\com.google.android.gms.play-services-gass-license-11.8.0</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.google.android.gms.play-services-gass-11.8.0</aar>
+    <modificationTime>2018-04-09T16:00:55.9665191-07:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android/com.google.android.gms.play-services-gass-11.8.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.google.android.gms.play-services-games-license-11.8.0</aar>
+    <modificationTime>2018-04-09T16:00:55.9610051-07:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android\com.google.android.gms.play-services-games-license-11.8.0</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.google.android.gms.play-services-games-11.8.0</aar>
+    <modificationTime>2018-04-09T16:00:55.9539862-07:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android/com.google.android.gms.play-services-games-11.8.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.google.android.gms.play-services-drive-license-11.8.0</aar>
+    <modificationTime>2018-04-09T16:00:55.9469670-07:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android\com.google.android.gms.play-services-drive-license-11.8.0</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.google.android.gms.play-services-drive-11.8.0</aar>
+    <modificationTime>2018-04-09T16:00:55.9404495-07:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android/com.google.android.gms.play-services-drive-11.8.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.google.android.gms.play-services-basement-license-11.8.0</aar>
+    <modificationTime>2018-04-09T16:00:55.9339329-07:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android\com.google.android.gms.play-services-basement-license-11.8.0</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.google.android.gms.play-services-basement-11.8.0</aar>
+    <modificationTime>2018-04-09T16:00:55.9264125-07:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android/com.google.android.gms.play-services-basement-11.8.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.google.android.gms.play-services-base-license-11.8.0</aar>
+    <modificationTime>2018-04-09T16:00:55.9193941-07:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android\com.google.android.gms.play-services-base-license-11.8.0</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.google.android.gms.play-services-base-11.8.0</aar>
+    <modificationTime>2018-04-09T16:00:55.9053565-07:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android/com.google.android.gms.play-services-base-11.8.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.google.android.gms.play-services-auth-base-license-11.8.0</aar>
+    <modificationTime>2018-04-09T16:00:55.8978372-07:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android\com.google.android.gms.play-services-auth-base-license-11.8.0</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.google.android.gms.play-services-auth-base-11.8.0</aar>
+    <modificationTime>2018-04-09T16:00:55.8827964-07:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android/com.google.android.gms.play-services-auth-base-11.8.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.google.android.gms.play-services-auth-api-phone-license-11.8.0</aar>
+    <modificationTime>2018-04-09T16:00:55.8757780-07:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android\com.google.android.gms.play-services-auth-api-phone-license-11.8.0</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.google.android.gms.play-services-auth-api-phone-11.8.0</aar>
+    <modificationTime>2018-04-09T16:00:55.8692605-07:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android/com.google.android.gms.play-services-auth-api-phone-11.8.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.google.android.gms.play-services-auth-11.8.0</aar>
+    <modificationTime>2018-04-09T16:00:55.8627431-07:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android/com.google.android.gms.play-services-auth-11.8.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.google.android.gms.play-services-ads-lite-license-11.8.0</aar>
+    <modificationTime>2018-04-09T16:00:55.8557258-07:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android\com.google.android.gms.play-services-ads-lite-license-11.8.0</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.google.android.gms.play-services-ads-lite-11.8.0</aar>
+    <modificationTime>2018-04-09T16:00:55.8461992-07:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android/com.google.android.gms.play-services-ads-lite-11.8.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.google.android.gms.play-services-ads-license-11.8.0</aar>
+    <modificationTime>2018-04-09T16:00:55.8391806-07:00</modificationTime>
+    <explode>true</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android\com.google.android.gms.play-services-ads-license-11.8.0</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.google.android.gms.play-services-ads-11.8.0</aar>
+    <modificationTime>2018-04-09T16:00:55.8301563-07:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android/com.google.android.gms.play-services-ads-11.8.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.android.support.support-v4-25.2.0</aar>
+    <modificationTime>2018-04-09T16:00:55.8211326-07:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android/com.android.support.support-v4-25.2.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.android.support.support-media-compat-25.2.0</aar>
+    <modificationTime>2018-04-09T16:00:55.8136125-07:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android/com.android.support.support-media-compat-25.2.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.android.support.support-fragment-25.2.0</aar>
+    <modificationTime>2018-04-09T16:00:55.8050897-07:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android/com.android.support.support-fragment-25.2.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.android.support.support-core-utils-25.2.0</aar>
+    <modificationTime>2018-04-09T16:00:55.7970686-07:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android/com.android.support.support-core-utils-25.2.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.android.support.support-core-ui-25.2.0</aar>
+    <modificationTime>2018-04-09T16:00:55.7880452-07:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android/com.android.support.support-core-ui-25.2.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.android.support.support-compat-25.2.0</aar>
+    <modificationTime>2018-04-09T16:00:55.7780203-07:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android/com.android.support.support-compat-25.2.0.aar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+  <explodeData>
+    <aar>com.android.support.support-annotations-25.2.0</aar>
+    <modificationTime>0001-01-01T00:00:00.0000000-08:00</modificationTime>
+    <explode>false</explode>
+    <bundleId>com.belizard.justslide</bundleId>
+    <path>Assets/Plugins/Android/com.android.support.support-annotations-25.2.0.jar</path>
+    <targetAbi>universal</targetAbi>
+    <gradleBuildEnabled>false</gradleBuildEnabled>
+    <gradleExport>false</gradleExport>
+    <ignoredVersion />
+  </explodeData>
+</aars>

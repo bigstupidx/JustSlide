@@ -235,7 +235,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11449736, guid: e353b78d986484fc1af9fe44ab2fd5e1, type: 2}
       propertyPath: m_Text
-      value: $5.99
+      value: $4.99
       objectReference: {fileID: 0}
     - target: {fileID: 11435172, guid: e353b78d986484fc1af9fe44ab2fd5e1, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -2291,7 +2291,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11449736, guid: e353b78d986484fc1af9fe44ab2fd5e1, type: 2}
       propertyPath: m_Text
-      value: $4.99
+      value: $3.99
       objectReference: {fileID: 0}
     - target: {fileID: 11435172, guid: e353b78d986484fc1af9fe44ab2fd5e1, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -2935,14 +2935,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 448625287}
-  m_LocalRotation: {x: 0.30070576, y: 0, z: 0, w: 0.953717}
-  m_LocalPosition: {x: 0, y: 15, z: -25}
+  m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
+  m_LocalPosition: {x: 0, y: 17, z: -25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 290643957}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 35, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
 --- !u!114 &448625293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4818,7 +4818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.99215686, g: 0.7921569, b: 0.2509804, a: 1}
+  m_Color: {r: 0.14117648, g: 0.7372549, b: 0.7647059, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7211,9 +7211,9 @@ MonoBehaviour:
   minBirdFlyingSpeed: 4
   minWallDistance: 2
   maxWallDistance: 3
-  pathDifficulty: 0.4
+  pathDifficulty: 0.2
   obstacleFrequency: 0.2
-  giftFrequency: 0.4
+  giftFrequency: 0.5
   birdFrequency: 0.5
   uiManager: {fileID: 1228792607}
   playerController: {fileID: 1563879415}
@@ -8229,7 +8229,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11449736, guid: e353b78d986484fc1af9fe44ab2fd5e1, type: 2}
       propertyPath: m_Text
-      value: $7.99
+      value: $5.99
       objectReference: {fileID: 0}
     - target: {fileID: 11435172, guid: e353b78d986484fc1af9fe44ab2fd5e1, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
