@@ -1,5 +1,7 @@
 <linker>
 <assembly fullname="Assembly-CSharp-firstpass">
+<type fullname="AppsFlyer" preserve="all"/>
+<type fullname="AppsFlyerTrackerCallbacks" preserve="all"/>
 <type fullname="AppStoresSupport.AppStoreSettings" preserve="all"/>
 <type fullname="UnityEngine.Purchasing.DemoInventory" preserve="all"/>
 <type fullname="UnityEngine.Purchasing.IAPButton" preserve="all"/>
@@ -8,6 +10,7 @@
 <type fullname="UnityEngine.Purchasing.IAPListener" preserve="all"/>
 </assembly>
 <assembly fullname="Assembly-CSharp">
+<type fullname="AppsFlyerMMP" preserve="all"/>
 <type fullname="BannerAd" preserve="all"/>
 <type fullname="SgLib.CameraController" preserve="all"/>
 <type fullname="SgLib.Character" preserve="all"/>

@@ -126,6 +126,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_SlidingSanta\Scripts\AppsFlyerMMP.cs" />
     <Compile Include="Assets\_SlidingSanta\Scripts\BannerAd.cs" />
     <Compile Include="Assets\_SlidingSanta\Scripts\CameraController.cs" />
     <Compile Include="Assets\_SlidingSanta\Scripts\Character.cs" />

@@ -11,7 +11,7 @@ Summary:
     Generic Abstract Classes = 3
     Attributes = 165
   Total Field Removals = 675
-  Total Method Removals = 11244
+  Total Method Removals = 11243
 ---------------------------------------------------
 ---------------------------------------------------
 Assembly: Apple
@@ -8857,7 +8857,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 43
   Total Field Removals = 84
-  Total Method Removals = 5294
+  Total Method Removals = 5293
   References Removed = 0
 ---------------------------------------------------
     <PrivateImplementationDetails>
@@ -9153,7 +9153,6 @@ Summary:
         GetFieldID(System.IntPtr,System.String)
         GetFieldID(System.IntPtr,System.String,System.String)
         GetMethodID(System.IntPtr,System.String)
-        GetMethodID(System.IntPtr,System.String,System.String)
         GetSignature(System.Object)
         GetSignature(System.Object[])
         GetSignature<ReturnType>(System.Object[])

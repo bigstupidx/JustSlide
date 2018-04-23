@@ -182,3 +182,6 @@ a5bd1cf3d6c4fcd5351611d145de134a Assembly-CSharp.dll:SgLib.Character
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 8159363767c8f67409b50fbc4e1f1264 Assembly-CSharp-firstpass.dll:.IAPDemo
+79ece330e3861b661ccca94ad0d1a74c Assembly-CSharp-firstpass.dll:.AppsFlyerTrackerCallbacks
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:.AppsFlyer
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.AppsFlyerMMP

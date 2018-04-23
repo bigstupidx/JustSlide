@@ -140,6 +140,7 @@ namespace SgLib
         private bool isPreGameOver;
         private EnvironmentManager.Environment currentEnv;
         private GameState tmpState;
+        private int tempHighScore;
 
         void Awake()
         {
@@ -187,7 +188,9 @@ namespace SgLib
             
 
             PrepareGame();
-            
+            tempHighScore = ScoreManager.Instance.HighScore;
+
+
         }
 
 
@@ -278,6 +281,11 @@ namespace SgLib
                 //UnityAds.instance.ShowAd();
             }
             GoogleManager.ReportScore();
+            AppsFlyerMMP.Score(ScoreManager.Instance.Score);
+            if(ScoreManager.Instance.HighScore > tempHighScore)
+            {
+                AppsFlyerMMP.PassHighScore();
+            }
 
             
             StartCoroutine(CRStopMusic(1f));

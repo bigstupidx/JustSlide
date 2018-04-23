@@ -9,7 +9,7 @@ using SgLib;
 public class GoogleManager : MonoBehaviour
 {
 
-    string androidLeaderboard = "CgkItYWW9sgKEAIQAA";
+    string androidLeaderboard = "CgkIvMad1bMKEAIQAQ";
     string iosLeaderboard = "Replace This";
     static string leaderboard;
 
