@@ -1,5 +1,15 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="Purchaser">
+			<method name="BuyConsumable"/>
+			<method name="BuyConsumable"/>
+			<method name="BuyConsumable"/>
+			<method name="BuyConsumable"/>
+			<method name="BuyConsumable"/>
+			<method name="BuyNonConsumable"/>
+			<method name="BuyConsumable"/>
+			<method name="RestorePurchases"/>
+		</type>
 		<type fullname="ShareUIController">
 			<method name="Share"/>
 			<method name="SwitchFormat"/>
@@ -20,14 +30,14 @@
 			<method name="ButtonClickSound"/>
 			<method name="HideStoreUI"/>
 			<method name="ButtonClickSound"/>
-			<method name="ButtonClickSound"/>
 			<method name="CloseCharacterSelectionScene"/>
 			<method name="ButtonClickSound"/>
 			<method name="ToggleSound"/>
 			<method name="ButtonClickSound"/>
-			<method name="OpenFacebookPage"/>
 			<method name="ButtonClickSound"/>
 			<method name="RestartGame"/>
+			<method name="ButtonClickSound"/>
+			<method name="OpenFacebookPage"/>
 			<method name="ButtonClickSound"/>
 			<method name="ShowStoreUI"/>
 			<method name="ButtonClickSound"/>
@@ -48,16 +58,6 @@
 			<method name="ButtonClickSound"/>
 			<method name="ShowCharacterSelectionScene"/>
 			<method name="ButtonClickSound"/>
-		</type>
-		<type fullname="Purchaser">
-			<method name="BuyConsumable"/>
-			<method name="BuyConsumable"/>
-			<method name="BuyConsumable"/>
-			<method name="BuyNonConsumable"/>
-			<method name="BuyConsumable"/>
-			<method name="BuyConsumable"/>
-			<method name="BuyConsumable"/>
-			<method name="RestorePurchases"/>
 		</type>
 		<type fullname="SgLib.RewardUIController">
 			<method name="Close"/>
