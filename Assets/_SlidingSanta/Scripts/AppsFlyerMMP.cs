@@ -31,7 +31,7 @@ public class AppsFlyerMMP : MonoBehaviour
         Dictionary<string, string> score = new Dictionary<string, string>();
         score.Add("score", scoreValue.ToString());
         AppsFlyer.trackRichEvent("score", score);
-        Debug.Log("AppsFlyer Steps Passed");
+        Debug.Log("AppsFlyer score Passed");
     }
 
     public static void PassHighScore()
@@ -39,7 +39,7 @@ public class AppsFlyerMMP : MonoBehaviour
         Dictionary<string, string> score = new Dictionary<string, string>();
         score.Add("high_score_passed", "1");
         AppsFlyer.trackRichEvent("high_score_passed", score);
-        Debug.Log("AppsFlyer Steps Passed");
+        Debug.Log("AppsFlyer high score Passed");
     }
 
 
