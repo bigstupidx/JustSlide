@@ -1,15 +1,5 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
-		<type fullname="Purchaser">
-			<method name="BuyConsumable"/>
-			<method name="BuyConsumable"/>
-			<method name="BuyConsumable"/>
-			<method name="BuyConsumable"/>
-			<method name="BuyConsumable"/>
-			<method name="BuyNonConsumable"/>
-			<method name="BuyConsumable"/>
-			<method name="RestorePurchases"/>
-		</type>
 		<type fullname="ShareUIController">
 			<method name="Share"/>
 			<method name="SwitchFormat"/>
@@ -22,22 +12,22 @@
 			<method name="RateApp"/>
 			<method name="ButtonClickSound"/>
 			<method name="StartGame"/>
+			<method name="ButtonClickSound"/>
+			<method name="RestartGame"/>
 			<method name="CloseTutorial"/>
 			<method name="ButtonClickSound"/>
 			<method name="HideSettingsUI"/>
-			<method name="ButtonClickSound"/>
-			<method name="ToggleSound"/>
-			<method name="ButtonClickSound"/>
-			<method name="HideStoreUI"/>
 			<method name="ButtonClickSound"/>
 			<method name="CloseCharacterSelectionScene"/>
 			<method name="ButtonClickSound"/>
 			<method name="ToggleSound"/>
 			<method name="ButtonClickSound"/>
+			<method name="HideStoreUI"/>
 			<method name="ButtonClickSound"/>
-			<method name="RestartGame"/>
+			<method name="ToggleSound"/>
 			<method name="ButtonClickSound"/>
 			<method name="OpenFacebookPage"/>
+			<method name="ButtonClickSound"/>
 			<method name="ButtonClickSound"/>
 			<method name="ShowStoreUI"/>
 			<method name="ButtonClickSound"/>
@@ -55,17 +45,27 @@
 			<method name="ShowAchievementsUI"/>
 			<method name="ButtonClickSound"/>
 			<method name="ButtonClickSound"/>
-			<method name="ButtonClickSound"/>
 			<method name="ShowCharacterSelectionScene"/>
 			<method name="ButtonClickSound"/>
+			<method name="ButtonClickSound"/>
+		</type>
+		<type fullname="Purchaser">
+			<method name="BuyConsumable"/>
+			<method name="BuyConsumable"/>
+			<method name="BuyConsumable"/>
+			<method name="BuyConsumable"/>
+			<method name="BuyConsumable"/>
+			<method name="BuyConsumable"/>
+			<method name="BuyNonConsumable"/>
+			<method name="RestorePurchases"/>
+		</type>
+		<type fullname="SgLib.CharacterScroller">
+			<method name="HandleConfirmButton"/>
+			<method name="UnlockVehicleButton"/>
+			<method name="UnlockHumanButton"/>
 		</type>
 		<type fullname="SgLib.RewardUIController">
 			<method name="Close"/>
-		</type>
-		<type fullname="SgLib.CharacterScroller">
-			<method name="UnlockHumanButton"/>
-			<method name="HandleConfirmButton"/>
-			<method name="UnlockVehicleButton"/>
 		</type>
 		<type fullname="UnityAds">
 			<method name="ShowAd"/>

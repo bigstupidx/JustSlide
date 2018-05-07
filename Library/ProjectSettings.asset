@@ -125,7 +125,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.2
+  bundleVersion: 1.3
   preloadedAssets: []
   metroInputSource: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -152,7 +152,7 @@ PlayerSettings:
     tvOS: com.Company.ProductName
   buildNumber:
     iOS: 0
-  AndroidBundleVersionCode: 19
+  AndroidBundleVersionCode: 21
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -688,9 +688,9 @@ PlayerSettings:
     Unity_Ads: 0
   facebookSdkVersion: 7.9.1
   apiCompatibilityLevel: 2
-  cloudProjectId: 62c275f7-3784-457c-988d-3bd523b53489
-  projectName: Belizard - Just Slide
-  organizationId: beratbekce
+  cloudProjectId: 35b63cde-1ad1-4600-a6c0-e4fab3a768a0
+  projectName: Just Slide
+  organizationId: investable-games
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

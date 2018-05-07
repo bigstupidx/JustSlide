@@ -9,9 +9,10 @@ public class AppsFlyerMMP : MonoBehaviour
     {
         // For detailed logging
         //AppsFlyer.setIsDebug (true);
+        AppsFlyer.setAppsFlyerKey("aTYJZVwsYCTz8BbnbrDbxL");
 #if UNITY_IOS
         //Mandatory - set your AppsFlyer’s Developer key.
-        AppsFlyer.setAppsFlyerKey ("aTYJZVwsYCTz8BbnbrDbxL");
+        
         //Mandatory - set your apple app ID
         //NOTE: You should enter the number only and not the "ID" prefix
         AppsFlyer.setAppID ("YOUR_APP_ID_HERE");
@@ -34,11 +35,11 @@ public class AppsFlyerMMP : MonoBehaviour
         Debug.Log("AppsFlyer score Passed");
     }
 
-    public static void PassHighScore()
+    public static void HighScore()
     {
         Dictionary<string, string> score = new Dictionary<string, string>();
         score.Add("high_score_passed", "1");
-        AppsFlyer.trackRichEvent("high_score_passed", score);
+        AppsFlyer.trackRichEvent("high_score", score);
         Debug.Log("AppsFlyer high score Passed");
     }
 

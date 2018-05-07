@@ -284,7 +284,7 @@ namespace SgLib
             AppsFlyerMMP.Score(ScoreManager.Instance.Score);
             if(ScoreManager.Instance.HighScore > tempHighScore)
             {
-                AppsFlyerMMP.PassHighScore();
+                AppsFlyerMMP.HighScore();
             }
 
             
