@@ -24,18 +24,20 @@ public class AppsFlyerMMP : MonoBehaviour
     #endif
     }
 
-
-    public static void Score(int batch)
+    public static void Score(int scoreValue)
     {
         Dictionary<string, string> score = new Dictionary<string, string>();
-        score.Add("score", batch.ToString());
+        score.Add("score", scoreValue.ToString());
         AppsFlyer.trackRichEvent("score", score);
-        Debug.Log("Apsflyer score sent");
-        //AppsFlyer.loadConversionData("AppsFlyerTrackerCallbacks");
+        Debug.Log("AppsFlyer score Passed");
+    }
 
-        //To get the callbacks
-        //AppsFlyer.createValidateInAppListener ("AppsFlyerTrackerCallbacks", "onInAppBillingSuccess", "onInAppBillingFailure");
-
+    public static void HighScore()
+    {
+        Dictionary<string, string> score = new Dictionary<string, string>();
+        score.Add("high_score_passed", "1");
+        AppsFlyer.trackRichEvent("high_score", score);
+        Debug.Log("AppsFlyer High Score Passed");
     }
 
 

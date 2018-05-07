@@ -712,13 +712,13 @@ Light:
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
-    m_Resolution: -1
+    m_Type: 0
+    m_Resolution: 3
     m_CustomResolution: -1
     m_Strength: 0.6
     m_Bias: 0
-    m_NormalBias: 0.54
-    m_NearPlane: 6.7
+    m_NormalBias: 0
+    m_NearPlane: 0.5
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
@@ -3554,7 +3554,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: WATCH FOR COINS
+  m_Text: WATCH FOR GIFTS
 --- !u!222 &573044032
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5049,6 +5049,26 @@ Prefab:
         type: 2}
       propertyPath: m_Color.g
       value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 114169962893182922, guid: 8f284a0aea3537b4caf8536cebf99afb,
+        type: 2}
+      propertyPath: lockColor.r
+      value: 0.6039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 114169962893182922, guid: 8f284a0aea3537b4caf8536cebf99afb,
+        type: 2}
+      propertyPath: lockColor.g
+      value: 0.6039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 114169962893182922, guid: 8f284a0aea3537b4caf8536cebf99afb,
+        type: 2}
+      propertyPath: lockColor.b
+      value: 0.6039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 114169962893182922, guid: 8f284a0aea3537b4caf8536cebf99afb,
+        type: 2}
+      propertyPath: lockColor.a
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f284a0aea3537b4caf8536cebf99afb, type: 2}
